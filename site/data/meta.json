@@ -18,8 +18,8 @@
   "filings_extracted": 588,
   "live_claims": 2,
   "counterclaims": 2,
-  "named_defendants": 22,
-  "named_actors": 41,
+  "named_defendants": 16,
+  "named_actors": 37,
   "primary_archive": "court-case-md/",
   "secondary_archive": "case-files/ (trial-wiki commentary)",
   "scope_note": "Primary docket archive ends Nov 7, 2025 (Plaintiffs' opposition to OpenAI's MSJ). Trial began April 27, 2026 and is documented separately in trial-wiki commentary (case-files/), treated here as secondary observation, not primary docket evidence."

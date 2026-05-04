@@ -52,7 +52,7 @@ export function renderTimeline(data, _m, root) {
 
   root.append(head, filterBar, legend, listShell);
 
-  const eventEls = sorted.map(makeEvent);
+  const eventEls = sorted.map(evt => makeEvent(evt, data));
   function paint() {
     const q = document.getElementById("tl-search").value.trim().toLowerCase();
     const sideF = document.getElementById("tl-side").value;
@@ -98,19 +98,31 @@ function pickEra(d, eras) {
   return null;
 }
 
-function makeEvent(evt) {
+function makeEvent(evt, data) {
   const node = el("div", { class: "timeline-event", id: evt.id, data: { side: evt.side || "neutral", major: evt.major ? "true" : "false" } }, [
     el("div", { class: "timeline-date" }, [evt.date_label || formatDate(evt.date), evt.major ? " · inflection" : ""]),
     el("div", { class: "timeline-title" }, evt.title),
     evt.description ? el("p", { class: "timeline-desc" }, evt.description) : null,
     el("div", { class: "timeline-meta" }, [
-      ...(evt.actors || []).slice(0, 6).map(a => el("a", { class: "pill", href: `#/actors/${slug(a)}` }, a)),
+      ...(evt.actors || []).slice(0, 6).map(name => actorPill(name, data)),
       ...(evt.citations || []).map(c => citationChip(c))
     ])
   ]);
   return node;
 }
 
-function slug(name) {
-  return String(name).toLowerCase().replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+function actorPill(name, data) {
+  // Resolve a display name to its actor id via the canonical index, with honorific
+  // stripping and a slug fallback. Unknown names render as static pills (no link).
+  const idx = data && data.indexes && data.indexes.actorByName;
+  const resolved = idx && (idx[name] || idx[name.replace(/^Hon\.\s+/, "")]);
+  if (resolved) {
+    return el("a", { class: "pill", href: `#/actors/${resolved.id}` }, name);
+  }
+  // Fallback: try kebab-slug; if the actor index says it exists, link it.
+  const fallback = String(name).toLowerCase().replace(/^hon\.\s+/, "").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+  if (data && data.indexes && data.indexes.actor && data.indexes.actor[fallback]) {
+    return el("a", { class: "pill", href: `#/actors/${fallback}` }, name);
+  }
+  return el("span", { class: "pill" }, name);
 }

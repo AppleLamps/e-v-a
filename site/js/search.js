@@ -5,7 +5,7 @@ import { highlight } from "./utils/format.js";
 import { navigate } from "./router.js";
 
 let allDocs = [];
-let panel, input, list, prompt;
+let panel, input, list;
 let active = -1;
 
 export function initSearch(data) {
@@ -36,7 +36,7 @@ function open() {
 }
 function close() {
   panel.hidden = true;
-  input.value = "";
+  // Keep input.value so reopening restores the last query.
   active = -1;
   document.getElementById("search-toggle").focus();
 }

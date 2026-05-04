@@ -16,6 +16,15 @@ export async function loadAll() {
     await Promise.all(FILES.map(fetchJson));
   // Build O(1) indexes used across views.
   const byId = (arr) => Object.fromEntries(arr.map(x => [x.id, x]));
+  const byKey = (arr, key) => Object.fromEntries(arr.map(x => [x[key], x]));
+  // Slug-based actor name lookup so display-name pills (timeline event "actors")
+  // resolve correctly even when the name carries an honorific or the slug rule
+  // would otherwise diverge from the canonical id.
+  const actorByName = {};
+  for (const a of actors) {
+    actorByName[a.name] = a;
+    actorByName[a.name.replace(/^Hon\.\s+/, "")] = a;
+  }
   return {
     meta,
     actors,
@@ -29,9 +38,10 @@ export async function loadAll() {
     sources,
     indexes: {
       actor: byId(actors),
+      actorByName,
       entity: byId(entities),
       claim: byId(claims),
-      source: byId(sources.entries),
+      source: byKey(sources.entries || [], "docket"),
       timeline: byId(timeline)
     }
   };

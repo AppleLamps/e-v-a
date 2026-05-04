@@ -37,6 +37,7 @@ export function initRouter(data) {
     }
     if (!matched) matched = { route: routes[0], m: ["/"] };
     root.classList.add("fade-in");
+    root.setAttribute("aria-busy", "true");
     root.innerHTML = "";
     try {
       matched.route.render(data, matched.m, root);
@@ -44,6 +45,7 @@ export function initRouter(data) {
       console.error("Render failed:", err);
       root.innerHTML = `<div class="shell"><div class="error-state"><h3>Render error.</h3><p>${err.message}</p></div></div>`;
     }
+    root.setAttribute("aria-busy", "false");
     setTimeout(() => root.classList.remove("fade-in"), 220);
     document.querySelectorAll(".primary-nav a").forEach(a => {
       const route = a.dataset.route;

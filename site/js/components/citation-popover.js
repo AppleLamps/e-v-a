@@ -5,6 +5,7 @@ import { escapeHtml } from "../utils/dom.js";
 
 let dataRef = null;
 let pop = null;
+let lastAnchor = null;
 
 export function initCitationPopover(data) {
   dataRef = data;
@@ -12,7 +13,7 @@ export function initCitationPopover(data) {
   if (!pop) return;
   document.addEventListener("citation:show", onShow);
   document.addEventListener("click", onDocClick, true);
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") hide(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !pop.hidden) { hide(); lastAnchor && lastAnchor.focus(); } });
   window.addEventListener("scroll", hide, { passive: true });
   window.addEventListener("resize", hide, { passive: true });
 }
@@ -20,6 +21,7 @@ export function initCitationPopover(data) {
 function onShow(e) {
   const { ref, anchor } = e.detail;
   if (!ref) return;
+  lastAnchor = anchor || null;
   const html = renderRef(ref);
   pop.innerHTML = html;
   pop.hidden = false;

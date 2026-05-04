@@ -40,7 +40,6 @@ export function renderActors(data, _m, root) {
   ]);
   root.append(head, filterBar, grid);
   const allCards = data.actors.map(makeCard);
-  const allMatching = data.actors;
   function paint() {
     const q = document.getElementById("ac-search").value.trim().toLowerCase();
     const sideF = document.getElementById("ac-side").value;

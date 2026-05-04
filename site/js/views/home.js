@@ -65,8 +65,8 @@ export function renderHome(data, _m, root) {
       stat(meta.filings_extracted, "Filings extracted", "Court PDFs converted to markdown for line-level citation."),
       stat(meta.live_claims, "Live claims at trial", "Of 26 originally pleaded; only the charitable-trust theory and restitution survive."),
       stat(meta.counterclaims, "Live counterclaims", "OpenAI's UCL and tortious-interference theories tied to the February 2025 LOI."),
-      stat(meta.named_defendants, "Named defendants", "Including a layered web of nonprofit, capped-profit, holding, and SPV entities."),
-      stat(meta.named_actors, "Named actors", "Founders, board members, executives, attorneys, and witnesses on the record.")
+      stat(meta.named_defendants, "Defendant entities", "Across the nonprofit, capped-profit, holding, fund, SPV, Aestas, and Microsoft tiers."),
+      stat(meta.named_actors, "Named actors", "Founders, board members, executives, attorneys, witnesses, and the bench on the record.")
     ])
   ]);
 
