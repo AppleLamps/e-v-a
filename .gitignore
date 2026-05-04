@@ -1,0 +1,41 @@
+# --- Heavy / regenerable inputs ----------------------------------------
+# Raw PDFs (~114 MB) — regenerate from sources/ via scripts/download-pdfs.mjs
+court-case-pdf/*.pdf
+court-case-pdf/*.part
+
+# Raw HTML inputs from CourtListener (~3 MB) — only needed when re-scraping
+sources/
+
+# Run logs — local debugging only
+logs/
+
+# Backup of pre-stripped wiki scrapes — redundant with case-files/
+case-files-backup/
+
+# --- Local / OS / editor junk -----------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Python (in case you add extraction tools later)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
