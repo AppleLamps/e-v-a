@@ -1,0 +1,452 @@
+[
+  {
+    "id": "elon-musk",
+    "name": "Elon Musk",
+    "role": "Lead plaintiff; OpenAI co-founder & funder; CEO of Tesla, SpaceX, X; founder of xAI Corp.",
+    "side": "plaintiff",
+    "roles": ["Founder", "Plaintiff", "Witness"],
+    "tags": ["Plaintiff", "Founder", "Trial witness"],
+    "summary": "Co-founded OpenAI as a 501(c)(3) in late 2015; donated approximately $44.6M between 2016 and 2020 (a figure Musk and his side now characterize as ~$38M in cash). Resigned from the OpenAI board in February 2018 after a failed bid to absorb the lab into Tesla or take 'unequivocal initial control' of a for-profit version. Founded xAI Corp. in March 2023.",
+    "bio": "South African–born U.S. entrepreneur. Founded Zip2, X.com (PayPal), Tesla, SpaceX, Neuralink, and X (Twitter). Filed this lawsuit in August 2024 alleging the OpenAI he funded as a charity has been converted into a for-profit empire dominated by Microsoft. Testified for three days at trial (April 28–30, 2026).",
+    "role_in_case": "On direct, framed his contributions and recruitment of Ilya Sutskever as the act that gave OpenAI its initial standing; characterized the for-profit conversion as theft of a charity. On cross, was confronted with: (1) his own 2017 demand for 'unequivocal initial control' of a for-profit OpenAI; (2) his 2015 'C-corp with a parallel nonprofit' email; (3) his September 2020 tweet that 'OpenAI is essentially captured by Microsoft'; (4) Tesla's parallel AGI ambitions and xAI's lack of any profit cap.",
+    "position_shifts": [
+      { "when": "Aug 2017", "text": "Privately advised Altman that the nonprofit structure 'may not be optimal' and proposed a 'standard C corp with a parallel nonprofit'.", "citations": [{ "docket": "147", "page": 7, "title": "OpenAI Answer & Counterclaim ¶24", "snippet": "Musk thought the nonprofit structure not 'optimal,' and advised it would '[p]robably be better to have a standard C corp with a parallel nonprofit'." }] },
+      { "when": "Sep 20, 2017", "text": "Issued ultimatum: 'continue with OpenAI as a non-profit. I will no longer fund OpenAI until you have made a firm commitment to stay or I'm just being a fool…'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13 (Sept 2017 emails)", "filename": "gov.uscourts.cand.433688.32.13.md" }] },
+      { "when": "2018", "text": "Demanded sole control and CEO seat of any for-profit OpenAI; when refused, resigned from the board.", "citations": [{ "docket": "147", "page": 8, "title": "OpenAI Answer & Counterclaim ¶33", "snippet": "He demanded sole control of the new for-profit, at least initially… 'unequivocally have initial control of the company.'" }] },
+      { "when": "Sep 2020", "text": "Public tweet: 'OpenAI is essentially captured by Microsoft' — three years and eleven months before suit; central to OpenAI's statute-of-limitations defense.", "citations": [{ "trial": "042826TT.txt", "line": 3855, "snippet": "by September of 2020, he is tweeting that OpenAI is controlled by Microsoft." }] },
+      { "when": "2023", "text": "Testified that after Microsoft's $10B investment closed, he 'finally came to the conclusion… that OpenAI was really going to become… a profit-maximizing, closed-source organization' — the moment he says he became sure the charity had been 'looted'.", "citations": [{ "docket": "350", "page": 8, "title": "Pls' MSJ Opp.", "filename": "gov.uscourts.cand.433688.350.0_2.md" }] },
+      { "when": "Feb 10, 2025", "text": "Sent Letter of Intent to OpenAI's board offering $97.375 billion to acquire OpenAI's nonprofit assets — characterized by OpenAI as a 'sham bid' and now the spine of OpenAI's counterclaims.", "citations": [{ "docket": "228", "page": 2, "title": "MTD Counterclaim Order", "filename": "gov.uscourts.cand.433688.228.0_1.md" }] }
+    ],
+    "attributes": [
+      ["Donations", "$44.56M wired 2016–2020 (Musk side characterizes as ~$38M cash)"],
+      ["OpenAI board service", "Co-chair, Dec 2015 – Feb 2018"],
+      ["Position on for-profit", "Privately proposed it (Aug 2017); demanded control (Sept 2017); accepted capped-profit (2019); deemed conversion 'looting' (2023)"],
+      ["Trial testimony days", "April 28–30, 2026 (direct, cross, redirect, recross)"]
+    ],
+    "connections": [
+      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Co-founder; opposing principal" },
+      { "actor_id": "greg-brockman", "actor_name": "Greg Brockman", "relation": "Co-founder; opposing principal" },
+      { "actor_id": "ilya-sutskever", "actor_name": "Ilya Sutskever", "relation": "Recruited by Musk from Google; testified for OpenAI side" },
+      { "actor_id": "shivon-zilis", "actor_name": "Shivon Zilis", "relation": "Co-plaintiff (FAC); Tesla/Neuralink board member" },
+      { "actor_id": "jared-birchall", "actor_name": "Jared Birchall", "relation": "Personal CFO; managed donations and Pioneer Building lease" }
+    ]
+  },
+  {
+    "id": "sam-altman",
+    "name": "Samuel Altman",
+    "role": "OpenAI CEO; co-founder; defendant",
+    "side": "defendant",
+    "roles": ["Co-founder", "Defendant", "Witness"],
+    "tags": ["Defendant", "CEO"],
+    "summary": "Approached Musk in May 2015 with the idea of a nonprofit AI lab; led OpenAI from 2019; oversaw the 2019 for-profit subsidiary creation, the Microsoft partnership, and the November 2023 board removal/reinstatement episode. Will not be called by plaintiffs in their case-in-chief; will be examined during OpenAI's case.",
+    "bio": "Former YC president; co-founded OpenAI with Brockman, Sutskever, Musk and others in 2015. Centerpiece of OpenAI's narrative as 'mission-driven CEO'; centerpiece of plaintiffs' narrative as architect of the alleged bait-and-switch. Filed declaration in opposition to preliminary injunction at Dkt #107 (Feb 2025).",
+    "role_in_case": "Plaintiffs allege his September 21, 2017 email — 'i remain enthusiastic about the non-profit structure!' — was a knowingly false reaffirmation made specifically to keep Musk's funding flowing while planning the for-profit pivot. Defense frames the 2017 reaffirmation as truthful and the subsequent capped-profit structure as a necessary, mission-aligned response to compute capital needs.",
+    "position_shifts": [
+      { "when": "May 2015", "text": "Pitched Musk on a nonprofit 'Manhattan Project for AI' where 'the tech belongs to the world via some sort of nonprofit'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 1", "filename": "gov.uscourts.cand.433688.32.1.md" }] },
+      { "when": "Sep 21, 2017", "text": "Following Musk's ultimatum: 'i remain enthusiastic about the non-profit structure!'", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13", "filename": "gov.uscourts.cand.433688.32.13.md" }] },
+      { "when": "Mar 2019", "text": "Public blog post launching OpenAI LP; described investors as 'clear that they should never expect a profit'.", "citations": [{ "docket": "327", "page": 8, "title": "OpenAI MSJ", "filename": "gov.uscourts.cand.433688.327.0_5.md" }] }
+    ],
+    "attributes": [
+      ["Position", "CEO, OpenAI, Inc.; member of OpenAI Inc. board"],
+      ["Equity", "OpenAI position publicly disclosed as nominal until restructuring; subject of redacted MSJ exhibits"],
+      ["Trial role", "Examined in OpenAI's case-in-chief, not plaintiffs'"]
+    ],
+    "connections": [
+      { "actor_id": "greg-brockman", "actor_name": "Greg Brockman", "relation": "Co-founder; co-defendant" },
+      { "actor_id": "satya-nadella", "actor_name": "Satya Nadella", "relation": "Microsoft CEO; partnership counterparty" },
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Estranged co-founder; opposing party" }
+    ]
+  },
+  {
+    "id": "greg-brockman",
+    "name": "Gregory Brockman",
+    "role": "OpenAI President & co-founder; defendant",
+    "side": "defendant",
+    "roles": ["Co-founder", "Defendant", "Witness"],
+    "tags": ["Defendant", "President"],
+    "summary": "Co-founder; OpenAI President; named defendant on the surviving fiduciary-duty and contract claims. Plaintiffs allege Brockman, with Sutskever, raised concerns to Musk in September 2017 about Musk having 'unilateral absolute control over the AGI', and that Brockman privately characterized the nonprofit framing as a way to 'bootstrap' the institution.",
+    "bio": "Former Stripe CTO; left to join OpenAI in 2015. Plaintiffs single out his November 22, 2015 email — describing OpenAI's nonprofit positioning as 'the best way to bootstrap ourselves into being a leading research institution' — as evidence of strategic intent. On the trial schedule for plaintiffs' case-in-chief, week 2.",
+    "position_shifts": [
+      { "when": "Nov 22, 2015", "text": "Wrote that the nonprofit posture was 'the best way to bootstrap ourselves into being a leading research institution'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 3", "filename": "gov.uscourts.cand.433688.32.3.md" }] },
+      { "when": "Sep 20, 2017", "text": "Joined Sutskever in raising 'highest stakes conversation' concerns about Musk's would-be 'unilateral absolute control over the AGI'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13", "filename": "gov.uscourts.cand.433688.32.13.md" }] }
+    ],
+    "attributes": [
+      ["Title", "President, OpenAI"],
+      ["Plaintiffs' framing", "Contributed 'zero' financial capital to the nonprofit but holds significant equity in the for-profit"]
+    ],
+    "connections": [
+      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Co-founder; co-defendant" },
+      { "actor_id": "ilya-sutskever", "actor_name": "Ilya Sutskever", "relation": "Co-founder; co-author of Sept 20, 2017 email" }
+    ]
+  },
+  {
+    "id": "ilya-sutskever",
+    "name": "Ilya Sutskever",
+    "role": "OpenAI co-founder & former Chief Scientist; deposition witness; not a defendant",
+    "side": "defendant",
+    "roles": ["Co-founder", "Witness", "Chief Scientist"],
+    "tags": ["Witness", "Chief Scientist"],
+    "summary": "Recruited from Google by Musk in late 2015. Co-author of the September 20, 2017 email to Musk warning that the proposed for-profit structure would give Musk 'unilateral absolute control over the AGI'. Filed a 14-page declaration (Dkt #334.1) and litigated to stay a discovery order through October 2025 (Dkts #337, #342, #346, #348).",
+    "bio": "Former Google Brain researcher; co-founder of OpenAI; voted to remove Altman from the CEO role in November 2023 and then voted to reinstate him. Subject of substantial third-party discovery in fall 2025; the court ordered him to comply with discovery by November 5, 2025 (Dkt #339).",
+    "role_in_case": "Sutskever's October 2025 declaration is the longest single declaration in the docket. His Sept 20, 2017 email is read by both sides: plaintiffs use it to show that even Brockman and Sutskever were uneasy with the for-profit pivot; defense uses it to show that Musk himself was the one demanding 'unilateral absolute control'.",
+    "attributes": [
+      ["Role at OpenAI", "Co-founder; Chief Scientist (2015–2024)"],
+      ["Recruited by", "Musk; Larry Page reportedly tried to keep him at Google"],
+      ["Trial schedule", "Examined via video deposition in plaintiffs' case (week 2)"]
+    ],
+    "connections": [
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Recruited him to OpenAI in 2015" },
+      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Voted to remove him in Nov 2023, then voted to reinstate" }
+    ]
+  },
+  {
+    "id": "satya-nadella",
+    "name": "Satya Nadella",
+    "role": "Microsoft CEO",
+    "side": "microsoft",
+    "roles": ["Executive", "Witness"],
+    "tags": ["Microsoft", "Witness"],
+    "summary": "Microsoft CEO since 2014. Counterparty for the 2019 capped-profit partnership ($1B), 2023 expansion ($10B), and the 2024 expanded investment. Defendants emphasize Nadella's deposition testimony that the partnership was 'arm's-length negotiation between sophisticated parties'. Plaintiffs cite Nadella's quoted statement that Microsoft has 'the people, the compute, the data, everything' as evidence Microsoft effectively absorbed OpenAI.",
+    "bio": "Joined Microsoft 1992; CEO since 2014; centered Microsoft's strategy on Azure and AI. Examined during Microsoft's case-in-chief, by agreement plaintiffs may delay Microsoft's Rule 50(a) motion until after that examination.",
+    "role_in_case": "Microsoft's MSJ (Dkt #329) leans heavily on Nadella's account that Microsoft did not receive 'a conventional equity ownership interest' but a capped-return arrangement; that the partnership was 'the result of arm's-length negotiations between sophisticated parties'; and that Microsoft 'remained supportive of its strategic partnership with OpenAI'.",
+    "attributes": [
+      ["Title", "Chair & CEO, Microsoft Corp."],
+      ["Deposed", "Yes; cited extensively in Microsoft MSJ"],
+      ["Partnership lead", "Negotiated 2019 capped-profit deal and 2023 expansion"]
+    ],
+    "connections": [
+      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Partnership counterparty" },
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Quoted: 'The only one who could really call Satya Nadella and have him actually pick up and answer the phone was me.' (042826TT.txt:5533)" }
+    ]
+  },
+  {
+    "id": "reid-hoffman",
+    "name": "Reid Hoffman",
+    "role": "Greylock GP; former OpenAI board member (resigned Mar 2023); Microsoft director",
+    "side": "defendant",
+    "roles": ["Director", "Witness"],
+    "tags": ["Defendant", "Board member"],
+    "summary": "Sat on both Microsoft's and OpenAI's boards through March 2023. Filed an opposition declaration (Dkt #65.21, December 2024); a corrected declaration was refiled in late September 2025 (Dkts #279–#287). Plaintiffs alleged a Section 8 (Clayton Act) interlocking-directorate violation; the court dismissed that count for lack of standing because Hoffman had resigned four months before the FAC was filed (Dkt #121).",
+    "bio": "LinkedIn co-founder; Greylock partner; longtime Microsoft and OpenAI board member.",
+    "role_in_case": "On the dismissed interlocking-directorate count (Count XV/XVI of FAC). The corrected declaration filed Sep 24–29, 2025 is unusual; plaintiffs cite it as evidence the original was inaccurate.",
+    "attributes": [
+      ["OpenAI board service", "2018 – Mar 2023"],
+      ["Microsoft board service", "2017 – present (during relevant period)"],
+      ["Declaration", "Dkt #65.21 (Dec 13, 2024); corrected #287 (Sep 29, 2025)"]
+    ],
+    "connections": [
+      { "actor_id": "deannah-templeton", "actor_name": "Deannah Templeton", "relation": "Successor as Microsoft's OpenAI board representative" },
+      { "actor_id": "satya-nadella", "actor_name": "Satya Nadella", "relation": "Microsoft co-director" }
+    ]
+  },
+  {
+    "id": "deannah-templeton",
+    "name": "Deannah Templeton",
+    "role": "Microsoft VP; OpenAI Inc. non-voting board observer Nov 2023 – Jul 2024; defendant",
+    "side": "defendant",
+    "roles": ["Director", "Defendant"],
+    "tags": ["Defendant", "Board observer"],
+    "summary": "Microsoft Technology & Research VP. Sat as a non-voting observer on OpenAI's nonprofit board from November 29, 2023 — the day the post-firing reconstituted board took its seats — until July 9, 2024, when she stepped down amid FTC scrutiny of Section 8 interlocks across AI partnerships. Named defendant on the dismissed interlocking-directorate count.",
+    "role_in_case": "On the dismissed interlocking-directorate count. The court found her resignation predated the FAC by four months and rejected the standing theory.",
+    "attributes": [
+      ["Role at OpenAI", "Non-voting board observer, Nov 29, 2023 – Jul 9, 2024"],
+      ["Role at Microsoft", "VP, Technology & Research"],
+      ["Declaration", "Dkt #65.15 (6p, Dec 13, 2024)"]
+    ],
+    "connections": [
+      { "actor_id": "reid-hoffman", "actor_name": "Reid Hoffman", "relation": "Predecessor as Microsoft's OpenAI board liaison" }
+    ]
+  },
+  {
+    "id": "shivon-zilis",
+    "name": "Shivon Zilis",
+    "role": "Tesla / Neuralink board member; co-plaintiff (FAC); witness",
+    "side": "plaintiff",
+    "roles": ["Plaintiff", "Witness"],
+    "tags": ["Plaintiff (FAC)", "Witness"],
+    "summary": "Reported to Musk on OpenAI matters during 2017–2018 (e.g., the September 22, 2017 update in FAC Ex. 14). Added as a co-plaintiff in the FAC (Nov 2024); dropped as a plaintiff in the SAC (May 2025). Filed a declaration in support of the preliminary injunction (Dkt #73.34, Dec 2024). Confirmed as a plaintiffs' witness late on Day 5 (Kry: 'I had a mental lapse. Shivon Zilis will also be called as a witness.').",
+    "attributes": [
+      ["Plaintiff status", "FAC co-plaintiff (Nov 2024); dropped from SAC (May 2025)"],
+      ["Trial role", "Plaintiffs' witness"]
+    ],
+    "connections": [
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Reports to Musk on OpenAI; Tesla/Neuralink board member" }
+    ]
+  },
+  {
+    "id": "jared-birchall",
+    "name": "Jared Birchall",
+    "role": "Musk's family-office CFO; Musk Foundation officer; trial witness",
+    "side": "plaintiff",
+    "roles": ["Witness", "Officer"],
+    "tags": ["Witness", "Musk-side"],
+    "summary": "Manager of Excession LLC (Musk's family office) and CFO of the Musk Foundation. Authenticated the $38,191,066 contribution chart at trial. His testimony about the February 2025 $97.375B Letter of Intent was struck on Day 5 ('this gentleman had no personal knowledge'). The judge sanctioned plaintiffs' counsel after Toberoff's role in feeding Birchall the questions about the LOI emerged.",
+    "role_in_case": "Day-4 direct (Kry) on contributions, Pioneer Building lease, and the LOI; Day-5 motion to strike granted. Bench: 'You must be very convincing. You're not convincing today.' (043026TT.txt:7775)",
+    "attributes": [
+      ["Title", "Manager, Excession LLC; CFO, Musk Foundation"],
+      ["Trial day", "Day 4 (Apr 30, 2026); LOI testimony struck Day 5"]
+    ],
+    "connections": [
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Personal CFO" },
+      { "actor_id": "marc-toberoff", "actor_name": "Marc Toberoff", "relation": "Plaintiffs' counsel; sanctioned for feeding questions to Birchall" }
+    ]
+  },
+  {
+    "id": "yvonne-gonzalez-rogers",
+    "name": "Hon. Yvonne Gonzalez Rogers",
+    "role": "U.S. District Judge, N.D. Cal., Oakland Division",
+    "side": "judicial",
+    "roles": ["Court"],
+    "tags": ["Judge"],
+    "summary": "Presiding judge. Issued every dispositive order: PI denial (Dkt #121), MTD ruling (Dkt #163), counterclaim/SAC ruling (Dkt #228), motion-to-strike ruling (Dkt #222), pretrial order (Dkt #146). Has framed the case narrowly: 'This is not a trial on the safety risks of artificial intelligence… The question here is whether there was a breach of charitable trust.' (043026TT.txt:817)",
+    "bio": "Former Alameda County prosecutor; nominated to the bench by President Obama in 2011. Known for tight courtroom management.",
+    "role_in_case": "Has repeatedly criticized 'gamesmanship' on both sides (Dkts #222, #228 fn.4); on Day 5 sanctioned plaintiffs' co-counsel and granted the motion to strike Birchall's LOI testimony.",
+    "attributes": [
+      ["Bench", "U.S. District Court, N.D. Cal."],
+      ["Notable rulings", "PI denied (Mar 2025); MTD partially granted (May 2025); counterclaims survive (Aug 2025)"]
+    ]
+  },
+  {
+    "id": "thomas-hixson",
+    "name": "Hon. Thomas S. Hixson",
+    "role": "U.S. Magistrate Judge, N.D. Cal.",
+    "side": "judicial",
+    "roles": ["Court"],
+    "tags": ["Magistrate"],
+    "summary": "Discovery referee on the case. Issued discovery orders #188, #194, #203, #213, #224, #226 across the June–October 2025 letter-brief disputes; ruled on Sutskever's motion to stay (Dkt #339); presided over the Eight Partners VC privilege fight."
+  },
+  {
+    "id": "marc-toberoff",
+    "name": "Marc Toberoff",
+    "role": "Plaintiffs' lead counsel (Toberoff & Associates)",
+    "side": "counsel",
+    "roles": ["Counsel"],
+    "tags": ["Plaintiffs' counsel"],
+    "summary": "Filed every iteration of the complaint and PI motion. On Day 5, the court chastised him from the bench: 'You shouldn't throw the young lawyers under the bus by not saying anything. That's not appropriate.' (050126TT.txt:360)"
+  },
+  {
+    "id": "steven-molo",
+    "name": "Steven Molo",
+    "role": "Plaintiffs' lead trial counsel (MoloLamken)",
+    "side": "counsel",
+    "roles": ["Counsel"],
+    "tags": ["Plaintiffs' counsel"],
+    "summary": "Gave the plaintiffs' opening: 'we're here today because the defendants in this case stole a charity… The museum store can't loot the museum, sell the Picassos, and pocket the profits.' Conducted Musk's direct examination."
+  },
+  {
+    "id": "robert-kry",
+    "name": "Robert Kry",
+    "role": "Plaintiffs' co-counsel (MoloLamken)",
+    "side": "counsel",
+    "roles": ["Counsel"],
+    "tags": ["Plaintiffs' counsel"],
+    "summary": "Conducted Birchall's direct examination. Repeatedly admonished by the bench for leading questions ('Stop leading, Mr. Kry.' 043026TT.txt:4709)."
+  },
+  {
+    "id": "william-savitt",
+    "name": "William Savitt",
+    "role": "OpenAI lead trial counsel (Wachtell, Lipton, Rosen & Katz)",
+    "side": "counsel",
+    "roles": ["Counsel"],
+    "tags": ["Defense counsel"],
+    "summary": "Gave OpenAI's opening: 'Mr. Musk's lawsuit is a pageant of hypocrisy.' Conducted Musk's cross-examination across Days 2–4. Audibly defeated late Day 3: 'Maybe we should break for the day.'"
+  },
+  {
+    "id": "russell-cohen",
+    "name": "Russell Cohen",
+    "role": "Microsoft trial counsel (Dechert)",
+    "side": "counsel",
+    "roles": ["Counsel"],
+    "tags": ["Microsoft counsel"],
+    "summary": "Gave Microsoft's opening: 'Mr. Musk never picked up the phone to say, you can't do this.' Cross-examined Birchall."
+  },
+  {
+    "id": "bradley-wilson",
+    "name": "Bradley Wilson",
+    "role": "OpenAI counsel (Wachtell)",
+    "side": "counsel",
+    "roles": ["Counsel"],
+    "tags": ["Defense counsel"],
+    "summary": "Cross-examined Birchall. The bench moderated his pace: 'Mr. Wilson, slow down.' (043026TT.txt:5436)"
+  },
+  {
+    "id": "rob-bonta",
+    "name": "Rob Bonta",
+    "role": "California Attorney General",
+    "side": "third_party",
+    "roles": ["Government"],
+    "tags": ["California AG"],
+    "summary": "Named as involuntary plaintiff in the FAC; filed motion to dismiss the involuntary-plaintiff designation (Dkt #101, Jan 31, 2025). Has independent supervisory authority over California charitable trusts."
+  },
+  {
+    "id": "kathleen-jennings",
+    "name": "Kathleen Jennings",
+    "role": "Delaware Attorney General",
+    "side": "third_party",
+    "roles": ["Government"],
+    "tags": ["Delaware AG"],
+    "summary": "Filed amicus brief in support of plaintiffs' preliminary-injunction motion (Dkt #77, Dec 30, 2024). Position: a Delaware nonprofit's conversion to for-profit raises charitable-trust supervision concerns."
+  },
+  {
+    "id": "ilya-page",
+    "name": "Larry Page",
+    "side": "third_party",
+    "role": "Google co-founder; non-party",
+    "roles": ["Witness referenced"],
+    "tags": ["Non-party"],
+    "summary": "Subject of Musk's most-told trial story — that Page called him a 'speciesist' for being pro-human, which Musk says crystallised his concern that AI safety needed an institution outside Google. (042826TT.txt:4828, 4844, 4995, 5497)"
+  },
+  {
+    "id": "andrej-karpathy",
+    "name": "Andrej Karpathy",
+    "side": "third_party",
+    "role": "Former OpenAI co-founder, departed for Tesla 2017; later returned to OpenAI",
+    "roles": ["Witness referenced"],
+    "tags": ["Tesla/OpenAI"],
+    "summary": "Musk's June 2017 hire of Karpathy from OpenAI to Tesla — 'The OpenAI guys are going to want to kill me, but it had to be done…' (DX 773) — is featured by defense as evidence Musk poached talent while still on OpenAI's board. Karpathy's December 2018 message to Musk proposed OpenAI 'attach to Tesla as its cash cow' (DX 749)."
+  },
+  {
+    "id": "helen-toner",
+    "name": "Helen Toner",
+    "side": "neutral",
+    "role": "Former OpenAI nonprofit board member; voted to remove Altman Nov 2023",
+    "roles": ["Witness", "Director"],
+    "tags": ["Former director"],
+    "summary": "Among the directors who voted to remove Altman in November 2023; did not survive the reconstituted post-reinstatement board. Identified in the trial-wiki as a video-deposition witness."
+  },
+  {
+    "id": "tasha-mccauley",
+    "name": "Tasha McCauley",
+    "side": "neutral",
+    "role": "Former OpenAI nonprofit board member; voted to remove Altman Nov 2023",
+    "roles": ["Witness", "Director"],
+    "tags": ["Former director"],
+    "summary": "Co-author with Toner of the post-removal critique; did not survive the reconstituted board. Video deposition designated."
+  },
+  {
+    "id": "mira-murati",
+    "name": "Mira Murati",
+    "side": "neutral",
+    "role": "Former OpenAI CTO",
+    "roles": ["Witness", "Executive"],
+    "tags": ["Former CTO"],
+    "summary": "OpenAI CTO during the November 2023 board episode and the GPT-4o release. Designated for video-deposition testimony at trial."
+  },
+  {
+    "id": "rosie-campbell",
+    "name": "Rosie Campbell",
+    "side": "neutral",
+    "role": "Former OpenAI safety researcher",
+    "roles": ["Witness"],
+    "tags": ["Witness"],
+    "summary": "Former OpenAI safety-aligned employee designated to testify in plaintiffs' case-in-chief regarding nonprofit culture and the safety/commercial-pressure tradeoff."
+  },
+  {
+    "id": "stuart-russell",
+    "name": "Stuart Russell",
+    "side": "plaintiff",
+    "role": "Plaintiffs' AI-safety expert (UC Berkeley)",
+    "roles": ["Expert"],
+    "tags": ["Plaintiffs' expert"],
+    "summary": "Plaintiffs' expert witness; the court excluded extinction-risk testimony from his trial scope (043026TT.txt:712). Scheduled to testify in plaintiffs' Week-2 case."
+  },
+  {
+    "id": "david-schizer",
+    "name": "David Schizer",
+    "side": "plaintiff",
+    "role": "Plaintiffs' nonprofit-law expert (Columbia Law School)",
+    "roles": ["Expert"],
+    "tags": ["Plaintiffs' expert"],
+    "summary": "Designated to close plaintiffs' case-in-chief with testimony on charitable-trust law and California nonprofit governance."
+  },
+  {
+    "id": "joshua-achiam",
+    "name": "Joshua Achiam",
+    "side": "defendant",
+    "role": "OpenAI corporate representative",
+    "roles": ["Witness", "Executive"],
+    "tags": ["OpenAI rep"],
+    "summary": "OpenAI's designated corporate representative permitted in the courtroom during trial."
+  },
+  {
+    "id": "antonio-gracias",
+    "name": "Antonio Gracias",
+    "side": "plaintiff",
+    "role": "Investor; declarant for plaintiffs' PI motion",
+    "roles": ["Declarant"],
+    "tags": ["Investor"],
+    "summary": "Filed declaration #73.33 (Dec 27, 2024) in support of the preliminary injunction."
+  },
+  {
+    "id": "gavin-baker",
+    "name": "Gavin Baker",
+    "side": "plaintiff",
+    "role": "Investor; declarant for plaintiffs' PI motion",
+    "roles": ["Declarant"],
+    "tags": ["Investor"],
+    "summary": "Filed declaration #73.31 (Dec 27, 2024). Cited as one of the few investor declarants supporting the alleged 'fund-no-competitors' theory; the court found xAI 'admitted that it could not provide a single declaration from an investor to confirm its theory' on the boycott (Dkt #121 p.8)."
+  },
+  {
+    "id": "jared-doe-microsoft",
+    "name": "Yina Arenas",
+    "side": "microsoft",
+    "role": "Microsoft declarant",
+    "roles": ["Declarant"],
+    "tags": ["Microsoft"],
+    "summary": "Filed declaration #65.19 (Dec 13, 2024, 9p) in opposition to PI; goes to Microsoft's account of the partnership and compute relationship."
+  },
+  {
+    "id": "robert-wu",
+    "name": "Robert Wu",
+    "side": "defendant",
+    "role": "OpenAI declarant",
+    "roles": ["Declarant"],
+    "tags": ["OpenAI"],
+    "summary": "Filed declaration #64.1 (Dec 13, 2024, 6p) in opposition to PI."
+  },
+  {
+    "id": "michael-wetter",
+    "name": "Michael Wetter",
+    "side": "microsoft",
+    "role": "Microsoft declarant",
+    "roles": ["Declarant"],
+    "tags": ["Microsoft"],
+    "summary": "Filed declaration #65.18 (Dec 13, 2024, 4p)."
+  },
+  {
+    "id": "howard-ullman",
+    "name": "Howard Ullman",
+    "side": "microsoft",
+    "role": "Microsoft declarant",
+    "roles": ["Declarant"],
+    "tags": ["Microsoft"],
+    "summary": "Filed declaration #65.1 (Dec 13, 2024, 4p)."
+  },
+  {
+    "id": "jensen-huang",
+    "name": "Jensen Huang",
+    "side": "third_party",
+    "role": "NVIDIA CEO; non-party referenced",
+    "roles": ["Witness referenced"],
+    "tags": ["Non-party"],
+    "summary": "Non-party. April 2016 email read into the trial record: Musk to Huang on OpenAI as 'a nonprofit company by me and a few others with the goal of developing safe AGI (and hopefully not paving the road to hell with good intentions).' (042826TT.txt:5623)"
+  },
+  {
+    "id": "mark-zuckerberg",
+    "name": "Mark Zuckerberg",
+    "side": "third_party",
+    "role": "Meta CEO; non-party referenced",
+    "roles": ["Witness referenced"],
+    "tags": ["Non-party"],
+    "summary": "Featured in a Feb 3, 2025 Musk email: 'Are you open to the idea of bidding on the OpenAI IP with me and some others?' (DX 1156). Meta separately sent California's AG a letter supporting Musk's lawsuit (DX 1083)."
+  },
+  {
+    "id": "bret-eddy",
+    "name": "Bret Eddy",
+    "side": "defendant",
+    "role": "OpenAI counsel",
+    "roles": ["Counsel"],
+    "tags": ["Defense counsel"],
+    "summary": "OpenAI counsel referenced in the Day-5 jury-instruction conference exchange on the unjust-enrichment knowledge standard."
+  }
+]

@@ -1,0 +1,59 @@
+.quote-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  padding: var(--space-m);
+  display: grid;
+  gap: 0.5rem;
+}
+.quote-card.plaintiff { border-left-color: var(--plaintiff); }
+.quote-card.defendant { border-left-color: var(--defendant); }
+.quote-card.judicial { border-left-color: var(--judicial); }
+.quote-card.neutral { border-left-color: var(--neutral); }
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: var(--fs-step-1);
+  line-height: 1.45;
+  color: var(--ink-strong);
+  font-style: italic;
+}
+.quote-text::before { content: "“"; color: var(--ink-mute); margin-right: 0.05em; font-style: normal; }
+.quote-text::after { content: "”"; color: var(--ink-mute); margin-left: 0.05em; font-style: normal; }
+
+.quote-attr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: var(--fs-step--1);
+  color: var(--ink-mute);
+}
+.quote-attr .speaker {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--ink-strong);
+  font-size: 0.86rem;
+}
+.quote-attr .quote-when { font-family: var(--font-mono); font-size: 0.74rem; }
+.quote-attr .ctx { font-style: italic; }
+
+.quote-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.5rem;
+  font-size: 0.72rem;
+}
+.quote-pill {
+  padding: 0.05rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+.quote-pill.under-oath { color: var(--judicial); border-color: color-mix(in oklab, var(--judicial) 40%, var(--line)); }
+.quote-pill.private { color: var(--warn); border-color: color-mix(in oklab, var(--warn) 40%, var(--line)); }
+.quote-pill.contradicts { color: var(--plaintiff); border-color: color-mix(in oklab, var(--plaintiff) 40%, var(--line)); }

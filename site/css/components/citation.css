@@ -1,0 +1,81 @@
+/* Inline citation chips and popover */
+
+.cite {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.18rem;
+  padding: 0.05rem 0.35rem;
+  margin: 0 0.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78em;
+  line-height: 1.2;
+  color: var(--ink-mute);
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  transition: color var(--t-fast), background var(--t-fast), border-color var(--t-fast);
+  cursor: help;
+}
+.cite:hover, .cite:focus-visible {
+  color: var(--ink-strong);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+.cite::before {
+  content: "§";
+  color: var(--accent);
+  font-weight: 600;
+}
+.cite.cite-trial::before { content: "T"; }
+.cite.cite-court::before { content: "§"; }
+
+.citation-popover {
+  position: fixed;
+  z-index: var(--z-popover);
+  max-width: min(360px, 90vw);
+  background: var(--bg-elev);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-2);
+  padding: var(--space-s);
+  font-size: var(--fs-step--1);
+  color: var(--ink);
+  pointer-events: auto;
+  animation: cite-pop var(--t-fast) var(--ease) both;
+}
+@keyframes cite-pop {
+  from { opacity: 0; transform: translateY(4px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.citation-popover h6 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+.citation-popover .cp-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--ink-strong);
+  margin: 0.15rem 0;
+  font-size: var(--fs-step-0);
+  line-height: 1.25;
+}
+.citation-popover .cp-meta {
+  color: var(--ink-mute);
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+}
+.citation-popover .cp-snippet {
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--line);
+  font-style: italic;
+  color: var(--ink);
+}

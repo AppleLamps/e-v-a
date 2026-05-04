@@ -1,0 +1,121 @@
+.home-hero {
+  padding: var(--space-2xl) 0 var(--space-xl);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at top right, var(--accent-soft), transparent 70%),
+    radial-gradient(ellipse at bottom left, var(--defendant-soft), transparent 70%);
+}
+.home-hero h1 {
+  font-size: var(--fs-step-6);
+  letter-spacing: -0.025em;
+  margin-bottom: var(--space-m);
+  text-wrap: balance;
+}
+.home-hero .deck { color: var(--ink); margin-bottom: var(--space-l); max-width: 60ch; }
+.home-hero .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem var(--space-m);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+}
+.home-hero .meta-row span strong { color: var(--ink-strong); font-weight: 600; }
+
+.home-hypothesis {
+  border-top: 4px solid var(--accent);
+  background: var(--bg-elev);
+  border-radius: var(--radius-m);
+  padding: var(--space-l);
+  display: grid;
+  gap: var(--space-m);
+  margin: var(--space-xl) 0;
+}
+.home-hypothesis h2 {
+  font-size: var(--fs-step-3);
+  letter-spacing: -0.012em;
+}
+.home-hypothesis .lead-claim {
+  font-family: var(--font-serif);
+  font-size: var(--fs-step-2);
+  line-height: 1.4;
+  color: var(--ink-strong);
+}
+.home-hypothesis .components {
+  display: grid;
+  gap: var(--space-s);
+}
+.component {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: var(--space-s);
+  padding: var(--space-s) 0;
+  border-bottom: 1px dashed var(--line);
+}
+.component:last-child { border-bottom: 0; }
+.component-rank {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--ink-strong);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.component h4 { font-size: var(--fs-step-1); margin-bottom: 0.2rem; font-family: var(--font-serif); font-weight: 600; }
+.component p { font-size: var(--fs-step-0); color: var(--ink); margin: 0; }
+
+.posture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-m);
+  margin: var(--space-xl) 0;
+}
+.posture-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+}
+.posture-card h4 { font-size: var(--fs-step-0); margin-bottom: 0.3rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); font-weight: 600; }
+.posture-card .stat { font-family: var(--font-serif); font-size: var(--fs-step-3); font-weight: 600; color: var(--ink-strong); letter-spacing: -0.015em; line-height: 1.05; }
+.posture-card .desc { font-size: var(--fs-step--1); color: var(--ink-mute); margin-top: 0.4rem; }
+
+.home-quick-jump {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-s);
+  margin-top: var(--space-l);
+}
+.home-quick-jump a {
+  display: grid;
+  gap: 0.2rem;
+  padding: var(--space-m);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  color: var(--ink);
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+.home-quick-jump a:hover { border-color: var(--accent); background: var(--bg-elev-2); color: var(--ink-strong); }
+.home-quick-jump h5 { color: var(--ink-strong); margin-bottom: 0; font-family: var(--font-serif); font-weight: 600; font-size: var(--fs-step-1); letter-spacing: -0.005em; text-transform: none; }
+.home-quick-jump p { color: var(--ink-mute); margin: 0; font-size: var(--fs-step--1); max-width: none; }
+
+.archive-callout {
+  border-left: 3px solid var(--warn);
+  background: var(--bg-elev);
+  padding: var(--space-m);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  margin: var(--space-l) 0;
+}
+.archive-callout h5 { color: var(--warn); margin-bottom: 0.3rem; font-family: var(--font-sans); }
+.archive-callout p { font-size: var(--fs-step--1); color: var(--ink); }
+
+@media (max-width: 600px) {
+  .home-hero { padding: var(--space-xl) 0; }
+  .home-hero h1 { font-size: var(--fs-step-4); }
+}

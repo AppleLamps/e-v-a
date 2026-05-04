@@ -1,0 +1,60 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--ink-mute);
+  white-space: nowrap;
+}
+.badge.role-plaintiff { color: var(--plaintiff); border-color: color-mix(in oklab, var(--plaintiff) 40%, var(--line)); background: var(--plaintiff-soft); }
+.badge.role-defendant { color: var(--defendant); border-color: color-mix(in oklab, var(--defendant) 40%, var(--line)); background: var(--defendant-soft); }
+.badge.role-judicial { color: var(--judicial); border-color: color-mix(in oklab, var(--judicial) 40%, var(--line)); background: var(--judicial-soft); }
+.badge.role-counsel { color: var(--ink); }
+.badge.role-witness, .badge.role-witness-aligned { color: var(--neutral); }
+.badge.status-live { color: var(--good); border-color: color-mix(in oklab, var(--good) 40%, var(--line)); }
+.badge.status-dismissed { color: var(--ink-faint); text-decoration: line-through; text-decoration-color: var(--ink-faint); }
+.badge.status-trial { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.badge.status-counterclaim { color: var(--defendant); }
+.badge.outcome-unresolved { color: var(--warn); }
+.badge.outcome-conflicting { color: var(--warn); }
+.badge.outcome-supported { color: var(--good); }
+
+.kbd, kbd {
+  display: inline-block;
+  padding: 0.05rem 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--bg-elev-2);
+  color: var(--ink);
+  margin: 0 0.05rem;
+}
+
+.confidence-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.confidence-track {
+  display: inline-flex;
+  height: 4px;
+  width: 64px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.confidence-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: inherit;
+}

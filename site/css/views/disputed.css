@@ -1,0 +1,82 @@
+.dispute-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+  display: grid;
+  gap: var(--space-s);
+  margin-bottom: var(--space-m);
+}
+.dispute-card h3 {
+  font-size: var(--fs-step-2);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--ink-strong);
+}
+.dispute-status {
+  display: inline-flex;
+  gap: 0.35rem;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  align-items: center;
+  background: var(--bg-elev-2);
+}
+.dispute-status.unresolved { color: var(--warn); border-color: color-mix(in oklab, var(--warn) 40%, var(--line)); }
+.dispute-status.conflicting { color: var(--warn); border-color: color-mix(in oklab, var(--warn) 40%, var(--line)); }
+.dispute-status.supported { color: var(--good); border-color: color-mix(in oklab, var(--good) 40%, var(--line)); }
+.dispute-status.disputed { color: var(--accent); border-color: var(--accent); }
+
+.dispute-grid {
+  display: grid;
+  gap: var(--space-m);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  .dispute-grid { grid-template-columns: 1fr 1fr; }
+}
+.dispute-side {
+  background: var(--bg-elev-2);
+  border-left: 3px solid var(--accent);
+  padding: var(--space-s) var(--space-m);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+.dispute-side.plaintiff { border-left-color: var(--plaintiff); }
+.dispute-side.defendant { border-left-color: var(--defendant); }
+.dispute-side h5 {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-mute);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  font-family: var(--font-sans);
+}
+.dispute-side h5.plaintiff { color: var(--plaintiff); }
+.dispute-side h5.defendant { color: var(--defendant); }
+.dispute-side p {
+  font-size: var(--fs-step-0);
+  color: var(--ink);
+  line-height: 1.5;
+}
+.dispute-record {
+  background: var(--bg-elev-2);
+  border-top: 1px solid var(--line);
+  border-radius: 0 0 var(--radius-m) var(--radius-m);
+  padding: var(--space-s) var(--space-m);
+  margin: var(--space-s) calc(-1 * var(--space-m)) calc(-1 * var(--space-m));
+  font-size: var(--fs-step--1);
+  color: var(--ink-mute);
+}
+.dispute-record strong {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  font-weight: 600;
+}

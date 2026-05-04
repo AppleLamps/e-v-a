@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Forensic analysis of Musk v. Altman (4:24-cv-04722-YGR), built from the underlying docket of 588 court filings." />
+  <meta name="theme-color" content="#0d0f12" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f7f6f1" media="(prefers-color-scheme: light)" />
+  <title>Musk v. Altman — A Forensic Reading of the Docket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23c89b3c'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%230d0f12'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="#/" data-route="home" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">M<span class="brand-v">v</span>A</span>
+        <span class="brand-text">
+          <span class="brand-line-1">Musk v. Altman</span>
+          <span class="brand-line-2">A forensic reading of the docket</span>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#/" data-route="home">Summary</a></li>
+          <li><a href="#/timeline" data-route="timeline">Timeline</a></li>
+          <li><a href="#/actors" data-route="actors">Actors</a></li>
+          <li><a href="#/entities" data-route="entities">Entities</a></li>
+          <li><a href="#/disputed" data-route="disputed">Disputed Facts</a></li>
+          <li><a href="#/claims" data-route="claims">Causes of Action</a></li>
+          <li><a href="#/quotes" data-route="quotes">Quotes</a></li>
+          <li><a href="#/map" data-route="map">Map</a></li>
+          <li><a href="#/analysis" data-route="analysis">Analysis</a></li>
+          <li><a href="#/sources" data-route="sources">Sources</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button class="icon-button" id="search-toggle" type="button" aria-label="Open search" title="Search (press /)">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m20 20-3.6-3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 3.2A9 9 0 1 0 20.8 14.5 7.2 7.2 0 0 1 14.5 3.2z" fill="currentColor"/></svg>
+        </button>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="case-banner" aria-label="Case caption">
+      <span class="case-name">Elon Musk et al. v. Samuel Altman et al.</span>
+      <span class="case-meta">No. 4:24-cv-04722-YGR · N.D. Cal. · Hon. Yvonne Gonzalez Rogers</span>
+      <span class="case-archive" id="archive-stamp">Archive through —</span>
+    </div>
+  </header>
+
+  <noscript>
+    <div style="max-width:680px;margin:3rem auto;padding:1.4rem;border:1px solid #c89b3c;border-radius:8px;background:#14181d;color:#e8e6df;font-family:Inter,system-ui,sans-serif">
+      <h2 style="font-family:'Source Serif 4',Georgia,serif;color:#f7f5ef;margin:0 0 .5rem">JavaScript required.</h2>
+      <p>This site is a static set of JSON data files rendered into views by a small ES-module shim. Without JavaScript the data still resolves at <code>/data/*.json</code>, and the underlying docket archive is at <code>../court-case-md/</code> in the repository.</p>
+    </div>
+  </noscript>
+  <main id="main" tabindex="-1">
+    <section id="loading-pane" class="state-pane" aria-live="polite">
+      <div class="state-inner">
+        <div class="state-spinner" aria-hidden="true"></div>
+        <p>Loading the docket…</p>
+      </div>
+    </section>
+    <div id="view-root" class="view-root" hidden></div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-line">
+        Built from the underlying record of 588 filings. Every claim on this site links to a docket entry. <span class="footer-meta" id="footer-stamp"></span>
+      </p>
+      <p class="footer-line muted">
+        This site is non-commercial and analytical. Tone is clinical, not partisan. Where the documentary record is genuinely ambiguous, the site says so rather than forcing a conclusion.
+      </p>
+    </div>
+  </footer>
+
+  <div id="search-panel" class="search-panel" hidden role="dialog" aria-modal="true" aria-labelledby="search-label">
+    <div class="search-shell">
+      <label id="search-label" class="visually-hidden" for="search-input">Search the case</label>
+      <div class="search-input-row">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m20 20-3.6-3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="search-input" type="search" autocomplete="off" placeholder="Search actors, entities, quotes, events, claims, sources…" />
+        <button class="icon-button" id="search-close" type="button" aria-label="Close search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
+      <div class="search-hint">
+        <kbd>/</kbd> open · <kbd>↑</kbd><kbd>↓</kbd> navigate · <kbd>Enter</kbd> open · <kbd>Esc</kbd> close
+      </div>
+    </div>
+  </div>
+
+  <div id="citation-popover" class="citation-popover" hidden role="dialog" aria-label="Citation"></div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

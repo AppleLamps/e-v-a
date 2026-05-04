@@ -1,0 +1,79 @@
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  position: relative;
+  transition: border-color var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+  min-width: 0;
+}
+.card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-1);
+}
+
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.card > * { position: relative; z-index: 2; }
+.card-link { z-index: 1; }
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: var(--fs-step--1);
+  color: var(--ink-mute);
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-step-1);
+  color: var(--ink-strong);
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+}
+
+.card-body {
+  font-size: var(--fs-step-0);
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.card-footer {
+  margin-top: auto;
+  padding-top: var(--space-xs);
+  border-top: 1px dashed var(--line);
+  font-size: var(--fs-step--1);
+  color: var(--ink-mute);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.card-side {
+  border-left: 3px solid var(--accent);
+  padding-left: var(--space-m);
+}
+.card-side.plaintiff { border-left-color: var(--plaintiff); }
+.card-side.defendant { border-left-color: var(--defendant); }
+.card-side.judicial { border-left-color: var(--judicial); }
+.card-side.neutral { border-left-color: var(--neutral); }
+
+.kicker {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}

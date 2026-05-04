@@ -1,0 +1,66 @@
+.analysis-section {
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: var(--space-l) 0;
+}
+.analysis-section h2 {
+  font-size: var(--fs-step-4);
+  margin-bottom: var(--space-m);
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+.analysis-section h3 {
+  font-size: var(--fs-step-2);
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-s);
+}
+.analysis-section p, .analysis-section ul, .analysis-section ol {
+  font-family: var(--font-serif);
+  font-size: var(--fs-step-1);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 65ch;
+  margin-bottom: var(--space-m);
+}
+.analysis-section ul, .analysis-section ol { padding-left: 1.4em; list-style: revert; }
+.analysis-section li { margin-bottom: var(--space-xs); }
+.analysis-section blockquote {
+  margin: var(--space-l) 0;
+  background: var(--bg-elev);
+  border-left: 3px solid var(--accent);
+}
+.toc {
+  position: sticky;
+  top: calc(var(--header-h, 64px) + 30px);
+  display: grid;
+  gap: 0.3rem;
+  padding: var(--space-m);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  align-self: start;
+  font-size: var(--fs-step--1);
+}
+.toc h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-mute);
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-sans);
+}
+.toc a {
+  display: block;
+  padding: 0.3rem 0.4rem;
+  border-radius: var(--radius-s);
+  color: var(--ink-mute);
+  border-left: 2px solid transparent;
+}
+.toc a:hover, .toc a.active {
+  color: var(--ink-strong);
+  background: var(--bg-elev-2);
+  border-left-color: var(--accent);
+}
+@media (max-width: 899px) {
+  .toc { position: static; }
+}
