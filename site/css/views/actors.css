@@ -1,0 +1,29 @@
+.actor-card {
+  display: grid;
+  gap: var(--space-xs);
+  align-content: start;
+}
+.actor-card .name {
+  font-family: var(--font-serif);
+  font-size: var(--fs-step-2);
+  font-weight: 600;
+  color: var(--ink-strong);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.actor-card .role { color: var(--ink-mute); font-size: var(--fs-step--1); }
+.actor-card .summary {
+  font-size: var(--fs-step-0);
+  color: var(--ink);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.actor-card .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}

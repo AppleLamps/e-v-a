@@ -1,0 +1,66 @@
+.claim-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  padding: var(--space-l);
+  display: grid;
+  gap: var(--space-s);
+  margin-bottom: var(--space-m);
+  position: relative;
+}
+.claim-card.status-live { border-left-color: var(--good); }
+.claim-card.status-dismissed { border-left-color: var(--ink-faint); }
+.claim-card.status-counterclaim { border-left-color: var(--defendant); }
+.claim-card.status-trial { border-left-color: var(--accent); }
+.claim-num {
+  font-family: var(--font-mono);
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+.claim-title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-step-2);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--ink-strong);
+}
+.claim-card .summary { font-size: var(--fs-step-0); color: var(--ink); }
+.claim-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-s);
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-s);
+  margin-top: var(--space-s);
+}
+@media (min-width: 760px) {
+  .claim-meta { grid-template-columns: 1fr 1fr; }
+}
+.claim-meta dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  font-family: var(--font-sans);
+}
+.claim-meta dd { color: var(--ink); margin: 0 0 0.5rem; font-size: var(--fs-step-0); }
+.claim-history {
+  display: grid;
+  gap: 0.4rem;
+}
+.claim-step {
+  padding: 0.4rem 0.6rem;
+  background: var(--bg-elev-2);
+  border-left: 2px solid var(--line-strong);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  font-size: var(--fs-step--1);
+}
+.claim-step.outcome-survived { border-left-color: var(--good); }
+.claim-step.outcome-dismissed { border-left-color: var(--ink-faint); }
+.claim-step.outcome-partly { border-left-color: var(--warn); }
+.claim-step .when { color: var(--ink-mute); font-family: var(--font-mono); font-size: 0.72rem; }
+.claim-step .what { color: var(--ink); }

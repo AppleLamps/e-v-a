@@ -1,0 +1,222 @@
+[
+  {
+    "id": "openai-inc",
+    "name": "OpenAI, Inc.",
+    "kind": "501(c)(3) public charity (Delaware corporation)",
+    "tier": "nonprofit",
+    "jurisdiction": "Delaware (registered as charitable trust in California)",
+    "formed": "Dec 2015",
+    "short": "The original 501(c)(3). Plaintiffs allege its assets, IP, and personnel were transferred into the for-profit layers; defense says the nonprofit retains supervisory and economic interests.",
+    "description": "Filed in Delaware as a nonprofit corporation; registered with the California Attorney General's Registry of Charitable Trusts in August 2017. Certificate of incorporation states OpenAI 'shall be a nonprofit corporation organized exclusively for charitable and/or educational purposes within the meaning of section 501(c)(3).' The board of OpenAI, Inc. — not the LP — is the entity to which Musk's donations flowed. Site of the November 2023 board crisis.",
+    "flows": [
+      { "kind": "Capital in", "from": "Elon Musk (via DAFs and YC.org)", "to": "OpenAI, Inc.", "detail": "$44.56M wired 2016–2020 per FAC ¶424; ~$38M cash on Birchall's trial chart", "citations": ["#32", "#170"] },
+      { "kind": "IP", "from": "OpenAI, Inc.", "to": "OpenAI L.P. / OpenAI OpCo, LLC", "detail": "Plaintiffs allege exclusive licensing arrangement transferred IP control to the for-profit layer", "citations": ["#170"] }
+    ],
+    "officers": [
+      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "title": "CEO; director" },
+      { "actor_id": "greg-brockman", "actor_name": "Greg Brockman", "title": "President; director" }
+    ],
+    "attributes": [
+      ["Type", "501(c)(3) public charity"],
+      ["Mission (per cert.)", "'Organized exclusively for charitable and/or educational purposes'"],
+      ["Plaintiffs' theory", "Funds and assets diverted into for-profit subsidiaries"]
+    ]
+  },
+  {
+    "id": "openai-lp",
+    "name": "OpenAI, L.P.",
+    "kind": "Limited partnership (Delaware) — for-profit operating layer",
+    "tier": "operating",
+    "jurisdiction": "Delaware",
+    "formed": "Mar 2019",
+    "short": "Capped-profit LP launched March 2019 as a for-profit subsidiary of OpenAI, Inc. Designed with 'fixed maximum return' caps for investors. Renamed/restructured into OpenAI OpCo, LLC.",
+    "description": "Created as the vehicle for outside capital after the 2018–2019 strategic pivot. Microsoft's 2019 $1B and 2023 $10B investments flowed here. Plaintiffs allege the 'profit cap' was effectively removed in the 2024–2025 restructuring; defense disputes the framing of the restructuring.",
+    "flows": [
+      { "kind": "Capital in", "from": "Microsoft Corp.", "to": "OpenAI L.P.", "detail": "Reported $13.75B cumulative through 2024", "citations": ["#170", "#329"] }
+    ],
+    "attributes": [
+      ["Structure", "Capped-profit LP"],
+      ["GP", "OpenAI GP, L.L.C."]
+    ]
+  },
+  {
+    "id": "openai-opco",
+    "name": "OpenAI OpCo, LLC",
+    "kind": "Operating LLC (Delaware) — successor to L.P.",
+    "tier": "operating",
+    "jurisdiction": "Delaware",
+    "formed": "Restructure",
+    "short": "Successor name for the operating for-profit. Named defendant in every iteration of the complaint.",
+    "description": "Houses commercial activities and exclusive licensing arrangements with Microsoft; site of the 2024–2025 restructuring at issue."
+  },
+  {
+    "id": "openai-gp",
+    "name": "OpenAI GP, L.L.C.",
+    "kind": "Limited liability company (Delaware) — general partner",
+    "tier": "holding",
+    "jurisdiction": "Delaware",
+    "formed": "2019",
+    "short": "General partner of OpenAI, L.P. Management entity for the for-profit layer.",
+    "description": "Plaintiffs say the GP layer is where management and control rights reside; named defendant on every iteration."
+  },
+  {
+    "id": "openai-llc",
+    "name": "OpenAI, L.L.C.",
+    "kind": "Holding LLC (Delaware)",
+    "tier": "holding",
+    "jurisdiction": "Delaware",
+    "short": "Intermediate holding/management entity in the OpenAI corporate web."
+  },
+  {
+    "id": "openai-global",
+    "name": "OpenAI Global, LLC",
+    "kind": "Operating LLC (Delaware)",
+    "tier": "operating",
+    "jurisdiction": "Delaware",
+    "short": "Global commercial-business vehicle within the for-profit layer."
+  },
+  {
+    "id": "openai-holdings",
+    "name": "OpenAI Holdings, LLC",
+    "kind": "Holding LLC (Delaware)",
+    "tier": "holding",
+    "jurisdiction": "Delaware",
+    "short": "Equity/assets holding structure within the for-profit corporate web."
+  },
+  {
+    "id": "oai-corporation",
+    "name": "OAI Corporation, LLC",
+    "kind": "Holding entity (Delaware)",
+    "tier": "holding",
+    "jurisdiction": "Delaware",
+    "short": "Supplementary operational/holding entity named in every complaint caption."
+  },
+  {
+    "id": "openai-startup-fund-mgmt",
+    "name": "OpenAI Startup Fund Management, LLC",
+    "kind": "Fund management LLC (Delaware)",
+    "tier": "fund",
+    "jurisdiction": "Delaware",
+    "short": "Manages OpenAI's downstream startup investment program. Plaintiffs say this is where the alleged 'fund-no-competitors' covenant operates."
+  },
+  {
+    "id": "openai-startup-fund-i",
+    "name": "OpenAI Startup Fund I, L.P.",
+    "kind": "Investment fund LP (Delaware)",
+    "tier": "fund",
+    "jurisdiction": "Delaware",
+    "short": "Limited partnership raising outside capital; plaintiffs allege LP agreements include no-compete-with-OpenAI commitments. The court found xAI 'could not provide a single declaration from an investor to confirm its theory'."
+  },
+  {
+    "id": "openai-startup-fund-gp-i",
+    "name": "OpenAI Startup Fund GP I, L.L.C.",
+    "kind": "GP for Startup Fund I (Delaware)",
+    "tier": "fund",
+    "jurisdiction": "Delaware",
+    "short": "Manages the Startup Fund I LP; participates in deal selection and capital deployment."
+  },
+  {
+    "id": "openai-spv-gp-i",
+    "name": "OpenAI Startup Fund SPV GP I-IV, L.L.C.",
+    "kind": "Special-purpose-vehicle GPs (Delaware)",
+    "tier": "spv",
+    "jurisdiction": "Delaware",
+    "short": "Four GPs for the SPV layer."
+  },
+  {
+    "id": "openai-spv-i",
+    "name": "OpenAI Startup Fund SPV I-IV, L.P.",
+    "kind": "SPV LPs (Delaware)",
+    "tier": "spv",
+    "jurisdiction": "Delaware",
+    "short": "Four downstream SPV limited partnerships. Plaintiffs say the SPV layer obscures beneficial ownership of for-profit interests."
+  },
+  {
+    "id": "aestas-management",
+    "name": "Aestas Management Company, LLC",
+    "kind": "Management LLC (Delaware)",
+    "tier": "aestas",
+    "jurisdiction": "Delaware",
+    "formed": "Feb 10, 2023",
+    "short": "Named defendant in original complaint and SAC. Holds/manages stakes in for-profit entities; alleged in SAC to be a control vehicle for insiders.",
+    "description": "Per FAC ¶551–559, formed 2023 as a general operating partner for parts of the for-profit network. Plaintiffs add Aestas back as a named defendant in the SAC."
+  },
+  {
+    "id": "aestas-llc",
+    "name": "Aestas, LLC",
+    "kind": "Holding LLC (Delaware)",
+    "tier": "aestas",
+    "jurisdiction": "Delaware",
+    "formed": "Sep 19, 2018",
+    "short": "Sister Aestas entity, predating the management company. Plaintiffs allege it holds for-profit interests."
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft Corp.",
+    "kind": "Public company (Washington)",
+    "tier": "microsoft",
+    "jurisdiction": "Washington",
+    "formed": "1975",
+    "short": "Investor, exclusive cloud provider, and licensee. Named defendant on three counts that survived the MTD (tortious interference, aiding-and-abetting fiduciary duty, and parts of unjust enrichment).",
+    "description": "Microsoft's MSJ characterizes the relationship as 'arm's-length negotiations between sophisticated parties'; it 'did not receive a conventional equity ownership interest' but a capped-return arrangement. Plaintiffs cite Microsoft's 2019 $1B, 2023 $10B, and 2024 expanded investments and the November 2023 board episode as evidence Microsoft exerts de facto control.",
+    "flows": [
+      { "kind": "Capital", "from": "Microsoft", "to": "OpenAI L.P.", "detail": "$1B (2019) → $10B (2023) → expanded 2024", "citations": ["#170", "#329"] },
+      { "kind": "Compute", "from": "Microsoft (Azure)", "to": "OpenAI", "detail": "Exclusive cloud relationship; below-cost pricing alleged by plaintiffs (rejected at PI stage)" },
+      { "kind": "Licensing", "from": "OpenAI", "to": "Microsoft", "detail": "Licensee of GPT-4 and successor models" }
+    ],
+    "officers": [
+      { "actor_id": "satya-nadella", "actor_name": "Satya Nadella", "title": "CEO" },
+      { "actor_id": "reid-hoffman", "actor_name": "Reid Hoffman", "title": "Director (until Mar 2023)" }
+    ]
+  },
+  {
+    "id": "xai-corp",
+    "name": "X.AI Corp.",
+    "kind": "Public benefit corporation (Nevada)",
+    "tier": "plaintiff",
+    "jurisdiction": "Nevada",
+    "formed": "Mar 2023",
+    "short": "Musk's competing AI company. Co-plaintiff on antitrust and unfair-competition counts in the FAC (Nov 2024) and SAC (May 2025).",
+    "description": "Trial-record evidence showed xAI raised over $11 billion (Dkt #121 p.8). xAI converted from a public benefit corporation to a C-corp during 2025; on cross, Musk testified 'a B-corp and a C-corp are pretty much the same thing' (043026TT.txt:1838). xAI has no profit caps for its investors (043026TT.txt:1997)."
+  },
+  {
+    "id": "tesla",
+    "name": "Tesla, Inc.",
+    "kind": "Public company (Delaware)",
+    "tier": "other",
+    "jurisdiction": "Delaware",
+    "short": "Not a party. Featured because Musk proposed in 2018 that OpenAI 'attach to Tesla as its cash cow' (DX 749) and because Tesla has parallel AI/robotics ambitions ('AI-enabled robot army', 042926TT.txt:4814)."
+  },
+  {
+    "id": "neuralink",
+    "name": "Neuralink Corp.",
+    "kind": "Private company (Delaware)",
+    "tier": "other",
+    "jurisdiction": "Delaware",
+    "short": "Not a party. Featured via the October 2017 Musk email to Ben Rapoport: 'I have no problem if you pitch people at OpenAI to work at Neuralink' (DX 719) — used by defense to show Musk's view of cross-company recruitment."
+  },
+  {
+    "id": "musk-foundation",
+    "name": "Musk Foundation",
+    "kind": "501(c)(3) (United States)",
+    "tier": "other",
+    "jurisdiction": "U.S.",
+    "short": "Musk's family foundation; CFO Birchall managed donations. Some of Musk's contributions to OpenAI were routed through donor-advised funds (DAFs) and YC.org as fiscal sponsor — the basis of OpenAI's 'no settlor standing' argument."
+  },
+  {
+    "id": "yc-org",
+    "name": "YC.org",
+    "kind": "Charitable arm of Y Combinator",
+    "tier": "other",
+    "jurisdiction": "U.S.",
+    "short": "Acted as fiscal sponsor for early OpenAI contributions. Plaintiffs cite YC.org's role to argue Musk's donations were directed to OpenAI; defense argues the indirect path defeats settlor standing."
+  },
+  {
+    "id": "musk-industries",
+    "name": "Musk Industries (Excession LLC)",
+    "kind": "Family-office LLC",
+    "tier": "other",
+    "jurisdiction": "U.S.",
+    "short": "Musk's personal family office. Per FAC ¶425, paid OpenAI's monthly office rent and overhead; on the lease for the Pioneer Building. DX 600 (Birchall to Sam Teller, Jan 2017): 'Elon holds 100 percent of the power and authority regarding the building.'"
+  }
+]

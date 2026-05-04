@@ -1,0 +1,44 @@
+.entity-card {
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+}
+.entity-card .ent-name {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-step-1);
+  color: var(--ink-strong);
+  letter-spacing: -0.005em;
+}
+.entity-card .ent-juris {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+.entity-card .ent-desc {
+  font-size: var(--fs-step-0);
+  color: var(--ink);
+  line-height: 1.4;
+}
+.entity-card .ent-tier {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  font-weight: 600;
+}
+.entity-tier-group {
+  margin-top: var(--space-xl);
+}
+.entity-tier-group h3 {
+  font-size: var(--fs-step-2);
+  margin-bottom: var(--space-s);
+  letter-spacing: -0.005em;
+}
+.entity-tier-group .tier-rule {
+  height: 1px;
+  background: linear-gradient(to right, var(--accent), transparent);
+  margin-bottom: var(--space-m);
+}

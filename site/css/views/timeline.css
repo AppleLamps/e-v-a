@@ -1,0 +1,81 @@
+.timeline-shell { padding: 0 var(--space-m); }
+.timeline-list {
+  position: relative;
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--line);
+  display: grid;
+  gap: var(--space-l);
+}
+.timeline-event {
+  position: relative;
+  display: grid;
+  gap: 0.3rem;
+  padding-left: 0.6rem;
+}
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: -1.85rem;
+  top: 0.35rem;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--bg);
+}
+.timeline-event[data-side="plaintiff"]::before { background: var(--plaintiff); }
+.timeline-event[data-side="defendant"]::before { background: var(--defendant); }
+.timeline-event[data-side="judicial"]::before { background: var(--judicial); }
+.timeline-event[data-side="neutral"]::before { background: var(--neutral); }
+.timeline-event[data-major="true"]::before {
+  width: 13px; height: 13px;
+  left: -1.97rem;
+  top: 0.25rem;
+}
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-faint);
+}
+.timeline-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-step-1);
+  color: var(--ink-strong);
+  letter-spacing: -0.005em;
+}
+.timeline-desc { color: var(--ink); font-size: var(--fs-step-0); max-width: 65ch; }
+.timeline-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; font-size: 0.74rem; }
+.timeline-cluster-label {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: var(--fs-step--1);
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: var(--space-l);
+  position: relative;
+  left: -1.6rem;
+  padding-left: 0;
+}
+.timeline-cluster-label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  background: var(--accent);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.timeline-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  font-size: 0.74rem;
+  color: var(--ink-mute);
+  margin-bottom: var(--space-m);
+}
+.timeline-legend .item { display: inline-flex; align-items: center; gap: 0.3rem; }
+@media (min-width: 1100px) {
+  .timeline-list { padding-left: 1.8rem; }
+}

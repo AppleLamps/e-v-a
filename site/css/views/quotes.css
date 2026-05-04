@@ -1,0 +1,15 @@
+.quotes-list { display: grid; gap: var(--space-m); }
+.quotes-list .quote-card { max-width: 75ch; }
+.quote-cluster {
+  margin-top: var(--space-xl);
+}
+.quote-cluster h3 {
+  font-size: var(--fs-step-3);
+  margin-bottom: var(--space-s);
+  letter-spacing: -0.01em;
+}
+.quote-cluster .cluster-rule {
+  height: 1px;
+  background: linear-gradient(to right, var(--accent), transparent);
+  margin-bottom: var(--space-m);
+}

@@ -1,0 +1,86 @@
+.profile {
+  display: grid;
+  gap: var(--space-l);
+}
+.profile-header {
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-l) 0 var(--space-m);
+  border-bottom: 1px solid var(--line);
+}
+.profile-name {
+  font-family: var(--font-serif);
+  font-size: var(--fs-step-4);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink-strong);
+  line-height: 1.05;
+}
+.profile-role {
+  font-size: var(--fs-step-1);
+  color: var(--ink-mute);
+}
+.profile-affiliation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.profile-section h3 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-mute);
+  margin-bottom: var(--space-xs);
+}
+.profile-section p { color: var(--ink); max-width: 65ch; }
+.profile-section ul { display: grid; gap: var(--space-xs); }
+.profile-section li {
+  padding: var(--space-xs) 0;
+  border-bottom: 1px dashed var(--line);
+  color: var(--ink);
+}
+.profile-section li:last-child { border-bottom: 0; }
+.profile-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--ink-mute);
+  font-size: var(--fs-step--1);
+  margin-bottom: 1rem;
+}
+.profile-back:hover { color: var(--ink-strong); }
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-l);
+}
+@media (min-width: 900px) {
+  .profile-grid { grid-template-columns: 2fr 1fr; }
+}
+.profile-aside {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+  display: grid;
+  gap: var(--space-s);
+  align-self: start;
+  position: sticky;
+  top: calc(var(--header-h, 64px) + 30px);
+}
+.profile-aside dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+.profile-aside dd {
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+  font-size: var(--fs-step-0);
+}
+@media (max-width: 899px) {
+  .profile-aside { position: static; }
+}

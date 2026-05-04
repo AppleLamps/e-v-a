@@ -1,0 +1,41 @@
+/* Minimal modern reset. */
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--fs-step-0);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+img, svg, video { display: block; max-width: 100%; height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { background: none; border: 0; cursor: pointer; padding: 0; }
+a { color: var(--accent-strong); text-decoration: none; }
+a:hover { color: var(--accent); }
+
+ul, ol { padding: 0; margin: 0; list-style: none; }
+
+[hidden] { display: none !important; }
+
+/* Focus rings — visible, never removed. */
+:focus { outline: none; }
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+  border-radius: var(--radius-s);
+}
+
+::selection { background: var(--accent-soft); color: var(--ink-strong); }

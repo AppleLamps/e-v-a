@@ -1,0 +1,156 @@
+{
+  "hero": {
+    "headline": "A founder dispute fought as a charitable-trust case.",
+    "deck": "Twenty-six causes of action collapsed to two by the eve of trial. The fight is no longer who said what to whom in 2015 — it is whether the documents that survive establish a legally enforceable trust over the institution OpenAI has become."
+  },
+  "executive_summary": {
+    "title": "What this case is actually about",
+    "thesis": "Stripped of the rhetoric about looted charities, captured Microsofts, and AI extinction, the litigation that survives to a jury is a narrow charitable-trust and restitution dispute between two founders who agreed in 2015 to build a public-benefit research lab and disagreed by 2018 about who would control its commercial future. Each side's larger story — the 'pageant of hypocrisy' and the 'museum store looting the museum' — is a backdrop the court has explicitly excluded from the verdict.",
+    "confidence": { "label": "Moderate-high", "value": 0.7 },
+    "components": [
+      { "title": "Control dispute", "description": "The proximate cause of the breakdown is documented in the 2017 emails: Musk demanded 'unequivocal initial control' of any for-profit OpenAI, and the founders refused. Plaintiffs' fraud theory and defense's 'walked away' theory both depend on this exchange — but neither side has reframed it as the central fact, because both of them lose if the jury treats this as a control dispute and not a charity dispute.", "weight": "Heavy — sourced to the September 20, 2017 Sutskever/Brockman email and Musk's own trial admission of seeking 'unequivocal control'." },
+      { "title": "Market-positioning dispute", "description": "OpenAI's counterclaim explicitly frames the lawsuit as competitive interference by xAI; the timing of the August 2024 filing (after xAI was capitalized) and the February 2025 LOI fit that frame. Plaintiffs deny it but Musk's xAI testimony — no profit caps, full control, B-corp converted to C-corp — is in the record under oath.", "weight": "Significant — sourced to OpenAI Counterclaim ¶6, ¶70, and Musk's own cross-examination on xAI's structure." },
+      { "title": "Mission dispute", "description": "The legal claim that survives is the charitable-trust theory, and the underlying philosophical disagreement is real: did the 2015 founding emails create a public-benefit obligation enforceable by a settlor? The court has called this question a 'toss-up' — neither side can be confident on the merits.", "weight": "Real but indeterminate — the court has framed it as 'toss-up'." },
+      { "title": "Personal grievance", "description": "Musk's three-phase narrative ('enthusiastic, uncertain, looting') is structured around a personal sense of betrayal that the court has, on multiple occasions, treated as orthogonal to the legal question. Defense's 'tale of two Elons' and 'pageant of hypocrisy' tropes treat the same emotion as motive evidence.", "weight": "Rhetorically central, doctrinally limited." }
+    ]
+  },
+  "eras": [
+    { "label": "Founding (2015–2016)", "start": "2015-01-01", "end": "2016-12-31" },
+    { "label": "First control attempt (2017)", "start": "2017-01-01", "end": "2017-12-31" },
+    { "label": "Departure & for-profit pivot (2018–2019)", "start": "2018-01-01", "end": "2019-12-31" },
+    { "label": "Microsoft years (2020–2023)", "start": "2020-01-01", "end": "2023-10-31" },
+    { "label": "Board crisis & lawsuit (Nov 2023 – Aug 2024)", "start": "2023-11-01", "end": "2024-08-31" },
+    { "label": "Pre-trial litigation (Sep 2024 – Oct 2025)", "start": "2024-09-01", "end": "2025-10-31" },
+    { "label": "MSJ → Trial (Nov 2025 – present)", "start": "2025-11-01" }
+  ],
+  "connections": [
+    { "from": "a:elon-musk", "to": "a:sam-altman", "kind": "founders", "label": "co-founders, opposing principals" },
+    { "from": "a:elon-musk", "to": "a:greg-brockman", "kind": "founders", "label": "co-founders" },
+    { "from": "a:elon-musk", "to": "a:ilya-sutskever", "kind": "recruit", "label": "recruited from Google" },
+    { "from": "a:elon-musk", "to": "a:shivon-zilis", "kind": "advisor", "label": "Tesla/Neuralink board; OpenAI advisor" },
+    { "from": "a:elon-musk", "to": "a:jared-birchall", "kind": "officer", "label": "personal CFO; Foundation officer" },
+    { "from": "a:elon-musk", "to": "e:musk-foundation", "kind": "owns", "label": "founder" },
+    { "from": "a:elon-musk", "to": "e:xai-corp", "kind": "owns", "label": "founder, controlling shareholder" },
+    { "from": "a:elon-musk", "to": "e:tesla", "kind": "owns", "label": "CEO" },
+    { "from": "a:elon-musk", "to": "e:neuralink", "kind": "owns", "label": "founder" },
+    { "from": "a:elon-musk", "to": "e:musk-industries", "kind": "owns", "label": "personal LLC; Pioneer Building lease" },
+    { "from": "a:sam-altman", "to": "e:openai-inc", "kind": "officer", "label": "CEO; director" },
+    { "from": "a:greg-brockman", "to": "e:openai-inc", "kind": "officer", "label": "President; director" },
+    { "from": "a:ilya-sutskever", "to": "e:openai-inc", "kind": "officer", "label": "former Chief Scientist" },
+    { "from": "a:satya-nadella", "to": "e:microsoft", "kind": "officer", "label": "CEO" },
+    { "from": "a:reid-hoffman", "to": "e:microsoft", "kind": "officer", "label": "director" },
+    { "from": "a:reid-hoffman", "to": "e:openai-inc", "kind": "officer", "label": "former director (Sec. 8 dismissed)" },
+    { "from": "a:deannah-templeton", "to": "e:microsoft", "kind": "officer", "label": "VP" },
+    { "from": "a:deannah-templeton", "to": "e:openai-inc", "kind": "officer", "label": "former observer (Sec. 8 dismissed)" },
+    { "from": "e:microsoft", "to": "e:openai-lp", "kind": "capital", "label": "$1B (2019), $10B (2023)" },
+    { "from": "e:microsoft", "to": "e:openai-opco", "kind": "capital", "label": "expanded 2024" },
+    { "from": "e:openai-inc", "to": "e:openai-lp", "kind": "control", "label": "501(c)(3) parent of capped-profit LP" },
+    { "from": "e:openai-lp", "to": "e:openai-opco", "kind": "succession", "label": "restructured" },
+    { "from": "e:openai-inc", "to": "e:openai-gp", "kind": "control", "label": "GP control chain" },
+    { "from": "e:openai-gp", "to": "e:openai-lp", "kind": "control", "label": "general partner" },
+    { "from": "e:openai-startup-fund-mgmt", "to": "e:openai-startup-fund-i", "kind": "control", "label": "manages" },
+    { "from": "e:openai-startup-fund-gp-i", "to": "e:openai-startup-fund-i", "kind": "control", "label": "general partner" },
+    { "from": "e:openai-startup-fund-mgmt", "to": "e:openai-spv-gp-i", "kind": "control", "label": "manages SPV GPs" },
+    { "from": "e:openai-spv-gp-i", "to": "e:openai-spv-i", "kind": "control", "label": "SPV GP / LP" },
+    { "from": "e:aestas-management", "to": "e:aestas-llc", "kind": "control", "label": "manages" },
+    { "from": "a:elon-musk", "to": "e:openai-inc", "kind": "capital", "label": "$44.56M wired 2016–2020" },
+    { "from": "e:musk-foundation", "to": "e:openai-inc", "kind": "capital", "label": "donations via DAFs" },
+    { "from": "e:yc-org", "to": "e:openai-inc", "kind": "capital", "label": "fiscal-sponsor pass-through" },
+    { "from": "e:musk-industries", "to": "e:openai-inc", "kind": "support", "label": "Pioneer Building lease; rent paid for OpenAI" },
+    { "from": "a:elon-musk", "to": "a:satya-nadella", "kind": "contact", "label": "called for compute (per Musk testimony)" },
+    { "from": "a:satya-nadella", "to": "a:sam-altman", "kind": "contact", "label": "partnership counterparty" },
+    { "from": "a:yvonne-gonzalez-rogers", "to": "e:openai-inc", "kind": "judicial", "label": "presiding judge" },
+    { "from": "a:thomas-hixson", "to": "e:openai-inc", "kind": "judicial", "label": "magistrate (discovery)" },
+    { "from": "a:marc-toberoff", "to": "a:elon-musk", "kind": "counsel", "label": "lead plaintiffs' counsel" },
+    { "from": "a:steven-molo", "to": "a:elon-musk", "kind": "counsel", "label": "trial counsel" },
+    { "from": "a:robert-kry", "to": "a:elon-musk", "kind": "counsel", "label": "co-counsel" },
+    { "from": "a:william-savitt", "to": "a:sam-altman", "kind": "counsel", "label": "OpenAI lead trial counsel" },
+    { "from": "a:bradley-wilson", "to": "a:sam-altman", "kind": "counsel", "label": "OpenAI counsel" },
+    { "from": "a:russell-cohen", "to": "e:microsoft", "kind": "counsel", "label": "Microsoft trial counsel" },
+    { "from": "a:helen-toner", "to": "e:openai-inc", "kind": "officer", "label": "former director (Nov 2023 firing)" },
+    { "from": "a:tasha-mccauley", "to": "e:openai-inc", "kind": "officer", "label": "former director (Nov 2023 firing)" },
+    { "from": "a:mira-murati", "to": "e:openai-inc", "kind": "officer", "label": "former CTO" },
+    { "from": "a:rosie-campbell", "to": "e:openai-inc", "kind": "former", "label": "former safety researcher" },
+    { "from": "a:joshua-achiam", "to": "e:openai-inc", "kind": "officer", "label": "corporate representative" },
+    { "from": "a:andrej-karpathy", "to": "e:openai-inc", "kind": "former", "label": "co-founder; left for Tesla 2017" },
+    { "from": "a:andrej-karpathy", "to": "e:tesla", "kind": "officer", "label": "Director, Tesla Vision (2017)" },
+    { "from": "a:rob-bonta", "to": "e:openai-inc", "kind": "regulatory", "label": "California AG" },
+    { "from": "a:kathleen-jennings", "to": "e:openai-inc", "kind": "regulatory", "label": "Delaware AG (amicus)" },
+    { "from": "a:stuart-russell", "to": "a:elon-musk", "kind": "expert", "label": "plaintiffs' expert" },
+    { "from": "a:david-schizer", "to": "a:elon-musk", "kind": "expert", "label": "plaintiffs' expert (nonprofit law)" }
+  ],
+  "sections": [
+    {
+      "id": "real-fight",
+      "eyebrow": "The real fight",
+      "title": "What each side is actually fighting over.",
+      "deck": "Stated motives ('AI safety,' 'the original mission,' 'humanity') against revealed motives in the documentary record.",
+      "blocks": [
+        { "type": "p", "text": "Musk's stated motive is to recover a charity that has been 'looted' and converted into an $800B for-profit empire. His revealed motive — visible across the contemporaneous emails (DX 773, DX 749, DX 853), his August 2017 demand for 'unequivocal initial control', his September 2020 'captured by Microsoft' tweet, and his Sept 2017 alternate proposal of 'a standard C corp with a parallel nonprofit' — is harder to fix on a single point. The record is consistent with at least two readings: a man genuinely outraged at the betrayal of a public trust, and a man positioned competitively against a rival he founded and then quit." },
+        { "type": "p", "text": "OpenAI's stated motive is to defend a mission-driven restructuring forced by the capital intensity of frontier AI. Its revealed motive in the counterclaims is to fight off a 'years-long harassment campaign' driven by a competitor it cannot tolerate seeing succeed. Both readings are present in the documents the defense itself filed (Counterclaim ¶6, ¶70). The court has accepted at the pleading stage that both readings can coexist." },
+        { "type": "p", "text": "Microsoft's stated motive is the disciplined defense of an arm's-length partnership where it 'did not receive a conventional equity ownership interest.' Its revealed leverage — disclosed by Musk's testimony, by the November 2023 episode in which Microsoft assembled an instant offer to absorb OpenAI's staff, and by the structural fact that OpenAI runs on Microsoft compute — is operational rather than equity-based. Microsoft's MSJ does not contest that operational entanglement; it contests whether that entanglement amounts to control." },
+        { "type": "h3", "text": "What the jury is actually deciding" },
+        { "type": "p", "text": "Two questions. First, do the founding emails and the September 2017 reaffirmations create an enforceable charitable trust whose corpus is the institution OpenAI became? Second, if so, what is the appropriate restitutionary remedy — and to whom does that remedy run? On May 1, 2026 the court foreclosed the more imaginative answers to question two: 'It's a claim for restitution under a theory of unjust enrichment, and you cannot disentangle yourself from that.' If the jury finds for plaintiffs, restitution flows back to Musk personally, not to a charity of his choice — a result Musk's counsel tried to avoid and the court refused to adjudicate in advance." }
+      ]
+    },
+    {
+      "id": "musk-rhetoric",
+      "eyebrow": "Plaintiffs' rhetorical strategy",
+      "title": "How Musk's camp constructs its narrative.",
+      "blocks": [
+        { "type": "p", "text": "The plaintiffs' through-line is moral: 'You can't steal a charity.' Molo's opening invoked the museum-store metaphor. Musk's testimony returned to the 'three phases' (enthusiastic, uncertain, looting) and the 'stolen car' analogy. The hard moral framing serves four functions: it activates jurors' priors about charitable abuse; it personifies the dispute (Musk as the deceived donor, Altman as the deceiver); it suppresses inconvenient details (Musk's own 2017 control demands, his pledge-to-contribution gap); and it converts a contractual question into a question about American philanthropy itself ('the entire foundation of charitable giving in America will be destroyed')." },
+        { "type": "p", "text": "The sympathetic witnesses are deliberately compact. Musk himself dominates the case-in-chief; Birchall authenticates the donation chart; Stuart Russell and David Schizer arrive late to provide expert framing on AI risk and on charitable-trust law. Plaintiffs declined to call Sam Altman in their case-in-chief — a choice that telegraphs they prefer the defense to handle Altman themselves." },
+        { "type": "p", "text": "Downplayed: Musk's 2017 'C corp with a parallel nonprofit' email; his 2018 'attach to Tesla as its cash cow' exchange (DX 749); his 'OK by me' on the cap-50× corporate proposal (DX 806); his 2020 'last penny' admission; xAI's lack of profit caps. The plaintiffs' opening barely engaged any of these; the cross-examination forced each into the record. The strategy was to keep the moral frame load-bearing and let the cross do its damage to the periphery." }
+      ]
+    },
+    {
+      "id": "openai-rhetoric",
+      "eyebrow": "Defense rhetorical strategy",
+      "title": "How OpenAI's camp constructs its narrative.",
+      "blocks": [
+        { "type": "p", "text": "OpenAI's through-line is character: 'pageant of hypocrisy.' Savitt's opening built the contradiction structure — Musk demands control, leaves when he doesn't get it, pledges $1B and contributes $38M, attacks the institution he built when his rival fails to overtake it. Each piece is documented: the September 2017 control fight, Birchall's 'zero' answer for Brockman, the cross-examination accountancy of the $1B pledge, the Tesla 'attach' email, xAI's structure, and the LOI as a sham bid." },
+        { "type": "p", "text": "The sympathetic witnesses are technical and procedural. Nadella appears not to defend Microsoft from a corporate-control narrative but to deny the technical premise — there is no conventional equity, the partnership was arm's-length. Sutskever's 14-page declaration anchors the technical compute argument that drove the 2018–2019 capital change. The defense lets Musk be his own worst witness." },
+        { "type": "p", "text": "Downplayed: the magnitude of the for-profit's value relative to the nonprofit; Microsoft's role in the November 2023 board crisis; the redacted equity arrangements for Altman and Brockman. The MSJ filings carry visible redactions on financial-interest detail — the public docket cannot resolve those questions, and the defense plainly prefers them not to be at the front of the trial." }
+      ]
+    },
+    {
+      "id": "court-voice",
+      "eyebrow": "The judge's voice",
+      "title": "Hon. Yvonne Gonzalez Rogers as case manager.",
+      "blocks": [
+        { "type": "p", "text": "Gonzalez Rogers' rulings show three consistent commitments. First, evidentiary rigor over rhetoric: she rejected the antitrust theory because xAI 'admitted that it could not provide a single declaration from an investor'; she dismissed Section 8 standing because the alleged interlocks ended four months pre-suit. Second, doctrinal precision: she enforced California's agent-immunity rule on the for-profit subsidiaries, applied Cohen v. Kabbalah Centre on §17510.6, and refused plaintiffs' attempt to convert restitution into a charity redirect. Third, impatience with both sides: 'the parties to this action have repeatedly over-litigated this case'; 'The gamesmanship of both sides is obvious, as each flip flops.'" },
+        { "type": "p", "text": "Her trial management has been notably hands-on: she struck Birchall's LOI testimony for lack of foundation; she sanctioned Toberoff for sending questions to a witness in real time; she set tight closing-time allotments (90/90/30); and she narrowed the case scope from the bench: 'This is not a trial on the safety risks of artificial intelligence… The question here is whether there was a breach of charitable trust.'" }
+      ]
+    },
+    {
+      "id": "omissions",
+      "eyebrow": "Omissions and silences",
+      "title": "What the record does not say.",
+      "blocks": [
+        { "type": "p", "text": "Three categories of silence are conspicuous. First, the equity arrangements: the OpenAI MSJ contains heavy redactions on Altman and Brockman's financial interests in the for-profit subsidiaries. The public docket cannot answer whether the alleged 'private inurement' is well-grounded; the trial may not either if the redactions hold." },
+        { "type": "p", "text": "Second, the November 2023 board episode: extensively framed by plaintiffs but only thinly documented in the public docket. Hoffman's corrected declaration in late September 2025 (#287) suggests the original December 2024 filing was inaccurate on something material; the public version does not say what." },
+        { "type": "p", "text": "Third, Musk's own donor-advised fund records: the OpenAI MSJ argues that Musk's contributions flowed through DAFs and YC.org, and therefore he has no settlor standing; plaintiffs argue the consideration is what matters. The underlying DAF documentation was the subject of repeated discovery letter briefs but is not in the public docket. Whether Musk made the contributions personally or as a trustee of a DAF is one of the more important factual questions the trial will resolve, and the public can see only the parties' framings of it." }
+      ]
+    },
+    {
+      "id": "evolution",
+      "eyebrow": "Evolution of the dispute",
+      "title": "From 26 claims to 2.",
+      "blocks": [
+        { "type": "p", "text": "The original complaint pleaded a kitchen sink — federal antitrust (Sherman, Clayton, Cartwright, UPA), Lanham Act false advertising, civil RICO, and a constellation of California fraud, contract, and trust theories. Twelve months and three rounds of motions later, two theories survive: breach of charitable trust and restitution under unjust enrichment. The compression is the case's most underappreciated fact." },
+        { "type": "p", "text": "What was added in the FAC (Nov 2024): Shivon Zilis as derivative plaintiff and xAI Corp. as competitor plaintiff; expanded antitrust theories. What was added in the SAC (May 2025): Aestas defendants restored; RICO §1962(c) repleaded with greater specificity. What was lost: Express contract (May 2025); Section 8 (Mar 2025); RICO entire (Aug 2025); derivative claims (Mar 2025); aiding-and-abetting fraud (May 2025); Lanham Act as to Musk (May 2025); implied covenant (Aug 2025)." },
+        { "type": "p", "text": "What was added by OpenAI: counterclaims for UCL fraudulent/unfair prongs and tortious interference with prospective economic advantage, anchored in the February 10, 2025 LOI and its Wall Street Journal media campaign. The court allowed both to proceed to a Phase II trial; that phase is not part of the April 2026 jury proceedings." }
+      ]
+    },
+    {
+      "id": "scope",
+      "eyebrow": "Archive scope",
+      "title": "What this site covers, and what it does not.",
+      "blocks": [
+        { "type": "p", "text": "**Primary archive (court-case-md/):** 588 docket filings extracted to markdown, August 5, 2024 through November 7, 2025. The site treats every claim that traces to a docket entry in this archive as primary evidence." },
+        { "type": "p", "text": "**Secondary commentary (case-files/):** 37 trial-wiki pages from trial.mts.now documenting the proceedings of April 27 – May 1, 2026 (Days 1–5). The trial-wiki is a parallel observation, not a primary docket filing. Quotes drawn from it are tagged as 'Trial' citations and link by transcript filename and line number; the site treats them as the most reliable available reconstruction of the courtroom record but flags them as secondary." },
+        { "type": "p", "text": "**Out of scope:** any post-trial motions, the verdict itself if it has been rendered, sealed exhibits not reflected in the public docket, and journalistic commentary outside the trial-wiki. The site avoids reasoning from press accounts when the underlying filing is available." }
+      ]
+    }
+  ]
+}
