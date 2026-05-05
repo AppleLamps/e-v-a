@@ -1,0 +1,48 @@
+.prose-flow {
+  display: grid;
+  gap: 0.72rem;
+  color: var(--ink);
+  max-width: 72ch;
+}
+.prose-flow p {
+  margin: 0;
+  max-width: inherit;
+}
+.prose-flow strong {
+  color: var(--ink-strong);
+  font-weight: 700;
+}
+.prose-flow em {
+  color: var(--ink-strong);
+  font-style: italic;
+}
+.prose-compact {
+  gap: 0.48rem;
+}
+.prose-points {
+  display: grid;
+  gap: 0.38rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.prose-points li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--ink);
+}
+.prose-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.85;
+}
+.text-small .prose-flow,
+.prose-flow.text-small {
+  font-size: var(--fs-step--1);
+}

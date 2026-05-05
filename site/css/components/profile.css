@@ -34,6 +34,11 @@
   margin-bottom: var(--space-xs);
 }
 .profile-section p { color: var(--ink); max-width: 65ch; }
+.profile-section .prose-flow {
+  color: var(--ink);
+  max-width: 65ch;
+  line-height: 1.58;
+}
 .profile-section ul { display: grid; gap: var(--space-xs); }
 .profile-section li {
   padding: var(--space-xs) 0;

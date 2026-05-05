@@ -1,5 +1,6 @@
 import { el } from "../utils/dom.js";
 import { citationChip } from "../utils/citation.js";
+import { prose } from "../utils/prose.js";
 
 const SIDE_LABEL = {
   plaintiff: "Plaintiff side",
@@ -68,7 +69,7 @@ function makeCard(a) {
     el("a", { class: "card-link", href: "#/actors/" + a.id, "aria-label": "View " + a.name }),
     el("div", { class: "name" }, a.name),
     a.role ? el("div", { class: "role" }, a.role) : null,
-    a.summary ? el("p", { class: "summary" }, a.summary) : null,
+    a.summary ? prose(a.summary, { className: "summary", compact: true }) : null,
     el("div", { class: "meta-row" }, [
       a.side ? el("span", { class: "badge role-" + a.side }, SIDE_LABEL[a.side] || a.side) : null,
       ...(a.tags || []).map(t => el("span", { class: "badge" }, t))
@@ -99,11 +100,11 @@ export function renderActor(data, id, root) {
     ]),
     a.bio ? el("section", { class: "profile-section" }, [
       el("h3", {}, "Background"),
-      el("p", {}, a.bio)
+      prose(a.bio)
     ]) : null,
     a.role_in_case ? el("section", { class: "profile-section" }, [
       el("h3", {}, "Role in the case"),
-      el("p", {}, a.role_in_case)
+      prose(a.role_in_case)
     ]) : null,
     (a.position_shifts || []).length ? el("section", { class: "profile-section" }, [
       el("h3", {}, "Shifts in stated position"),

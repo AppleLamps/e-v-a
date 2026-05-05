@@ -1,5 +1,6 @@
 import { el } from "../utils/dom.js";
 import { citationChip } from "../utils/citation.js";
+import { prose } from "../utils/prose.js";
 
 const STATUS_LABEL = {
   live: "Live at trial",
@@ -61,7 +62,7 @@ function makeCard(c) {
       el("span", { class: "badge status-" + (c.status || "live") }, STATUS_LABEL[c.status] || c.status || "live")
     ]),
     el("h3", { class: "claim-title" }, c.title),
-    c.summary ? el("p", { class: "summary" }, c.summary) : null,
+    c.summary ? prose(c.summary, { className: "summary", compact: true }) : null,
     el("dl", { class: "claim-meta" }, [
       c.legal_theory ? el("div", {}, [el("dt", {}, "Legal theory"), el("dd", {}, c.legal_theory)]) : null,
       c.parties ? el("div", {}, [el("dt", {}, "Parties"), el("dd", {}, c.parties)]) : null,
@@ -69,9 +70,9 @@ function makeCard(c) {
         el("dt", {}, "Elements"),
         el("dd", {}, el("ul", { style: "padding-left:1.2em;list-style:revert" }, c.elements.map(e => el("li", {}, e))))
       ]) : null,
-      c.relief ? el("div", {}, [el("dt", {}, "Relief sought"), el("dd", {}, c.relief)]) : null,
-      c.plaintiff_evidence ? el("div", {}, [el("dt", {}, "Plaintiff's strongest evidence"), el("dd", {}, c.plaintiff_evidence)]) : null,
-      c.defense_response ? el("div", {}, [el("dt", {}, "Defense response"), el("dd", {}, c.defense_response)]) : null
+      c.relief ? el("div", {}, [el("dt", {}, "Relief sought"), el("dd", {}, prose(c.relief, { compact: true }))]) : null,
+      c.plaintiff_evidence ? el("div", {}, [el("dt", {}, "Plaintiff's strongest evidence"), el("dd", {}, prose(c.plaintiff_evidence, { compact: true }))]) : null,
+      c.defense_response ? el("div", {}, [el("dt", {}, "Defense response"), el("dd", {}, prose(c.defense_response, { compact: true }))]) : null
     ]),
     (c.history || []).length ? el("section", {}, [
       el("h5", { style: "font-family:var(--font-sans);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:.4rem" }, "Procedural history"),

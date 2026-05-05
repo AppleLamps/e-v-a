@@ -44,6 +44,11 @@
 }
 .sources-table .col-title { color: var(--ink); }
 .sources-table .col-title strong { color: var(--ink-strong); font-family: var(--font-serif); font-weight: 600; }
+.sources-table .source-notes {
+  margin-top: 0.32rem;
+  line-height: 1.48;
+  max-width: 78ch;
+}
 .sources-table .col-pages {
   font-family: var(--font-mono);
   color: var(--ink-faint);

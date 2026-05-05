@@ -1,5 +1,6 @@
 import { el } from "../utils/dom.js";
 import { citationChip } from "../utils/citation.js";
+import { prose } from "../utils/prose.js";
 
 export function renderEntities(data, _m, root) {
   const head = el("section", { class: "shell" }, [
@@ -98,7 +99,7 @@ export function renderEntity(data, id, root) {
     ]),
     e.description ? el("section", { class: "profile-section" }, [
       el("h3", {}, "Role in the alleged scheme"),
-      el("p", {}, e.description)
+      prose(e.description)
     ]) : null,
     (e.flows || []).length ? el("section", { class: "profile-section" }, [
       el("h3", {}, "Flows of capital, IP, or control"),

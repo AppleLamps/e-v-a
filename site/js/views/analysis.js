@@ -1,5 +1,6 @@
 import { el } from "../utils/dom.js";
 import { citationChip } from "../utils/citation.js";
+import { prose, inlineProse } from "../utils/prose.js";
 
 export function renderAnalysis(data, _m, root) {
   const head = el("section", { class: "shell" }, [
@@ -24,8 +25,8 @@ export function renderAnalysis(data, _m, root) {
 function renderSection(s) {
   const blocks = (s.blocks || []).map(b => {
     if (b.type === "h3") return el("h3", { id: b.id || undefined }, b.text);
-    if (b.type === "p") return el("p", {}, [
-      ...renderInline(b.text),
+    if (b.type === "p") return el("div", { class: "analysis-prose" }, [
+      prose(b.text),
       ...((b.citations || []).map(c => citationChip(c)))
     ]);
     if (b.type === "blockquote") return el("blockquote", {}, [
@@ -37,7 +38,7 @@ function renderSection(s) {
       ])
     ]);
     if (b.type === "list") return el("ul", {}, (b.items || []).map(it => el("li", {}, [
-      ...renderInline(it.text),
+      ...inlineProse(it.text),
       ...((it.citations || []).map(c => citationChip(c)))
     ])));
     return null;
@@ -48,18 +49,4 @@ function renderSection(s) {
     s.deck ? el("p", { class: "deck" }, s.deck) : null,
     ...blocks
   ]);
-}
-
-function renderInline(t) {
-  // Allow simple **bold** marks in analysis text.
-  const out = [];
-  const re = /\*\*([^*]+)\*\*/g;
-  let last = 0, m;
-  while ((m = re.exec(t)) !== null) {
-    if (m.index > last) out.push(document.createTextNode(t.slice(last, m.index)));
-    out.push(el("strong", {}, m[1]));
-    last = m.index + m[0].length;
-  }
-  if (last < t.length) out.push(document.createTextNode(t.slice(last)));
-  return out;
 }

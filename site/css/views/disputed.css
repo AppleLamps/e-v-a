@@ -78,6 +78,11 @@
   color: var(--ink);
   line-height: 1.55;
 }
+.dispute-side .prose-flow {
+  font-size: var(--fs-step-0);
+  line-height: 1.55;
+  max-width: 58ch;
+}
 .dispute-record {
   background: var(--bg-sunken);
   border: 1px solid var(--line);
@@ -87,6 +92,11 @@
   margin: 0;
   font-size: var(--fs-step--1);
   color: var(--ink-mute);
+}
+.dispute-record .prose-flow {
+  margin-top: var(--space-xs);
+  color: var(--ink-mute);
+  max-width: 74ch;
 }
 .dispute-record strong {
   color: var(--accent);

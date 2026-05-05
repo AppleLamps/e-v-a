@@ -1,5 +1,6 @@
 import { el } from "../utils/dom.js";
 import { citationChip } from "../utils/citation.js";
+import { prose } from "../utils/prose.js";
 
 export function renderDisputed(data, _m, root) {
   const head = el("section", { class: "shell" }, [
@@ -14,21 +15,21 @@ export function renderDisputed(data, _m, root) {
         el("h3", {}, d.question),
         el("span", { class: "dispute-status " + (d.status || "disputed") }, (d.status || "disputed").replace("_", " "))
       ]),
-      d.summary ? el("p", { class: "muted" }, d.summary) : null,
+      d.summary ? prose(d.summary, { className: "muted", compact: true }) : null,
       el("div", { class: "dispute-grid" }, [
         d.plaintiff_position ? el("div", { class: "dispute-side plaintiff" }, [
           el("h5", { class: "plaintiff" }, "Plaintiff position"),
-          el("p", {}, d.plaintiff_position),
+          prose(d.plaintiff_position, { compact: true }),
           ...(((d.plaintiff_citations) || []).length ? [el("div", { class: "muted text-small", style: "margin-top:.4rem" }, d.plaintiff_citations.map(c => citationChip(c)))] : [])
         ]) : null,
         d.defense_position ? el("div", { class: "dispute-side defendant" }, [
           el("h5", { class: "defendant" }, "Defense position"),
-          el("p", {}, d.defense_position),
+          prose(d.defense_position, { compact: true }),
           ...(((d.defense_citations) || []).length ? [el("div", { class: "muted text-small", style: "margin-top:.4rem" }, d.defense_citations.map(c => citationChip(c)))] : [])
         ]) : null
       ]),
       d.record ? el("div", { class: "dispute-record" }, [
-        el("strong", {}, "What the record shows"), el("br"), d.record,
+        el("strong", {}, "What the record shows"), prose(d.record, { compact: true }),
         " ",
         ...((d.record_citations || []).map(c => citationChip(c)))
       ]) : null

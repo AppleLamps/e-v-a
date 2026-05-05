@@ -1,6 +1,7 @@
 import { el, escapeHtml } from "../utils/dom.js";
 import { formatDate } from "../utils/format.js";
 import { citationChip } from "../utils/citation.js";
+import { prose } from "../utils/prose.js";
 
 const SIDE_LABEL = {
   plaintiff: "Musk-side",
@@ -105,7 +106,7 @@ function makeEvent(evt, actorIdByName) {
   const node = el("div", { class: "timeline-event", id: evt.id, data: { side: evt.side || "neutral", major: evt.major ? "true" : "false" } }, [
     el("div", { class: "timeline-date" }, [evt.date_label || formatDate(evt.date), evt.major ? " · inflection" : ""]),
     el("div", { class: "timeline-title" }, evt.title),
-    evt.description ? el("p", { class: "timeline-desc" }, evt.description) : null,
+    evt.description ? prose(evt.description, { className: "timeline-desc", compact: true }) : null,
     el("div", { class: "timeline-meta" }, [
       ...(evt.actors || []).slice(0, 6).map(a => el("a", { class: "pill", href: `#/actors/${actorIdByName.get(a) || slug(a)}` }, a)),
       ...(evt.citations || []).map(c => citationChip(c))

@@ -1,4 +1,5 @@
 import { el } from "../utils/dom.js";
+import { prose } from "../utils/prose.js";
 
 export function renderSources(data, _m, root) {
   const entries = data.sources.entries || [];
@@ -73,7 +74,7 @@ function makeRow(s) {
     el("td", { class: "col-label" }, s.label || ""),
     el("td", { class: "col-title" }, [
       el("strong", {}, s.title || s.label || ("Docket #" + s.docket)),
-      s.notes ? el("div", { class: "muted text-small", style: "margin-top:.2rem" }, s.notes) : null,
+      s.notes ? prose(s.notes, { className: "muted text-small source-notes", compact: true }) : null,
       s.filename ? el("div", { class: "mono", style: "color:var(--ink-faint);font-size:.74rem;margin-top:.2rem;word-break:break-all" }, s.filename) : null
     ]),
     el("td", { class: "col-pages" }, s.pages ? s.pages + "p" : "")

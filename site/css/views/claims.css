@@ -26,7 +26,7 @@
   letter-spacing: -0.005em;
   color: var(--ink-strong);
 }
-.claim-card .summary { font-size: var(--fs-step-0); color: var(--ink); }
+.claim-card .summary { font-size: var(--fs-step-0); color: var(--ink); line-height: 1.55; }
 .claim-meta {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,6 +48,11 @@
   font-family: var(--font-sans);
 }
 .claim-meta dd { color: var(--ink); margin: 0 0 0.5rem; font-size: var(--fs-step-0); }
+.claim-meta dd .prose-flow {
+  font-size: inherit;
+  line-height: 1.5;
+  max-width: 56ch;
+}
 .claim-history {
   display: grid;
   gap: 0.4rem;
