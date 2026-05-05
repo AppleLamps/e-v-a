@@ -67,7 +67,14 @@
   line-height: 1.58;
   max-width: 72ch;
 }
-.timeline-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; font-size: 0.74rem; }
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.38rem 0.44rem;
+  font-size: 0.74rem;
+  margin-top: 0.08rem;
+}
 .timeline-cluster-label {
   font-family: var(--font-sans);
   text-transform: uppercase;
