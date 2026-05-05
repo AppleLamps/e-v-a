@@ -35,7 +35,7 @@
 .analysis-section .prose-flow ul {
   margin-bottom: 0;
 }
-.analysis-section ul, .analysis-section ol { padding-left: 1.4em; list-style: revert; }
+.analysis-section ul:not(.prose-points), .analysis-section ol { padding-left: 1.4em; list-style: revert; }
 .analysis-section li { margin-bottom: var(--space-xs); }
 .analysis-section blockquote {
   margin: var(--space-l) 0;
