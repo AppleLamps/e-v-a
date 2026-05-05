@@ -59,8 +59,9 @@ The site does not need any node tooling, build step, or environment variables to
 
 Two routes:
 
-1. **Drag-and-drop on vercel.com.** Choose this directory (`site/`) when importing. Vercel detects the static layout and serves it.
-2. **CLI.** From this directory:
+1. **Git import from repo root.** Use the repository root as the Vercel project root. The root `vercel.json` sets `outputDirectory` to `site/` and applies the same cache/security headers.
+2. **Drag-and-drop on vercel.com.** Choose this directory (`site/`) when importing. Vercel detects the static layout and serves it.
+3. **CLI.** From this directory:
 
    ```sh
    npx vercel deploy --prod
@@ -73,7 +74,7 @@ The site has no runtime environment variables. There is no server-side code, no 
 ## Source-of-truth chain
 
 ```
-court-case-md/   ←  primary evidence (588 court filings as markdown + YAML frontmatter)
+court-case-md/   ←  primary evidence (1,153 PDF-derived markdown files + YAML frontmatter)
 case-files/      ←  secondary trial-wiki commentary (treated as observation, not primary)
                 ↓
 analyst notes (forensic reading)
@@ -190,7 +191,7 @@ Edit `data/analysis.json`'s `connections` array. Each entry needs a `from` and `
 Edit `data/meta.json`:
 
 ```json
-{ "last_analyzed": "2026-05-04", "archive_through": "Nov 7, 2025", "archive_through_iso": "2025-11-07" }
+{ "last_analyzed": "2026-05-04", "archive_through": "May 3, 2026", "archive_through_iso": "2026-05-03" }
 ```
 
 ## Citation conventions

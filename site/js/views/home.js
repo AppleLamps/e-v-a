@@ -63,7 +63,7 @@ export function renderHome(data, _m, root) {
     el("div", { class: "posture-grid" }, [
       stat(meta.docket_entries, "Docket entries", "From the filed complaint through the most recent entry in the archive."),
       stat(meta.filings_extracted, "Filings extracted", "Court PDFs converted to markdown for line-level citation."),
-      stat(meta.live_claims, "Live claims at trial", "After the Jan 15, 2026 MSJ ruling: charitable trust, fraud, constructive fraud, and unjust enrichment vs. OpenAI; aiding and abetting fiduciary breach vs. Microsoft."),
+      stat(meta.live_claims, "Live claims at trial", "After the Apr 24, 2026 order: charitable trust and restitution/unjust enrichment vs. OpenAI; aiding and abetting fiduciary breach vs. Microsoft."),
       stat(meta.counterclaims, "Live counterclaims", "OpenAI's UCL and tortious-interference theories tied to the February 2025 LOI."),
       stat(meta.named_defendants, "Named defendants", "Including a layered web of nonprofit, capped-profit, holding, and SPV entities."),
       stat(meta.named_actors, "Named actors", "Founders, board members, executives, attorneys, and witnesses on the record.")
@@ -76,8 +76,8 @@ export function renderHome(data, _m, root) {
       el("p", {}, [
         "The primary docket archive ends ",
         el("strong", {}, formatDate(meta.archive_through_iso)),
-        " (entry #", meta.last_docket_no || "350",
-        " — Plaintiffs' opposition to the OpenAI MSJ). Trial began ",
+        " (entry #", meta.last_docket_no || "522",
+        "). Trial began ",
         el("strong", {}, formatDate(meta.trial_start_iso)),
         " and proceedings are tracked separately in ",
         el("code", {}, "case-files/"),
@@ -95,7 +95,7 @@ export function renderHome(data, _m, root) {
       jumpLink("/actors", "Cast of actors", "Founders, board, counsel, witnesses — with quotes and procedural history attached."),
       jumpLink("/entities", "Corporate entity map", "The nonprofit, the capped-profit LP, OpenAI Global, OAI Corp, Aestas, Microsoft, x.AI."),
       jumpLink("/disputed", "Disputed facts", "Side-by-side: what plaintiffs assert, what defendants assert, what the documents actually show."),
-      jumpLink("/claims", "Causes of action", "26 claims pleaded; the seven that cleared MTD; the two that went to the jury."),
+      jumpLink("/claims", "Causes of action", "26 claims pleaded; MSJ and pretrial rulings narrowed the April liability case to three live theories."),
       jumpLink("/quotes", "Quote database", "Founding emails, depositions, public tweets, and trial testimony — clustered and contradictable."),
       jumpLink("/map", "Connection map", "An interactive graph of who answers to whom and which way the money and IP move."),
       jumpLink("/analysis", "Long-form analysis", "Rhetorical strategy of each side, omissions, evolution of the dispute, and the real fight."),

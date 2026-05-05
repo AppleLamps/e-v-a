@@ -68,7 +68,7 @@ function tierDesc(t) {
     spv: "Special-purpose vehicles for downstream deals. Plaintiffs say beneficial ownership is obscured at this layer.",
     aestas: "Aestas Management Company, LLC and Aestas, LLC — defendants on the SAC; alleged to hold for-profit interests for insiders.",
     plaintiff: "Musk's competing AI corporation, added as plaintiff in the FAC.",
-    microsoft: "Investor, exclusive cloud provider, and licensee. Named defendant on three claims that survived MTD.",
+    microsoft: "Investor, exclusive cloud provider, and licensee. Remaining claim: aiding and abetting breach of fiduciary duty.",
     other: ""
   })[t] || "";
 }

@@ -15,15 +15,15 @@
   {
     "id": "df-altman-2017-truthful",
     "question": "When Altman wrote 'i remain enthusiastic about the non-profit structure!' on September 21, 2017, was that statement false when made?",
-    "summary": "The fulcrum of the fraud and constructive-fraud claims.",
+    "summary": "The former fulcrum of the fraud theories; still relevant as background to trust, reliance, and limitations.",
     "status": "unresolved",
     "actors": ["sam-altman"],
     "plaintiff_position": "Yes. By July 2017, Sutskever's biweekly update (Ex. 11) listed 'Designing the for-profit structure' as ongoing work; the September 20 'highest-stakes conversation' from Sutskever and Brockman discussed the for-profit structure in detail. The reaffirmation was a calculated representation made to keep Musk's money flowing while planning the conversion. ~$10.275M in continued contributions followed.",
     "plaintiff_citations": [{ "docket": "32", "title": "FAC Ex. 11; FAC Ex. 13" }, { "docket": "32", "title": "FAC ¶306" }],
     "defense_position": "Statements were truthful expressions of present belief and feeling. Musk himself was simultaneously demanding 'unequivocal initial control' of a for-profit; the team's resistance was to Musk's control demands, not to a continuing nonprofit ethos. The September 2017 emails were earnest attempts to preserve the institution Musk wanted.",
     "defense_citations": [{ "docket": "147", "page": 7, "title": "OpenAI Counterclaim ¶24, ¶33" }, { "docket": "327", "page": 16, "title": "OpenAI MSJ — 'expressions of present feeling'" }],
-    "record": "The court found the statement 'actionable non-puffery' under Rule 9(b) and let the fraud claim survive (Dkt #163 p.5). Whether it was knowingly false at the moment of writing is for the jury.",
-    "record_citations": [{ "docket": "163", "page": 5 }]
+    "record": "The court found the statement 'actionable non-puffery' under Rule 9(b) and the fraud claim later survived MSJ. But on Apr 24, 2026, the court deemed fraud and constructive fraud voluntarily dismissed with prejudice. The statement remains evidentiary background, not a standalone live claim.",
+    "record_citations": [{ "docket": "163", "page": 5 }, { "docket": "390" }, { "docket": "497" }]
   },
   {
     "id": "df-musk-departure",
@@ -54,15 +54,15 @@
   {
     "id": "df-microsoft-control",
     "question": "Does Microsoft exercise de facto control over OpenAI?",
-    "summary": "Central to plaintiffs' aiding-and-abetting and tortious-interference theories.",
+    "summary": "Central to plaintiffs' remaining aiding-and-abetting theory against Microsoft.",
     "status": "disputed",
     "actors": ["satya-nadella", "reid-hoffman", "deannah-templeton"],
     "plaintiff_position": "Yes. Microsoft holds the exclusive cloud relationship, exclusive licenses to GPT-4 and successors, $13.75B cumulative investment, and used its leverage to force Altman's reinstatement in November 2023. Nadella's quoted statement that Microsoft has 'all the IP rights and all the capability' ('We have the people, the compute, the data, everything') captures the position.",
     "plaintiff_citations": [{ "docket": "170", "title": "SAC ¶318(k)" }],
     "defense_position": "No. Microsoft did not receive 'a conventional equity ownership interest' but a capped-return arrangement (Dkt #329 p.10). The 2019 partnership was 'arm's-length negotiations between sophisticated parties'; Microsoft 'remained supportive of its strategic partnership' and has not 'diverted the partnership benefits for its own benefit'.",
     "defense_citations": [{ "docket": "329", "page": 10, "filename": "gov.uscourts.cand.433688.329.0_1.md" }],
-    "record": "Microsoft's MSJ characterizes the structural relationship at length. Plaintiffs' November 2023 evidence remains largely under seal; the public record on operational control is thin.",
-    "record_citations": [{ "docket": "329", "page": 10 }]
+    "record": "Microsoft's MSJ and proposed findings characterize the relationship at length. Plaintiffs' November 2023 evidence remains partly under seal; the public record shows operational entanglement but not a judicial finding that it equals control.",
+    "record_citations": [{ "docket": "329", "page": 10 }, { "docket": "504" }]
   },
   {
     "id": "df-investor-boycott",
@@ -172,5 +172,70 @@
     "defense_position": "The statute requires current membership; Musk and Zilis were not members at the time of filing.",
     "record": "The court accepted the defense reading: 'That Musk and Zilis may have been members at one point is insufficient as a matter of law.' (Dkt #121 p.16) Counts XXII–XXIV dismissed without leave.",
     "record_citations": [{ "docket": "121", "page": 16 }]
+  },
+  {
+    "id": "df-remedy-recipient",
+    "question": "If plaintiffs win, who can receive restitution or disgorged gains?",
+    "summary": "The late pretrial remedy fight created a standing/remedy tension.",
+    "status": "disputed",
+    "actors": ["elon-musk"],
+    "plaintiff_position": "Musk says he will not seek an award to himself, xAI, or a controlled fund. His preferred remedy is an award to the OpenAI charity directly, or to donor-advised funds that must donate the award to the OpenAI charity.",
+    "plaintiff_citations": [{ "docket": "484", "filename": "gov.uscourts.cand.433688.484.0_1.md" }, { "docket": "462", "filename": "gov.uscourts.cand.433688.462.0_1.md" }],
+    "defense_position": "Defendants say the waiver confirms the case lacks personal injury and that restitution normally restores value to the plaintiff, not a third-party charity. They ask the court to require a fuller waiver or treat the remedy defect as fatal.",
+    "defense_citations": [{ "docket": "491", "filename": "gov.uscourts.cand.433688.491.0_2.md" }, { "docket": "492", "filename": "gov.uscourts.cand.433688.492.0.md" }],
+    "record": "PTO #3 assigns disgorgement to the Court as equitable relief. PTO #4 bifurcates liability and remedies. The court has not finally decided recipient or amount; May 1 trial commentary suggests reluctance to give an advisory redirect ruling before liability.",
+    "record_citations": [{ "docket": "456" }, { "docket": "477" }, { "trial": "050126TT.txt", "line": 1521 }]
+  },
+  {
+    "id": "df-daf-standing-control",
+    "question": "Do donor-advised funds and YC.org break Musk's standing or control over the donated property?",
+    "summary": "OpenAI's cleanest technical defense to a Musk-specific trust corpus.",
+    "status": "disputed",
+    "actors": ["elon-musk", "jared-birchall"],
+    "plaintiff_position": "Musk treats himself as the funding source and settlor: the money was solicited from him, contributed because of OpenAI's stated charitable mission, and traceable into OpenAI's assets regardless of DAF routing.",
+    "plaintiff_citations": [{ "docket": "350", "page": 8 }, { "docket": "503", "filename": "gov.uscourts.cand.433688.503.0.md" }],
+    "defense_position": "OpenAI says all cash contributions were indirect through DAFs and YC.org, that Musk relinquished ownership/control when he donated to those intermediaries, and that OpenAI recorded zero donor-restricted assets.",
+    "defense_citations": [{ "docket": "502", "filename": "gov.uscourts.cand.433688.502.0.md" }],
+    "record": "The public docket establishes the parties' positions but not the final factual resolution. This issue directly affects trust formation, restitution, and Musk's verified waiver.",
+    "record_citations": [{ "docket": "502" }, { "docket": "503" }, { "docket": "484" }]
+  },
+  {
+    "id": "df-section-17510",
+    "question": "Does Cal. Bus. & Prof. Code §17510.8 create an independent charitable-trust path here?",
+    "summary": "A late jury-instruction/legal issue over charitable solicitations.",
+    "status": "disputed",
+    "actors": ["elon-musk", "sam-altman", "jared-birchall"],
+    "plaintiff_position": "Yes. Musk says Altman's 2016 funding requests and OpenAI CFO Chris Clark's July 2020 rent request were charitable solicitations; §17510.8 creates a fiduciary relationship and charitable trust upon acceptance.",
+    "plaintiff_citations": [{ "docket": "515", "filename": "gov.uscourts.cand.433688.515.0_1.md" }],
+    "defense_position": "No. OpenAI says §17510.6 excludes solicitations within a charity's membership, Cohen v. Kabbalah Centre controls, and the July 2020 rent email was at most a $580,000 rent-specific request already used for rent.",
+    "defense_citations": [{ "docket": "516", "filename": "gov.uscourts.cand.433688.516.0.md" }],
+    "record": "The trial-wiki Day 5 summary says the court signaled §17510.6 controls over §17510.8, but the primary docket currently captures the dispute through the competing April 30 briefs rather than a written order.",
+    "record_citations": [{ "docket": "515" }, { "docket": "516" }, { "trial": "050126TT.txt", "line": 604 }]
+  },
+  {
+    "id": "df-microsoft-knowledge-assistance",
+    "question": "Did Microsoft know about Musk-specific charitable-trust duties and substantially assist a breach?",
+    "summary": "The remaining Microsoft liability question.",
+    "status": "disputed",
+    "actors": ["satya-nadella", "reid-hoffman", "deannah-templeton"],
+    "plaintiff_position": "Musk's proposed findings say Microsoft knew OpenAI's charitable obligations from diligence, the public charter/mission materials, and the 2023 board crisis, then assisted by funding and structuring transactions that enriched private investors.",
+    "plaintiff_citations": [{ "docket": "503", "filename": "gov.uscourts.cand.433688.503.0.md" }],
+    "defense_position": "Microsoft's proposed findings say it was not involved in OpenAI's formation or Musk's departure, was not told of Musk-specific donation conditions, received contractual assurances, and did not cause any alleged breach.",
+    "defense_citations": [{ "docket": "504", "filename": "gov.uscourts.cand.433688.504.0.md" }],
+    "record": "The MSJ ruling left the claim alive, but Microsoft's April 27 proposed findings preserve no-knowledge, no-assistance, limitations, laches, and unclean-hands defenses.",
+    "record_citations": [{ "docket": "390" }, { "docket": "504" }]
+  },
+  {
+    "id": "df-musk-motive-bias",
+    "question": "Is Musk pursuing the case to restore a charity or to punish a competitor and its principals?",
+    "summary": "A motive/bias dispute sharpened by the May 3 pretrial-communication application.",
+    "status": "conflicting",
+    "actors": ["elon-musk", "greg-brockman", "sam-altman"],
+    "plaintiff_position": "Musk says the case is about enforcing OpenAI's public charitable mission and preventing private enrichment from charitable assets.",
+    "plaintiff_citations": [{ "docket": "459", "filename": "gov.uscourts.cand.433688.459.0_3.md" }, { "docket": "503", "filename": "gov.uscourts.cand.433688.503.0.md" }],
+    "defense_position": "OpenAI says Musk is attacking a competitor. It seeks to introduce Brockman testimony that Musk told him before trial that Brockman and Altman would become the most hated men in America if they continued defending the case.",
+    "defense_citations": [{ "docket": "522", "filename": "gov.uscourts.cand.433688.522.0_2.md" }],
+    "record": "The application at #522 is a request to admit evidence, not a merits finding. It is still important because it shows how OpenAI intends to use motive and bias evidence during Brockman's testimony.",
+    "record_citations": [{ "docket": "522" }]
   }
 ]

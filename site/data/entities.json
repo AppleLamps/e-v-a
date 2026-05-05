@@ -157,7 +157,7 @@
     "tier": "microsoft",
     "jurisdiction": "Washington",
     "formed": "1975",
-    "short": "Investor, exclusive cloud provider, and licensee. Named defendant on three counts that survived the MTD (tortious interference, aiding-and-abetting fiduciary duty, and parts of unjust enrichment).",
+    "short": "Investor, exclusive cloud provider, and licensee. After MSJ, the remaining Microsoft claim is aiding and abetting breach of fiduciary duty.",
     "description": "Microsoft's MSJ characterizes the relationship as 'arm's-length negotiations between sophisticated parties'; it 'did not receive a conventional equity ownership interest' but a capped-return arrangement. Plaintiffs cite Microsoft's 2019 $1B, 2023 $10B, and 2024 expanded investments and the November 2023 board episode as evidence Microsoft exerts de facto control.",
     "flows": [
       { "kind": "Capital", "from": "Microsoft", "to": "OpenAI L.P.", "detail": "$1B (2019) → $10B (2023) → expanded 2024", "citations": ["#170", "#329"] },

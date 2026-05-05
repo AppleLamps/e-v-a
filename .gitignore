@@ -54,5 +54,6 @@ venv/
 # Claude / IDE assistant scratch
 .claude/
 
-# Vercel build output (when site/ is deployed)
+# Vercel local project metadata/build output
+.vercel/
 site/.vercel/

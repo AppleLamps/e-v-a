@@ -6,9 +6,9 @@ A self-contained archive of the federal lawsuit **Elon Musk et al. v. Samuel Alt
 
 In August 2024, Elon Musk sued Sam Altman, Greg Brockman, Microsoft, Reid Hoffman, and a long list of OpenAI corporate entities, alleging that OpenAI's pivot from a 501(c)(3) nonprofit to a capped-profit / for-profit structure breached the founding promise to develop AGI for the public benefit. Musk contributed roughly $44M to OpenAI between 2015 and 2020 on the understanding it was a charity. He claims Altman and Brockman effectively "stole the charity" by transferring its assets and personnel into for-profit vehicles in which they hold equity. Co-plaintiffs Shivon Zilis and X.AI Corp were added in the November 2024 First Amended Complaint. Microsoft is named as an alleged accomplice and beneficiary of the diverted assets. Causes of action originally pleaded: breach of contract, breach of fiduciary duty, civil RICO, false advertising, unfair competition, charitable trust, and others — 26 in total.
 
-The case proceeded through a contested preliminary-injunction motion (denied Mar 2025, Dkt #121), a partial motion-to-dismiss ruling (May 2025, Dkt #163), summary-judgment briefing (Oct–Nov 2025), and a **summary-judgment ruling on January 15, 2026 (Dkt #390)** that left the following theories alive at trial:
+The case proceeded through a contested preliminary-injunction motion (denied Mar 2025, Dkt #121), a partial motion-to-dismiss ruling (May 2025, Dkt #163), summary-judgment briefing (Oct-Nov 2025), and a **summary-judgment ruling on January 15, 2026 (Dkt #390)** that initially left five theories alive. After Musk's April 2026 notices and the court's **April 24, 2026 order (Dkt #497)** dismissing fraud and constructive fraud with prejudice, the live liability theories are:
 
-- **vs OpenAI defendants:** breach of charitable trust, fraud, constructive fraud, unjust enrichment
+- **vs OpenAI defendants:** breach of charitable trust, unjust enrichment / restitution
 - **vs Microsoft:** aiding and abetting breach of fiduciary duty
 
 A nine-person jury was empaneled on **April 27, 2026**. Per Pretrial Order No. 4 (Dkt #477), trial is **bifurcated** into a liability phase (Apr 28 – ~May 15) and a remedies phase (begins ~May 18). Disgorgement is an equitable remedy decided by the Court (PTO #3, Dkt #456), so any monetary award (Musk's ask is up to ~$134B) will be sized by Judge Gonzalez Rogers, not the jury.
@@ -27,7 +27,7 @@ For machine-readable metadata, `court-case-pdf/manifest.json` is keyed by filena
 
 ### 2. Forensic-analysis website (for human reading)
 
-`site/` is a vanilla HTML / ES-modules / CSS static site that presents the archive analytically: a timeline, an actor cast, a quote database, a connection map, a sources index, and long-form analysis. It loads JSON data files from `site/data/` at runtime — no build step. Configured for Vercel via `site/vercel.json`. To preview locally, serve `site/` over any static file server (e.g., `python -m http.server 8000` from inside `site/`).
+`site/` is a vanilla HTML / ES-modules / CSS static site that presents the archive analytically: a timeline, an actor cast, a quote database, a connection map, a sources index, and long-form analysis. It loads JSON data files from `site/data/` at runtime — no build step. Configured for Vercel from either the repo root (`vercel.json`, output directory `site/`) or with `site/` as the project root (`site/vercel.json`). To preview locally, serve `site/` over any static file server (e.g., `python -m http.server 8000` from inside `site/`).
 
 ## Folder layout
 
@@ -85,7 +85,7 @@ To back-fill new entries from CourtListener: in a browser, open the docket and S
 
 The website's analytical layer reads these JSON files. They are hand-curated derivative work from the primary archive, not auto-generated:
 
-- `sources.json` — curated index of the most important filings (currently 54 of the 413 indexed entries) with editorial notes on each
+- `sources.json` — curated index of the most important filings (currently 71 entries) with editorial notes on each
 - `timeline.json` — ~48 dated events from May 2015 through May 2026
 - `actors.json` — cast of ~40 named actors with bios, position shifts, attribute tables, and connection lists
 - `entities.json` — corporate-entity map (nonprofit, capped-profit LP, OpenAI Global, Aestas, Microsoft, xAI)
