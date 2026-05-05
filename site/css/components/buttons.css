@@ -5,11 +5,22 @@
   display: inline-grid;
   place-items: center;
   color: var(--ink-mute);
-  transition: background var(--t-fast), color var(--t-fast);
+  border: 1px solid transparent;
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast), transform var(--t-fast);
   flex-shrink: 0;
 }
-.icon-button:hover { background: var(--bg-elev-2); color: var(--ink-strong); }
-.icon-button svg { width: 20px; height: 20px; }
+.icon-button:hover {
+  background: var(--bg-elev-2);
+  border-color: var(--line);
+  color: var(--ink-strong);
+}
+.icon-button:active { transform: translateY(1px); }
+.icon-button svg {
+  width: 19px;
+  height: 19px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 .btn {
   display: inline-flex;

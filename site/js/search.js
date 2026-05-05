@@ -26,6 +26,9 @@ export function initSearch(data) {
     else if (e.key === "Enter") { commit(); }
     else if (e.key === "Tab") { trapTab(e); }
   });
+  window.addEventListener("hashchange", () => {
+    if (!panel.hidden) close();
+  });
   input.addEventListener("input", debounce(run, 60));
   // Initial empty state.
   const filingsCount = (data.sources.entries || []).length;

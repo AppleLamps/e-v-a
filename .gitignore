@@ -10,6 +10,9 @@ sources/
 logs/
 *.log
 
+# UI audit reports and screenshot evidence — generated local review artifacts
+audit/
+
 # Backup of pre-stripped wiki scrapes — redundant with case-files/
 case-files-backup/
 

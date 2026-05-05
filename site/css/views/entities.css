@@ -1,7 +1,8 @@
 .entity-card {
   display: grid;
-  gap: 0.4rem;
+  gap: 0.48rem;
   align-content: start;
+  min-height: 100%;
 }
 .entity-card .ent-name {
   font-family: var(--font-serif);
@@ -18,7 +19,7 @@
 .entity-card .ent-desc {
   font-size: var(--fs-step-0);
   color: var(--ink);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 .entity-card .ent-tier {
   display: inline-flex;
@@ -31,14 +32,62 @@
 }
 .entity-tier-group {
   margin-top: var(--space-xl);
+  padding: var(--space-l);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background:
+    linear-gradient(90deg, color-mix(in oklab, var(--accent-soft) 48%, transparent), transparent 38%),
+    var(--bg-sunken);
+}
+.entity-tier-group:first-child { margin-top: var(--space-l); }
+.entity-tier-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-m);
+  align-items: start;
+  padding-bottom: var(--space-m);
+  margin-bottom: var(--space-m);
+  border-bottom: 1px solid var(--line);
 }
 .entity-tier-group h3 {
   font-size: var(--fs-step-2);
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-xs);
   letter-spacing: -0.005em;
 }
-.entity-tier-group .tier-rule {
-  height: 1px;
-  background: linear-gradient(to right, var(--accent), transparent);
-  margin-bottom: var(--space-m);
+.entity-tier-head .muted {
+  max-width: 76ch;
+}
+.entity-tier-count {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-elev);
+  color: var(--ink-mute);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.entity-tier-group .grid-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: var(--space-s);
+}
+@media (min-width: 1100px) {
+  .entity-tier-group .grid-cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .entity-tier-group {
+    padding: var(--space-m);
+  }
+  .entity-tier-head {
+    grid-template-columns: 1fr;
+    gap: var(--space-s);
+  }
+  .entity-tier-count {
+    justify-self: start;
+  }
 }

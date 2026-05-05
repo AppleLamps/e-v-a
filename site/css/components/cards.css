@@ -7,12 +7,31 @@
   flex-direction: column;
   gap: var(--space-xs);
   position: relative;
-  transition: border-color var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+  overflow: hidden;
+  transition: border-color var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast), background var(--t-fast);
   min-width: 0;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-left: 3px solid transparent;
+  pointer-events: none;
+  transition: border-color var(--t-fast);
 }
 .card:hover {
   border-color: var(--line-strong);
   box-shadow: var(--shadow-1);
+  background: color-mix(in oklab, var(--bg-elev) 84%, var(--bg-elev-2));
+  transform: translateY(-1px);
+}
+.card:hover::after,
+.card:focus-within::after {
+  border-left-color: var(--accent);
+}
+.card:focus-within {
+  border-color: var(--accent);
+  box-shadow: var(--focus);
 }
 
 .card-link {

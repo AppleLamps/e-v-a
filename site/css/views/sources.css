@@ -71,7 +71,14 @@
   }
   .sources-table td { padding: 0.15rem 0; border: 0; }
   .sources-table .col-num::before { content: "#"; opacity: 0.5; }
-  .sources-table .col-date::before { content: "📅 "; opacity: 0.5; }
+  .sources-table .col-date::before {
+    content: "Date: ";
+    opacity: 0.6;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.68rem;
+  }
   .sources-table .col-pages { text-align: left; }
   .sources-table .col-pages::before { content: "Pages: "; opacity: 0.5; }
 }

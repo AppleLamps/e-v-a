@@ -35,6 +35,16 @@
 }
 .map-controls button:hover { background: var(--bg-elev-2); color: var(--ink-strong); }
 
+@media (max-width: 600px) {
+  .map-shell {
+    height: min(62dvh, 500px);
+  }
+  .map-controls {
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+}
+
 .map-legend {
   display: flex;
   flex-wrap: wrap;

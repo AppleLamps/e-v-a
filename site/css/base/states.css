@@ -1,7 +1,7 @@
 /* Loading, empty, and error states. */
 
 .state-pane {
-  min-height: 50vh;
+  min-height: calc(100dvh - var(--header-h, 64px));
   display: grid;
   place-items: center;
   padding: var(--space-2xl) var(--space-m);

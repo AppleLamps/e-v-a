@@ -18,10 +18,14 @@ export function renderEntities(data, _m, root) {
   order.filter(o => groups[o]).forEach((tier, idx) => {
     const items = groups[tier];
     const group = el("section", { class: "entity-tier-group" }, [
-      el("p", { class: "eyebrow" }, tierLabel(tier)),
-      el("h3", {}, tierTitle(tier)),
-      el("p", { class: "muted" }, tierDesc(tier)),
-      el("div", { class: "tier-rule" }),
+      el("div", { class: "entity-tier-head" }, [
+        el("div", {}, [
+          el("p", { class: "eyebrow" }, tierLabel(tier)),
+          el("h3", {}, tierTitle(tier)),
+          el("p", { class: "muted" }, tierDesc(tier))
+        ]),
+        el("span", { class: "entity-tier-count" }, `${items.length} ${items.length === 1 ? "entity" : "entities"}`)
+      ]),
       el("div", { class: "grid-cards" }, items.map(makeCard))
     ]);
     shell.appendChild(group);

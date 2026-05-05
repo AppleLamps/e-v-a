@@ -2,6 +2,7 @@
    simple force step on hover/load and allow pan/zoom. Designed to work without external libs. */
 
 import { el, escapeHtml } from "../utils/dom.js";
+import { placeLabels } from "../utils/map-labels.js";
 
 export function renderMap(data, _m, root) {
   const head = el("section", { class: "shell" }, [
@@ -24,6 +25,7 @@ export function renderMap(data, _m, root) {
   const svg = buildSvg(data, detail);
   board.appendChild(svg);
   const pz = enablePanZoom(svg, 1200, 760);
+  pz.reset();
   board.appendChild(buildControls(pz));
   wrap.append(board, detail);
   root.append(head, legend, wrap);
@@ -122,6 +124,7 @@ function buildSvg(data, detailEl) {
     n.x = Math.max(40, Math.min(W - 40, n.x));
     n.y = Math.max(40, Math.min(H - 40, n.y));
   }
+  placeLabels(nodes, W, H);
 
   const gEdges = document.createElementNS("http://www.w3.org/2000/svg", "g");
   const gNodes = document.createElementNS("http://www.w3.org/2000/svg", "g");
@@ -150,7 +153,9 @@ function buildSvg(data, detailEl) {
     c.setAttribute("stroke-width", "2.2");
     g.appendChild(c);
     const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    txt.setAttribute("x", r + 6); txt.setAttribute("y", 4);
+    txt.setAttribute("x", n.labelX);
+    txt.setAttribute("y", n.labelY);
+    txt.setAttribute("text-anchor", n.labelAnchor);
     txt.setAttribute("font-family", "Inter, sans-serif");
     txt.setAttribute("font-size", "11");
     txt.setAttribute("fill", "var(--ink)");
@@ -214,16 +219,28 @@ function buildControls(pz) {
     pz.apply();
   });
   reset.addEventListener("click", () => {
-    pz.state.scale = 1; pz.state.x = 0; pz.state.y = 0;
-    pz.apply();
+    pz.reset();
   });
   return wrap;
 }
 
 function enablePanZoom(svg, W, H) {
   const state = { x: 0, y: 0, scale: 1 };
+  const initial = () => {
+    const small = window.matchMedia("(max-width: 600px)").matches;
+    const scale = small ? 1.7 : 1;
+    return {
+      scale,
+      x: -(W - (W / scale)) / 2,
+      y: -(H - (H / scale)) / 2
+    };
+  };
   const apply = () => {
     svg.setAttribute("viewBox", `${-state.x} ${-state.y} ${W / state.scale} ${H / state.scale}`);
+  };
+  const reset = () => {
+    Object.assign(state, initial());
+    apply();
   };
   apply();
   let dragging = false, sx = 0, sy = 0, ox = 0, oy = 0;
@@ -268,7 +285,7 @@ function enablePanZoom(svg, W, H) {
     }
   }, { passive: true });
   svg.addEventListener("touchend", (e) => { if (e.touches.length < 2) pinch = null; });
-  return { state, apply, W, H };
+  return { state, apply, reset, W, H };
 }
 function dist(a, b) { return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); }
 function pointer(e, svg) { const r = svg.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }

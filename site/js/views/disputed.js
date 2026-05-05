@@ -7,7 +7,7 @@ export function renderDisputed(data, _m, root) {
     el("h1", {}, "Disputed facts"),
     el("p", { class: "deck" }, `Side-by-side comparisons. For each contested claim, this page lays out what each side asserts, what the underlying documents actually show, and where the record is silent or contradictory.`)
   ]);
-  const list = el("div", { class: "shell stack-l" });
+  const list = el("div", { class: "shell dispute-list" });
   (data.disputed || []).forEach(d => {
     const card = el("section", { class: "dispute-card", id: d.id }, [
       el("div", { class: "between", style: "flex-wrap:wrap;gap:.4rem" }, [
