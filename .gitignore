@@ -1,5 +1,5 @@
 # --- Heavy / regenerable inputs ----------------------------------------
-# Raw PDFs (~310 MB) — regenerate from sources/ via scripts/download-pdfs.mjs
+# Raw PDFs (~690 MB) — regenerate from sources/ via scripts/download-pdfs.mjs
 court-case-pdf/*.pdf
 court-case-pdf/*.part
 

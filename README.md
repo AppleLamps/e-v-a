@@ -42,10 +42,15 @@ case-files/            Trial-wiki digests from trial.mts.now (parallel commentar
 case-files-backup/     Original wiki scrapes before boilerplate stripping (gitignored)
 
 site/                  Static analysis website (HTML/CSS/JS + data/ JSON files)
+├── vercel.json        Static-deploy config when site/ is the Vercel project root
+└── data/              Hand-curated JSON powering the analytical views
 
 sources/               Raw HTML pulled from CourtListener (gitignored — input to scripts)
 scripts/               Tooling (re-runnable; see below)
 logs/                  Run logs from past extractions (gitignored)
+
+AGENTS.md              Operational briefing for AI agents working in this repo
+vercel.json            Static-deploy config when deploying from the repo root
 ```
 
 ## Archive scope
@@ -67,11 +72,11 @@ The 279 "manifest entries without PDFs" are docket text-only items — minute en
 
 ## Scripts (run from project root)
 
-The pipeline is HTML-driven: snapshot CourtListener docket pages into `sources/page*.html` (any number of pages — the scripts glob), then run the four scripts below in order.
+The pipeline is HTML-driven: snapshot CourtListener docket pages into `sources/page*.html` (any number of pages — the scripts glob), then run the commands below in order.
 
 ```
-node scripts/download-pdfs.mjs       # Fetch PDFs from sources/page*.html → court-case-pdf/
 node scripts/build-manifest.mjs      # Parse HTML + court-case-pdf/ → manifest.json
+node scripts/download-pdfs.mjs       # Fetch PDFs from sources/page*.html → court-case-pdf/
 node scripts/sample-pdfs.mjs --all   # Classify text vs scanned (writes nothing)
 node scripts/extract-pdfs.mjs        # Two-pass extraction: pdftotext + OCR for scanned
 node scripts/build-index.mjs         # Rebuild court-case-md/INDEX.md
@@ -79,19 +84,21 @@ node scripts/build-index.mjs         # Rebuild court-case-md/INDEX.md
 
 All scripts are idempotent — they skip work that's already done unless `--force` is passed. `download-pdfs.mjs` paces requests politely (1.5s spacing, retries with backoff on 429/503).
 
-To back-fill new entries from CourtListener: in a browser, open the docket and Save Page As → "Webpage, HTML Only" into `sources/page1.html`, `page2.html`, etc., overwriting whatever was there. Then re-run the four scripts above. Unreleased entries that aren't in the public RECAP archive yet require the [RECAP browser extension](https://free.law/recap/) and a free PACER account.
+Auxiliary scripts: `smoke-test-mistral.mjs` checks OCR credentials without running the full extractor, and `strip-boilerplate.mjs` cleans trial-wiki exports before they are kept in `case-files/`.
+
+To back-fill new entries from CourtListener: in a browser, open the docket and Save Page As → "Webpage, HTML Only" into `sources/page1.html`, `page2.html`, etc., overwriting whatever was there. Then re-run the pipeline commands above. Unreleased entries that aren't in the public RECAP archive yet require the [RECAP browser extension](https://free.law/recap/) and a free PACER account.
 
 ## Site data (`site/data/*.json`)
 
 The website's analytical layer reads these JSON files. They are hand-curated derivative work from the primary archive, not auto-generated:
 
 - `sources.json` — curated index of the most important filings (currently 71 entries) with editorial notes on each
-- `timeline.json` — ~48 dated events from May 2015 through May 2026
-- `actors.json` — cast of ~40 named actors with bios, position shifts, attribute tables, and connection lists
+- `timeline.json` — 52 dated events from May 2015 through May 2026
+- `actors.json` — cast of 37 named actors with bios, position shifts, attribute tables, and connection lists
 - `entities.json` — corporate-entity map (nonprofit, capped-profit LP, OpenAI Global, Aestas, Microsoft, xAI)
 - `quotes.json` — ~62 quoted statements (founding emails, depositions, public tweets, trial testimony) with themes, venue, under-oath/contradicts flags, and citations
 - `disputed-facts.json` — side-by-side disputed factual questions
-- `claims.json` — the 26 originally pleaded claims with surviving status
+- `claims.json` — 18 grouped claim, counterclaim, and legal-theory records covering the originally pleaded claims and live theories
 - `analysis.json` — long-form rhetorical analysis, eras, hero/executive_summary
 - `meta.json` — case caption, court, judge, archive scope notes, version stamps
 
