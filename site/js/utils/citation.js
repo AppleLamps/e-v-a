@@ -20,23 +20,22 @@ export function citationChips(refs) {
 
 export function citationChip(ref) {
   const norm = normalize(ref);
-  const a = el("a", {
+  const btn = el("button", {
+    type: "button",
     class: "cite" + (norm.kind === "trial" ? " cite-trial" : " cite-court"),
-    href: "#",
-    role: "button",
-    "aria-label": "Show source detail",
+    "aria-label": `Show source detail: ${norm.label}`,
+    "aria-haspopup": "dialog",
     data: {
       cite: JSON.stringify(norm)
     }
   });
-  a.textContent = norm.label;
-  a.addEventListener("click", (e) => {
-    e.preventDefault();
+  btn.textContent = norm.label;
+  btn.addEventListener("click", () => {
     document.dispatchEvent(new CustomEvent("citation:show", {
-      detail: { ref: norm, anchor: a }
+      detail: { ref: norm, anchor: btn }
     }));
   });
-  return a;
+  return btn;
 }
 
 export function normalize(ref) {

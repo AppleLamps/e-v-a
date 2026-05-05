@@ -13,6 +13,9 @@ const SIDE_LABEL = {
 export function renderTimeline(data, _m, root) {
   const { timeline } = data;
   const eras = (data.analysis.eras || []).slice();
+  // Resolve actor display names (e.g. "Hon. Yvonne Gonzalez Rogers") to canonical ids
+  // so timeline pills don't dead-end on prefixed/punctuated names.
+  const actorIdByName = new Map((data.actors || []).map(a => [a.name, a.id]));
   // Sort timeline by date.
   const sorted = [...timeline].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
   const sideOptions = ["all", ...new Set(sorted.map(e => e.side).filter(Boolean))];
@@ -52,7 +55,7 @@ export function renderTimeline(data, _m, root) {
 
   root.append(head, filterBar, legend, listShell);
 
-  const eventEls = sorted.map(makeEvent);
+  const eventEls = sorted.map(evt => makeEvent(evt, actorIdByName));
   function paint() {
     const q = document.getElementById("tl-search").value.trim().toLowerCase();
     const sideF = document.getElementById("tl-side").value;
@@ -98,13 +101,13 @@ function pickEra(d, eras) {
   return null;
 }
 
-function makeEvent(evt) {
+function makeEvent(evt, actorIdByName) {
   const node = el("div", { class: "timeline-event", id: evt.id, data: { side: evt.side || "neutral", major: evt.major ? "true" : "false" } }, [
     el("div", { class: "timeline-date" }, [evt.date_label || formatDate(evt.date), evt.major ? " · inflection" : ""]),
     el("div", { class: "timeline-title" }, evt.title),
     evt.description ? el("p", { class: "timeline-desc" }, evt.description) : null,
     el("div", { class: "timeline-meta" }, [
-      ...(evt.actors || []).slice(0, 6).map(a => el("a", { class: "pill", href: `#/actors/${slug(a)}` }, a)),
+      ...(evt.actors || []).slice(0, 6).map(a => el("a", { class: "pill", href: `#/actors/${actorIdByName.get(a) || slug(a)}` }, a)),
       ...(evt.citations || []).map(c => citationChip(c))
     ])
   ]);

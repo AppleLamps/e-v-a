@@ -3,21 +3,6 @@ url: "https://trial.mts.now/character/larry-page"
 title: "Larry Page — MTS Trial Wiki"
 ---
 
-# Larry Page
-
-From the MTS Trial Wiki — Co-founder of Google; central figure in Musk's "speciesist" origin story for OpenAI.
-
-Larry Page
-
-Co-founder of Google; central figure in Musk's "speciesist" origin story for OpenAI
-
-![Larry Page](https://trial.mts.now/images/characters/larry-page.jpg)Photo via Wikimedia Commons.
-
-| Role in trial | Co-founder of Google; central figure in Musk's "speciesist" origin story for OpenAI |
-| Affiliation | Google / Alphabet (co-founder) |
-| Born | March 26, 1973 — East Lansing, Michigan |
-| Testifies | Not expected to be called. |
-
 **Lawrence "Larry" Page** is a co-founder of **[Google](https://en.wikipedia.org/wiki/Google)** and former CEO of [Alphabet](https://en.wikipedia.org/wiki/Alphabet). He does not appear on any witness list for _Musk v. Altman_, but his name has come up repeatedly in the opening days of trial.
 
 ## "Speciesist"
@@ -32,8 +17,3 @@ Musk has used the anecdote in many public settings; in this courtroom he offered
 
 - [Elon Musk](https://trial.mts.now/character/elon-musk) — the source of the speciesist anecdote.
 - [Ilya Sutskever](https://trial.mts.now/character/ilya-sutskever) — at Google Brain at the time, recruited away to OpenAI.
-
-Categories:
-
-- [Characters](https://trial.mts.now/characters)
-- [Cameos](https://trial.mts.now/characters)

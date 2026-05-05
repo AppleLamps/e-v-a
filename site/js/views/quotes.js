@@ -7,9 +7,12 @@ export function renderQuotes(data, _m, root) {
     el("h1", {}, "Quote database"),
     el("p", { class: "deck" }, `${data.quotes.length} quoted statements — founding emails, depositions, public tweets, court filings, trial testimony. Filter by speaker, theme, year, venue, and whether the statement contradicts another.`)
   ]);
-  const speakers = ["all", ...new Set(data.quotes.map(q => q.speaker_name).filter(Boolean))].sort();
-  const themes = ["all", ...new Set(data.quotes.flatMap(q => q.themes || []))].sort();
-  const years = ["all", ...new Set(data.quotes.map(q => q.year).filter(Boolean))].sort((a, b) => a - b);
+  // Sort the values first, then prepend "all" — otherwise lowercase 'a' in "all"
+  // sorts after capital letters and "all" no longer ends up at index 0 (i.e., the
+  // default selection silently becomes whichever speaker/theme is alphabetically first).
+  const speakers = ["all", ...[...new Set(data.quotes.map(q => q.speaker_name).filter(Boolean))].sort()];
+  const themes = ["all", ...[...new Set(data.quotes.flatMap(q => q.themes || []))].sort()];
+  const years = ["all", ...[...new Set(data.quotes.map(q => q.year).filter(Boolean))].sort((a, b) => a - b)];
   const filterBar = el("div", { class: "filter-bar shell" }, [
     el("div", { class: "field" }, [
       el("label", { for: "qt-search" }, "Search"),

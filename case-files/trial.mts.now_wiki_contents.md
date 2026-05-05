@@ -5,17 +5,6 @@ title: "Wiki Info — MTS Trial Wiki"
 
 # Wiki Info
 
-From the MTS Trial Wiki, a project documenting Musk v. Altman.
-
-Contents
-
-1. [1Search the wiki](https://trial.mts.now/wiki/contents#search-the-wiki)
-2. [2Pages](https://trial.mts.now/wiki/contents#pages)
-3. [3Daily transcript digests](https://trial.mts.now/wiki/contents#daily-transcript-digests)
-4. [4Source materials](https://trial.mts.now/wiki/contents#source-materials)
-
-# Wiki Info
-
 A working wiki built from the daily court transcripts of _Elon Musk et al. v. Samuel Altman et al._, **case 4:24-CV-04722 YGR**, U.S. District Court for the Northern District of California, Oakland Division, Hon. **Yvonne Gonzalez Rogers** presiding. Trial began the week of April 27, 2026 and is expected to run through mid-May.
 
 This wiki is built from primary-source transcripts the trial court released on a daily basis. Every quote is cited as `(filenameTT.txt:LINE)` so you can verify against the underlying transcript in `wiki/extracted/`.
@@ -58,7 +47,3 @@ Day 1 (April 27 — jury selection) is not in the source materials.
 - `050126TT.pdf` / `050126TT.txt` — May 1
 
 Last updated: **May 1, 2026** (end of week 1).
-
-Categories:
-
-- [Wiki pages](https://trial.mts.now/)

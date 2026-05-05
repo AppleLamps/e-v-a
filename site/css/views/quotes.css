@@ -1,5 +1,11 @@
-.quotes-list { display: grid; gap: var(--space-m); }
-.quotes-list .quote-card { max-width: 75ch; }
+/* Quote cards form a centered reading column. The previous version capped each
+   card at 75ch which left a wide empty gutter on the right of the 1280px shell. */
+.quotes-list {
+  display: grid;
+  gap: var(--space-m);
+  max-width: 80ch;
+  margin-inline: auto;
+}
 .quote-cluster {
   margin-top: var(--space-xl);
 }

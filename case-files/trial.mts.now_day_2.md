@@ -5,45 +5,6 @@ title: "Day 2 — April 28, 2026 — Volume 2 (pages 198–385) — MTS Trial Wi
 
 # Day 2 — April 28, 2026 — Volume 2 (pages 198–385)
 
-Trial date 2026-04-28.
-
-Contents
-
-01. [11\. Summary](https://trial.mts.now/day/2#1-summary)
-02. [22\. Lawyers / participants present](https://trial.mts.now/day/2#2-lawyers-participants-present)
-03. [33\. Opening statement highlights](https://trial.mts.now/day/2#3-opening-statement-highlights)
-04. [3.1Plaintiffs — Mr. Molo](https://trial.mts.now/day/2#plaintiffs-mr-molo)
-05. [3.2OpenAI defense — Mr. Savitt](https://trial.mts.now/day/2#openai-defense-mr-savitt)
-06. [3.3Microsoft defense — Mr. Cohen](https://trial.mts.now/day/2#microsoft-defense-mr-cohen)
-07. [44\. Musk testimony highlights (direct examination by Mr. Molo)](https://trial.mts.now/day/2#4-musk-testimony-highlights-direct-examination-by-mr-molo)
-08. [4.1The lawsuit and the stakes](https://trial.mts.now/day/2#the-lawsuit-and-the-stakes)
-09. [4.2Background and work ethic](https://trial.mts.now/day/2#background-and-work-ethic)
-10. [4.3AI as existential concern — and the Larry Page anecdote](https://trial.mts.now/day/2#ai-as-existential-concern-and-the-larry-page-anecdote)
-11. [4.4AI risk framing](https://trial.mts.now/day/2#ai-risk-framing)
-12. [4.5Warning President Obama; ubiquity of AI conversations](https://trial.mts.now/day/2#warning-president-obama-ubiquity-of-ai-conversations)
-13. [4.6Founding of OpenAI as a 501(c)(3)](https://trial.mts.now/day/2#founding-of-openai-as-a-501-c-3)
-14. [4.7Recruiting Sutskever and the Larry Page fallout](https://trial.mts.now/day/2#recruiting-sutskever-and-the-larry-page-fallout)
-15. [4.8Calling Satya Nadella for compute (and Nadella's needling)](https://trial.mts.now/day/2#calling-satya-nadella-for-compute-and-nadella-s-needling)
-16. [4.9His pitch to Jensen Huang of NVIDIA](https://trial.mts.now/day/2#his-pitch-to-jensen-huang-of-nvidia)
-17. [4.10The 2017 negotiations break down — equity-split dispute](https://trial.mts.now/day/2#the-2017-negotiations-break-down-equity-split-dispute)
-18. [4.11Self-awareness about good intentions](https://trial.mts.now/day/2#self-awareness-about-good-intentions)
-19. [55\. Notable judicial / procedural moments](https://trial.mts.now/day/2#5-notable-judicial-procedural-moments)
-20. [5.1The pre-trial Musk Twitter colloquy](https://trial.mts.now/day/2#the-pre-trial-musk-twitter-colloquy)
-21. [5.2The hearing-aids aside (rapport-building with the jury)](https://trial.mts.now/day/2#the-hearing-aids-aside-rapport-building-with-the-jury)
-22. [5.3The federal-funding quip when AV equipment failed mid-opening](https://trial.mts.now/day/2#the-federal-funding-quip-when-av-equipment-failed-mid-opening)
-23. [5.4The big-lunch warning to jurors](https://trial.mts.now/day/2#the-big-lunch-warning-to-jurors)
-24. [5.5Recording in the overflow room — warning shot](https://trial.mts.now/day/2#recording-in-the-overflow-room-warning-shot)
-25. [5.6Ruling on Achiam (corporate-rep designation)](https://trial.mts.now/day/2#ruling-on-achiam-corporate-rep-designation)
-26. [5.7Ruling on Musk's response to "describe the lawsuit"](https://trial.mts.now/day/2#ruling-on-musk-s-response-to-describe-the-lawsuit)
-27. [5.8Direct shot at OpenAI's openings (after jury left)](https://trial.mts.now/day/2#direct-shot-at-openai-s-openings-after-jury-left)
-28. [5.9Admonition on the "10-billion vs. 10-million" press case](https://trial.mts.now/day/2#admonition-on-the-10-billion-vs-10-million-press-case)
-29. [5.10Closing-argument time allotments set](https://trial.mts.now/day/2#closing-argument-time-allotments-set)
-30. [5.11Sequestration warning to Musk](https://trial.mts.now/day/2#sequestration-warning-to-musk)
-31. [66\. Documents / exhibits referenced](https://trial.mts.now/day/2#6-documents-exhibits-referenced)
-32. [77\. Loose ends / cliffhangers](https://trial.mts.now/day/2#7-loose-ends-cliffhangers)
-
-# Day 2 — April 28, 2026 — Volume 2 (pages 198–385)
-
 _Musk v. Altman / OpenAI / Microsoft, 4:24-CV-04722 YGR, N.D. Cal., Hon. Yvonne Gonzalez Rogers_
 
 Source: `C:\dev\mts\court-transcripts\wiki\extracted\042826TT.txt`
@@ -348,8 +309,3 @@ The judge prevented theatrical pointing-at-Microsoft when AV equipment failed: "
 - **Twitter "clean slate"**: Whether Musk actually keeps his agreement to refrain from tweeting about the case during trial is now a live oversight issue; the judge specifically framed it as something she would be watching ("LIKE THIS WOULD BE A FIRST").
 - **Microsoft witness lineup** previewed: Satya Nadella (CEO), Kevin Scott (CTO), Amy Hood (CFO), Mike Wetter (corporate VP / due-diligence lead).
 - **Statute-of-limitations defense**: Both defendants pinned heavily on the September 24, 2020 Musk tweet ("essentially captured by Microsoft") as evidence Musk knew enough to sue more than three years before filing.
-
-Categories:
-
-- [Daily transcripts](https://trial.mts.now/)
-- [Timeline](https://trial.mts.now/wiki/timeline)

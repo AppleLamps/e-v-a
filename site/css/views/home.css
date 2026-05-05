@@ -74,6 +74,10 @@
   gap: var(--space-m);
   margin: var(--space-xl) 0;
 }
+/* 6 stat cards — lock to 3 columns above tablet so we get a clean 3x2, not 5+1. */
+@media (min-width: 760px) {
+  .posture-grid { grid-template-columns: repeat(3, 1fr); }
+}
 .posture-card {
   background: var(--bg-elev);
   border: 1px solid var(--line);
@@ -90,6 +94,10 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--space-s);
   margin-top: var(--space-l);
+}
+/* 9 jump cards — lock to 3 columns above tablet so we get a clean 3x3, not 4+4+1. */
+@media (min-width: 800px) {
+  .home-quick-jump { grid-template-columns: repeat(3, 1fr); }
 }
 .home-quick-jump a {
   display: grid;

@@ -5,7 +5,7 @@ export function renderSources(data, _m, root) {
   const head = el("section", { class: "shell" }, [
     el("p", { class: "eyebrow" }, "What we read"),
     el("h1", {}, "Sources"),
-    el("p", { class: "deck" }, "Every docket entry analyzed, with filing date, page count, doc label, and analytical notes where relevant. Pulled from the project manifest and enriched with editorial commentary on the spine documents.")
+    el("p", { class: "deck" }, `${entries.length} curated filings drawn from the broader docket of ${data.sources.docket_entries || ""}, with filing date, page count, doc label, and analytical notes where relevant. Spine documents are annotated; the remainder are listed for reference.`)
   ]);
   const summary = el("div", { class: "shell sources-summary" }, [
     el("span", {}, `${entries.length} entries`),

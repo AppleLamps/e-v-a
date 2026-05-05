@@ -3,10 +3,6 @@ url: "https://trial.mts.now/characters"
 title: "Characters — MTS Trial Wiki"
 ---
 
-# Characters
-
-Every named human in _Musk v. Altman_ — judge, parties, counsel, witnesses, and the people whose emails and texts the lawyers keep reading aloud. Plaintiffs are represented by **MoloLamken LLP** and **Toberoff & Associates**; OpenAI by **Wachtell, Lipton, Rosen & Katz**; Microsoft by **Dechert LLP**.
-
 ## Already testified2
 
 | Witness | Role | Days |
@@ -34,10 +30,6 @@ Every named human in _Musk v. Altman_ — judge, parties, counsel, witnesses, an
 | [Helen Toner](https://trial.mts.now/character/helen-toner) | Former OpenAI board member | video deposition |
 | [Tasha McCauley](https://trial.mts.now/character/tasha-mccauley) | Former OpenAI board member | video deposition |
 
-## Plaintiffs1
-
-Musk and his side of the v.
-
 - [![Elon Musk](https://trial.mts.now/images/characters/elon-musk.jpg)\\
 \\
 Elon Musk\\
@@ -47,10 +39,6 @@ Lead plaintiff; co-founder, OpenAI\\
 Lead plaintiff; co-founded OpenAI in 2015, departed its board in 2018, and now sues to unwind its 2019 for-profit conversion and the Microsoft partnership that followed.\\
 \\
 →](https://trial.mts.now/character/elon-musk)
-
-## OpenAI defendants2
-
-Named OpenAI executives and co-founders.
 
 - [![Greg Brockman](https://trial.mts.now/images/characters/greg-brockman.jpg)\\
 \\
@@ -71,10 +59,6 @@ CEO and co-founder of OpenAI; the "Altman" in Musk v. Altman. Will be examined d
 \\
 →](https://trial.mts.now/character/sam-altman)
 
-## Microsoft1
-
-Microsoft as defendant — the partner whose 2019 deal plaintiffs say 'captured' OpenAI.
-
 - [![Satya Nadella](https://trial.mts.now/images/characters/satya-nadella.jpg)\\
 \\
 Satya Nadella\\
@@ -84,10 +68,6 @@ CEO, Microsoft (defendant)\\
 Microsoft CEO; will be examined live during Microsoft's defense case under a Rule 50(a) stipulation that pauses Microsoft's motion-to-strike clock.\\
 \\
 →](https://trial.mts.now/character/satya-nadella)
-
-## Witnesses9
-
-Live and video-deposition witnesses called by either side.
 
 - [![David Schizer](https://trial.mts.now/images/characters/david-schizer.jpg)\\
 \\
@@ -171,10 +151,6 @@ Former OpenAI board member and one of the directors who voted to fire \[\[Sam Al
 \\
 →](https://trial.mts.now/character/tasha-mccauley)
 
-## Cameos5
-
-People featured heavily in evidence — letters, texts, exhibits — but not (yet) called.
-
 - [![Andrej Karpathy](https://trial.mts.now/images/characters/andrej-karpathy.jpg)\\
 \\
 Andrej Karpathy\\
@@ -221,10 +197,6 @@ Meta CEO whose Feb. 2025 text exchange with \[\[Elon Musk\|Musk\]\] about a join
 \\
 →](https://trial.mts.now/character/mark-zuckerberg)
 
-## The court1
-
-Judge, courtroom deputy, court reporter.
-
 - [![Hon. Yvonne Gonzalez Rogers](https://trial.mts.now/images/characters/yvonne-gonzalez-rogers.jpg)\\
 \\
 Hon. Yvonne Gonzalez Rogers\\
@@ -234,10 +206,6 @@ U.S. District Judge, presiding\\
 U.S. District Judge presiding over Musk v. Altman; has admonished counsel on both sides and personally interrogated Musk about his pre-trial tweets.\\
 \\
 →](https://trial.mts.now/character/yvonne-gonzalez-rogers)
-
-## Counsel — Plaintiffs3
-
-MoloLamken LLP and Toberoff & Associates.
 
 - [MT\\
 \\
@@ -267,10 +235,6 @@ Lead trial counsel for \[\[Elon Musk\|Musk\]\]; partner at MoloLamken LLP; gave 
 \\
 →](https://trial.mts.now/character/steven-molo)
 
-## Counsel — OpenAI2
-
-Wachtell, Lipton, Rosen & Katz.
-
 - [BW\\
 \\
 Bradley Wilson\\
@@ -289,10 +253,6 @@ Lead trial counsel for OpenAI defendants\\
 Wachtell partner and lead trial counsel for the \[\[OpenAI\]\] defendants; gave OpenAI's opening and conducted the \[\[Elon Musk\|Musk\]\] cross.\\
 \\
 →](https://trial.mts.now/character/william-savitt)
-
-## Counsel — Microsoft2
-
-Dechert LLP.
 
 - [NP\\
 \\

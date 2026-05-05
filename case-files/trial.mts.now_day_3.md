@@ -5,55 +5,6 @@ title: "Day 3 — Musk v. Altman / OpenAI — April 29, 2026 — MTS Trial Wiki"
 
 # Day 3 — Musk v. Altman / OpenAI — April 29, 2026
 
-Trial date 2026-04-29.
-
-Contents
-
-01. [11\. Summary](https://trial.mts.now/day/3#1-summary)
-02. [22\. Musk direct examination (continued) highlights](https://trial.mts.now/day/3#2-musk-direct-examination-continued-highlights)
-03. [33\. Musk cross-examination highlights](https://trial.mts.now/day/3#3-musk-cross-examination-highlights)
-04. [3.1Tesla and AGI (the opening salvo, DX 1444)](https://trial.mts.now/day/3#tesla-and-agi-the-opening-salvo-dx-1444)
-05. [3.2The $1B / $38M gap](https://trial.mts.now/day/3#the-1b-38m-gap)
-06. [3.3Musk's own 2015–2016 statements on for‑profit structure](https://trial.mts.now/day/3#musk-s-own-2015-2016-statements-on-for-profit-structure)
-07. [3.4The "triggering event," the Haunted Mansion meeting, and the cap table](https://trial.mts.now/day/3#the-triggering-event-the-haunted-mansion-meeting-and-the-cap-table)
-08. [3.5The control demand (DX 686)](https://trial.mts.now/day/3#the-control-demand-dx-686)
-09. [3.6Cutting off the $5M quarterly donations (DX 662)](https://trial.mts.now/day/3#cutting-off-the-5m-quarterly-donations-dx-662)
-10. [3.7B-corp vs. C-corp (DX 691)](https://trial.mts.now/day/3#b-corp-vs-c-corp-dx-691)
-11. [3.8Karpathy poaching while a director (DX 773)](https://trial.mts.now/day/3#karpathy-poaching-while-a-director-dx-773)
-12. [3.9Authorizing Neuralink to "pitch" OpenAI staff (DX 719) while still an OpenAI director](https://trial.mts.now/day/3#authorizing-neuralink-to-pitch-openai-staff-dx-719-while-still-an-openai-director)
-13. [3.10"OpenAI to attach to Tesla" / merger discussions (DX 749)](https://trial.mts.now/day/3#openai-to-attach-to-tesla-merger-discussions-dx-749)
-14. [3.11"Zero percent" odds and shifting the counterweight to Tesla (DX 844, 853)](https://trial.mts.now/day/3#zero-percent-odds-and-shifting-the-counterweight-to-tesla-dx-844-853)
-15. [3.12"OK by me" — the 2018 capped‑profit notice (DX 806, 819, 827)](https://trial.mts.now/day/3#ok-by-me-the-2018-capped-profit-notice-dx-806-819-827)
-16. [3.132019 capped-profit launch (DX 862, 863)](https://trial.mts.now/day/3#2019-capped-profit-launch-dx-862-863)
-17. [3.14Microsoft transactions and OpenAI board approvals (DX 869, 927, 1293)](https://trial.mts.now/day/3#microsoft-transactions-and-openai-board-approvals-dx-869-927-1293)
-18. [3.15xAI competition and AGI control](https://trial.mts.now/day/3#xai-competition-and-agi-control)
-19. [3.16Safety — Musk's lack of knowledge of OpenAI's actual practices](https://trial.mts.now/day/3#safety-musk-s-lack-of-knowledge-of-openai-s-actual-practices)
-20. [3.17Phase Two and the 2020 cutoff](https://trial.mts.now/day/3#phase-two-and-the-2020-cutoff)
-21. [3.18Notable Musk reactions to the cross technique](https://trial.mts.now/day/3#notable-musk-reactions-to-the-cross-technique)
-22. [44\. Notable judicial / procedural moments](https://trial.mts.now/day/3#4-notable-judicial-procedural-moments)
-23. [4.1Pre-jury housekeeping (8:00–8:30 a.m.)](https://trial.mts.now/day/3#pre-jury-housekeeping-8-00-8-30-a-m)
-24. [4.2Curative limiting instruction — agreed to keep working on it](https://trial.mts.now/day/3#curative-limiting-instruction-agreed-to-keep-working-on-it)
-25. [4.3Spectator photography — Dr. Belitski incident and the resulting confiscation order](https://trial.mts.now/day/3#spectator-photography-dr-belitski-incident-and-the-resulting-confiscation-order)
-26. [4.4Repeated "stop leading" admonitions to Mr. Molo on direct](https://trial.mts.now/day/3#repeated-stop-leading-admonitions-to-mr-molo-on-direct)
-27. [4.5Cabining Musk's narrative answers on cross](https://trial.mts.now/day/3#cabining-musk-s-narrative-answers-on-cross)
-28. [4.6Hearsay limiting instruction on PX 295 ("The Information" article)](https://trial.mts.now/day/3#hearsay-limiting-instruction-on-px-295-the-information-article)
-29. [4.7403 ruling: cross-examination of Musk on xAI's safety practices and Trump-administration AI policy](https://trial.mts.now/day/3#403-ruling-cross-examination-of-musk-on-xai-s-safety-practices-and-trump-administration-ai-policy)
-30. [4.8On the use of deposition testimony](https://trial.mts.now/day/3#on-the-use-of-deposition-testimony)
-31. [4.9Charitable-trust solicitation theory — § 17510.6 briefing ordered](https://trial.mts.now/day/3#charitable-trust-solicitation-theory-17510-6-briefing-ordered)
-32. [4.10Standard end-of-day jury admonition](https://trial.mts.now/day/3#standard-end-of-day-jury-admonition)
-33. [55\. Documents / exhibits referenced](https://trial.mts.now/day/3#5-documents-exhibits-referenced)
-34. [5.1Plaintiffs' exhibits used on Musk direct (chronological by document date)](https://trial.mts.now/day/3#plaintiffs-exhibits-used-on-musk-direct-chronological-by-document-date)
-35. [5.2OpenAI defense exhibits used on Musk cross](https://trial.mts.now/day/3#openai-defense-exhibits-used-on-musk-cross)
-36. [5.3Disputed / pending](https://trial.mts.now/day/3#disputed-pending)
-37. [66\. Memorable one-liners / heated moments](https://trial.mts.now/day/3#6-memorable-one-liners-heated-moments)
-38. [77\. Loose ends / cliffhangers](https://trial.mts.now/day/3#7-loose-ends-cliffhangers)
-39. [7.1Still on the stand Thursday morning](https://trial.mts.now/day/3#still-on-the-stand-thursday-morning)
-40. [7.2Witness lineup announced for Thursday (line 7775 ff)](https://trial.mts.now/day/3#witness-lineup-announced-for-thursday-line-7775-ff)
-41. [7.3Pending motions / open evidentiary issues](https://trial.mts.now/day/3#pending-motions-open-evidentiary-issues)
-42. [7.4Substantive cliffhangers](https://trial.mts.now/day/3#substantive-cliffhangers)
-
-# Day 3 — Musk v. Altman / OpenAI — April 29, 2026
-
 Volume 3, pages 386–644. Before Hon. Yvonne Gonzalez Rogers, Northern District of California, Oakland Division (4:24-CV-04722 YGR). Source: `042926TT.txt`.
 
 Witness: ELON REEVE MUSK (continued). Direct examination resumed by Mr. Molo (MoloLamken). Cross-examination by Mr. Savitt (Wachtell, Lipton, Rosen & Katz, for OpenAI defendants).
@@ -619,8 +570,3 @@ A. "Well, that's not the biggest risk. I mean, the biggest risk would be that AI
 - **The "solicitation" theory**: as a matter of law, can a co-founder "solicit" himself? The Court was openly skeptical at end of day (042926TT.txt:8404–8405); the briefing will likely shape the jury instructions.
 - **xAI / Tesla AGI control parallel**: the Court has acknowledged Musk "opened the door" to safety, but limited cross on that topic. Whether Stuart Russell's testimony Thursday gets in on regulation, and whether OpenAI's defense gets cross on Russell's work, is the next flashpoint.
 - **Brockman live testimony Thursday** — first chance to see Brockman in the box; plaintiffs' deposition video clips will play before he begins direct (Court denied OpenAI's request to defer them).
-
-Categories:
-
-- [Daily transcripts](https://trial.mts.now/)
-- [Timeline](https://trial.mts.now/wiki/timeline)

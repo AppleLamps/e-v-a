@@ -5,6 +5,7 @@ import { initSearch } from "./search.js";
 import { initCitationPopover } from "./components/citation-popover.js";
 import { loadAll } from "./data/loader.js";
 import { initNav } from "./components/nav.js";
+import { initBackToTop } from "./components/back-to-top.js";
 
 function showFatal(err) {
   const root = document.getElementById("view-root");
@@ -41,6 +42,7 @@ async function boot() {
     initRouter(data);
     initSearch(data);
     initCitationPopover(data);
+    initBackToTop();
     stampMeta(data.meta);
     measureHeader();
     window.addEventListener("resize", measureHeader, { passive: true });

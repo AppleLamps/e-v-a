@@ -3,27 +3,6 @@ url: "https://trial.mts.now/character/elon-musk"
 title: "Elon Musk — MTS Trial Wiki"
 ---
 
-# Elon Musk
-
-From the MTS Trial Wiki — Lead plaintiff; co-founder, OpenAI.
-
-Elon Musk
-
-Lead plaintiff; co-founder, OpenAI
-
-![Elon Musk](https://trial.mts.now/images/characters/elon-musk.jpg)Photo via Wikimedia Commons.
-
-| Role in trial | Lead plaintiff; co-founder, OpenAI |
-| Affiliation | Tesla, SpaceX, X (Twitter), xAI, Neuralink, the Boring Company |
-| Born | June 28, 1971 — Pretoria, South Africa |
-| Testifies | Day 1 (Apr 28) – Day 3 (Apr 30); held subject to recall. |
-
-Contents
-
-1. [1Trial role](https://trial.mts.now/character/elon-musk#trial-role)
-2. [2Notable on the stand](https://trial.mts.now/character/elon-musk#notable-on-the-stand)
-3. [3See also](https://trial.mts.now/character/elon-musk#see-also)
-
 **Elon Reeve Musk** is the lead plaintiff in _Musk v. Altman_. The CEO of [Tesla](https://en.wikipedia.org/wiki/Tesla), [SpaceX](https://en.wikipedia.org/wiki/SpaceX), [X](https://en.wikipedia.org/wiki/X_(Twitter)), [Neuralink](https://en.wikipedia.org/wiki/Neuralink) and (since 2023) the founder of competing AI lab **[xAI](https://en.wikipedia.org/wiki/xAI)**, Musk co-founded **[OpenAI](https://en.wikipedia.org/wiki/OpenAI)** in December 2015 alongside [Sam Altman](https://trial.mts.now/character/sam-altman), [Greg Brockman](https://trial.mts.now/character/greg-brockman), [Ilya Sutskever](https://trial.mts.now/character/ilya-sutskever) and others. He served on the OpenAI board until **February 2018** and donated roughly **$38 million** to the original 501(c)(3) over the course of his involvement.
 
 His stated motivation, repeated across days of testimony, was AI safety: he co-founded OpenAI as a non-profit because he believed advanced AI needed to be developed openly and accountably to humanity rather than controlled by any single for-profit company. Beyond his $38M in cash, he provided early compute, helped recruit the founding technical leadership (including [Ilya Sutskever](https://trial.mts.now/character/ilya-sutskever) from [Google](https://en.wikipedia.org/wiki/Google)), and lent the project the credibility of his name during its first three years.
@@ -58,8 +37,3 @@ His testimony covered:
 - [Sam Altman](https://trial.mts.now/character/sam-altman) — defendant; will be examined during OpenAI's defense case.
 - [Larry Page](https://trial.mts.now/character/larry-page) — central figure in the "speciesist" anecdote.
 - [Case overview](https://trial.mts.now/wiki/case-overview)
-
-Categories:
-
-- [Characters](https://trial.mts.now/characters)
-- [Plaintiffs](https://trial.mts.now/characters)

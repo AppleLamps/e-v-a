@@ -7,6 +7,7 @@ import { navigate } from "./router.js";
 let allDocs = [];
 let panel, input, list, prompt;
 let active = -1;
+let lastFocused = null;
 
 export function initSearch(data) {
   allDocs = buildIndex(data);
@@ -23,22 +24,42 @@ export function initSearch(data) {
     if (e.key === "ArrowDown") { e.preventDefault(); move(1); }
     else if (e.key === "ArrowUp") { e.preventDefault(); move(-1); }
     else if (e.key === "Enter") { commit(); }
+    else if (e.key === "Tab") { trapTab(e); }
   });
   input.addEventListener("input", debounce(run, 60));
   // Initial empty state.
-  list.innerHTML = `<div class="search-prompt">Search 13 categories: actors, entities, claims, disputed facts, quotes, timeline events, and 268 docket entries.</div>`;
+  const filingsCount = (data.sources.entries || []).length;
+  list.innerHTML = `<div class="search-prompt">Search across actors, entities, claims, disputed facts, quotes, timeline events, and ${filingsCount} indexed filings.</div>`;
 }
 
 function open() {
+  if (!panel.hidden) return;
+  lastFocused = document.activeElement;
   panel.hidden = false;
+  document.body.classList.add("modal-open");
   setTimeout(() => input.focus(), 20);
   if (input.value) run();
 }
 function close() {
+  if (panel.hidden) return;
   panel.hidden = true;
   input.value = "";
   active = -1;
-  document.getElementById("search-toggle").focus();
+  document.body.classList.remove("modal-open");
+  // Restore focus to whatever opened the dialog (usually the toggle button).
+  const target = (lastFocused && document.contains(lastFocused)) ? lastFocused : document.getElementById("search-toggle");
+  target?.focus();
+  lastFocused = null;
+}
+
+function trapTab(e) {
+  // Search results aren't focusable (they're driven by arrow keys), so the trap
+  // only brackets the two real interactive nodes: the input and the close button.
+  const close = document.getElementById("search-close");
+  const onInput = document.activeElement === input;
+  const onClose = document.activeElement === close;
+  if (e.shiftKey && onInput) { e.preventDefault(); close?.focus(); }
+  else if (!e.shiftKey && onClose) { e.preventDefault(); input.focus(); }
 }
 
 function isTyping(t) {

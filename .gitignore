@@ -1,16 +1,21 @@
 # --- Heavy / regenerable inputs ----------------------------------------
-# Raw PDFs (~114 MB) — regenerate from sources/ via scripts/download-pdfs.mjs
+# Raw PDFs (~310 MB) — regenerate from sources/ via scripts/download-pdfs.mjs
 court-case-pdf/*.pdf
 court-case-pdf/*.part
 
-# Raw HTML inputs from CourtListener (~3 MB) — only needed when re-scraping
+# Raw HTML inputs from CourtListener (~8 MB) — only needed when re-scraping
 sources/
 
 # Run logs — local debugging only
 logs/
+*.log
 
 # Backup of pre-stripped wiki scrapes — redundant with case-files/
 case-files-backup/
+
+# Failure logs written by scripts/download-pdfs.mjs and scripts/extract-pdfs.mjs
+download-failures.log
+extract-failures.log
 
 # --- Local / OS / editor junk -----------------------------------------
 .DS_Store
@@ -21,6 +26,9 @@ desktop.ini
 .idea/
 *.swp
 *.swo
+*.tmp
+*.temp
+*.bak
 
 # Node
 node_modules/
@@ -39,3 +47,9 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+
+# Claude / IDE assistant scratch
+.claude/
+
+# Vercel build output (when site/ is deployed)
+site/.vercel/

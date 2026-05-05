@@ -9,9 +9,11 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const PDF_DIR = path.join(ROOT, 'court-case-pdf');
-const PAGES = ['page1.html', 'page2.html']
-  .map(p => path.join(ROOT, 'sources', p))
-  .filter(p => fs.existsSync(p));
+// Glob sources/page*.html so new pages are picked up automatically.
+const PAGES = fs.readdirSync(path.join(ROOT, 'sources'))
+  .filter(f => /^page\d+\.html$/i.test(f))
+  .sort((a, b) => parseInt(a.match(/\d+/)[0], 10) - parseInt(b.match(/\d+/)[0], 10))
+  .map(f => path.join(ROOT, 'sources', f));
 
 // Find every `id="entry-N"` marker and slice each entry from one marker to the next.
 const entryMarkerRe = /id="entry-(\d+)"/gi;

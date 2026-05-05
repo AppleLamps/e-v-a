@@ -43,6 +43,7 @@
     "role_in_case": "Plaintiffs allege his September 21, 2017 email — 'i remain enthusiastic about the non-profit structure!' — was a knowingly false reaffirmation made specifically to keep Musk's funding flowing while planning the for-profit pivot. Defense frames the 2017 reaffirmation as truthful and the subsequent capped-profit structure as a necessary, mission-aligned response to compute capital needs.",
     "position_shifts": [
       { "when": "May 2015", "text": "Pitched Musk on a nonprofit 'Manhattan Project for AI' where 'the tech belongs to the world via some sort of nonprofit'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 1", "filename": "gov.uscourts.cand.433688.32.1.md" }] },
+      { "when": "Aug 2017", "text": "Per PX-350 (Birchall→Musk, Aug 18, 2017), Altman gave Brockman a percentage stake in the LLC holding Altman's family-office assets — a stake Altman equated to ~$10M — to compensate Brockman 'on the other side'. Birchall: 'naturally, Greg is going to have greater allegiance towards Sam, as a result of this arrangement.' Disclosed at trial Day 6.", "citations": [{ "trial": "050426TT.txt", "line": 5580, "snippet": "naturally, Greg is going to have greater allegiance towards Sam" }] },
       { "when": "Sep 21, 2017", "text": "Following Musk's ultimatum: 'i remain enthusiastic about the non-profit structure!'", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13", "filename": "gov.uscourts.cand.433688.32.13.md" }] },
       { "when": "Mar 2019", "text": "Public blog post launching OpenAI LP; described investors as 'clear that they should never expect a profit'.", "citations": [{ "docket": "327", "page": 8, "title": "OpenAI MSJ", "filename": "gov.uscourts.cand.433688.327.0_5.md" }] }
     ],
@@ -63,20 +64,27 @@
     "role": "OpenAI President & co-founder; defendant",
     "side": "defendant",
     "roles": ["Co-founder", "Defendant", "Witness"],
-    "tags": ["Defendant", "President"],
-    "summary": "Co-founder; OpenAI President; named defendant on the surviving fiduciary-duty and contract claims. Plaintiffs allege Brockman, with Sutskever, raised concerns to Musk in September 2017 about Musk having 'unilateral absolute control over the AGI', and that Brockman privately characterized the nonprofit framing as a way to 'bootstrap' the institution.",
-    "bio": "Former Stripe CTO; left to join OpenAI in 2015. Plaintiffs single out his November 22, 2015 email — describing OpenAI's nonprofit positioning as 'the best way to bootstrap ourselves into being a leading research institution' — as evidence of strategic intent. On the trial schedule for plaintiffs' case-in-chief, week 2.",
+    "tags": ["Defendant", "President", "Trial witness"],
+    "summary": "Co-founder; OpenAI President; named defendant on the surviving fiduciary-duty and contract claims. Took the stand on May 4, 2026 (Day 6) for adverse direct by plaintiffs' counsel Robert Kry — first testimony under oath in this case. Cross drew out a ~$30B equity stake (paid in $0); a $10M side-payment from Altman in 2017 hidden from Musk; undisclosed Cerebras ownership during 2017 merger talks; and a roster of ongoing self-dealing positions (Stripe, CoreWeave, Helion) that are now OpenAI counterparties.",
+    "bio": "Former Stripe CTO; left to join OpenAI in 2015. Plaintiffs single out his November 22, 2015 email — describing OpenAI's nonprofit positioning as 'the best way to bootstrap ourselves into being a leading research institution' — as evidence of strategic intent. Adverse direct began May 4, 2026; friendly examination by Steven Molo began late the same day and continues into Week 2.",
+    "role_in_case": "Trial cross has been the case's highest-stakes single witness day so far. Brockman conceded that his ~$30B OpenAI equity was acquired for $0 (050426TT.txt:2958, 3008); was confronted with PX-350 (Birchall→Musk, Aug 2017) describing a $10M side-stake Altman gave Brockman from his family-office LLC, with Musk forwarding the email to Brockman with only '??' (050426TT.txt:5580, 5626); and was read his own Nov 6, 2017 journal (PX-161) in which he wrote it would 'partially be wrong to steal the nonprofit from him. To convert to B Corp without him. They'd be pretty morally bankrupt' (050426TT.txt:7206). Brockman's response: 'I think I meant it would actually serve the mission but it'd be hard to look at yourself in the mirror' (050426TT.txt:7240). Asked whether OpenAI had retained 'the moral high ground' given his stake, he answered 'I believe we have maintained a moral high ground' (050426TT.txt:7018).",
     "position_shifts": [
       { "when": "Nov 22, 2015", "text": "Wrote that the nonprofit posture was 'the best way to bootstrap ourselves into being a leading research institution'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 3", "filename": "gov.uscourts.cand.433688.32.3.md" }] },
-      { "when": "Sep 20, 2017", "text": "Joined Sutskever in raising 'highest stakes conversation' concerns about Musk's would-be 'unilateral absolute control over the AGI'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13", "filename": "gov.uscourts.cand.433688.32.13.md" }] }
+      { "when": "Sep 20, 2017", "text": "Joined Sutskever in raising 'highest stakes conversation' concerns about Musk's would-be 'unilateral absolute control over the AGI'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13", "filename": "gov.uscourts.cand.433688.32.13.md" }] },
+      { "when": "Nov 6, 2017", "text": "Personal journal (PX-161) on the for-profit conversion: 'it'd partially be wrong to steal the nonprofit from him. To convert to B Corp without him. They'd be pretty morally bankrupt. And he's really not an idiot.'", "citations": [{ "trial": "050426TT.txt", "line": 7206, "snippet": "morally bankrupt. And he's really not an idiot." }] },
+      { "when": "May 4, 2026", "text": "On adverse direct: characterizes the same conversion as having 'maintained a moral high ground'.", "citations": [{ "trial": "050426TT.txt", "line": 7018, "snippet": "I believe we have maintained a moral high ground." }], "contradicts": true }
     ],
     "attributes": [
       ["Title", "President, OpenAI"],
-      ["Plaintiffs' framing", "Contributed 'zero' financial capital to the nonprofit but holds significant equity in the for-profit"]
+      ["OpenAI equity stake", "~$30B at current valuation, acquired for $0 (050426TT.txt:2958, 3008)"],
+      ["Plaintiffs' framing", "Contributed 'zero' financial capital to the nonprofit but holds significant equity in the for-profit"],
+      ["Disclosed conflicts (PX-390)", "Stripe equity ~$471M + $60M/3-yr OpenAI–Stripe payment-processing deal; CoreWeave equity (~$750K) and ~$22.4B in 2025 OpenAI–CoreWeave deals; Cerebras equity acquired Mar 17, 2017 (undisclosed during 2017 merger talks); Helion ties (Altman holds up to ~$1.5B; OpenAI signed a May 2024 scaled-deployment agreement and a Mar 2026 power-purchase deal)"],
+      ["Trial day", "Day 6 (May 4, 2026): adverse direct by Kry; friendly examination by Molo begins late session"]
     ],
     "connections": [
-      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Co-founder; co-defendant" },
-      { "actor_id": "ilya-sutskever", "actor_name": "Ilya Sutskever", "relation": "Co-founder; co-author of Sept 20, 2017 email" }
+      { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Co-founder; co-defendant; trial testimony establishes a $10M side-payment from Altman to Brockman in 2017 (PX-350) hidden from Musk" },
+      { "actor_id": "ilya-sutskever", "actor_name": "Ilya Sutskever", "relation": "Co-founder; co-author of Sept 20, 2017 email" },
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Estranged co-founder; PX-350 documents Musk forwarding the Birchall side-pay email to Brockman with only '??' (050426TT.txt:5626)" }
     ]
   },
   {
@@ -346,9 +354,9 @@
     "name": "Stuart Russell",
     "side": "plaintiff",
     "role": "Plaintiffs' AI-safety expert (UC Berkeley)",
-    "roles": ["Expert"],
-    "tags": ["Plaintiffs' expert"],
-    "summary": "Plaintiffs' expert witness; the court excluded extinction-risk testimony from his trial scope (043026TT.txt:712). Scheduled to testify in plaintiffs' Week-2 case."
+    "roles": ["Expert", "Witness"],
+    "tags": ["Plaintiffs' expert", "Trial witness"],
+    "summary": "Plaintiffs' AI-safety expert; the court excluded extinction-risk testimony from his trial scope (043026TT.txt:712). Testified Day 6 (May 4, 2026); cross by Frentzen drew out he had never previously testified as an expert and was unaware that ARI (where he advises) had campaigned to make Musk Trump's AI advisor (050426TT.txt:194, 2310–2344)."
   },
   {
     "id": "david-schizer",

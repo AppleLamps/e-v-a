@@ -5,36 +5,6 @@ title: "Key Themes — MTS Trial Wiki"
 
 # Key Themes
 
-From the MTS Trial Wiki, a project documenting Musk v. Altman.
-
-Contents
-
-01. [1Plaintiffs' framing](https://trial.mts.now/wiki/key-themes#plaintiffs-framing)
-02. [1.1"Stole a charity"](https://trial.mts.now/wiki/key-themes#stole-a-charity)
-03. [1.2Musk's "three phases"](https://trial.mts.now/wiki/key-themes#musk-s-three-phases)
-04. [1.3"I was a fool"](https://trial.mts.now/wiki/key-themes#i-was-a-fool)
-05. [1.4Greg Brockman's contributions ("zero")](https://trial.mts.now/wiki/key-themes#greg-brockman-s-contributions-zero)
-06. [2Defense's framing](https://trial.mts.now/wiki/key-themes#defense-s-framing)
-07. [2.1"Pageant of hypocrisy" / Tale of two Elons](https://trial.mts.now/wiki/key-themes#pageant-of-hypocrisy-tale-of-two-elons)
-08. [2.2The $1B / $38M gap](https://trial.mts.now/wiki/key-themes#the-1b-38m-gap)
-09. [2.3"Unequivocal control" (the 2017 negotiation breakdown)](https://trial.mts.now/wiki/key-themes#unequivocal-control-the-2017-negotiation-breakdown)
-10. [2.4Tesla / xAI as Musk's own AGI play (the parallel)](https://trial.mts.now/wiki/key-themes#tesla-xai-as-musk-s-own-agi-play-the-parallel)
-11. [2.5The 2018 "purple box" term sheet](https://trial.mts.now/wiki/key-themes#the-2018-purple-box-term-sheet)
-12. [2.6The "donor-advised funds" / tax-deduction wrinkle](https://trial.mts.now/wiki/key-themes#the-donor-advised-funds-tax-deduction-wrinkle)
-13. [3Mission and meaning](https://trial.mts.now/wiki/key-themes#mission-and-meaning)
-14. [3.1AGI safety as the original purpose](https://trial.mts.now/wiki/key-themes#agi-safety-as-the-original-purpose)
-15. [3.2The "OPEN" in OpenAI](https://trial.mts.now/wiki/key-themes#the-open-in-openai)
-16. [4The Microsoft thread](https://trial.mts.now/wiki/key-themes#the-microsoft-thread)
-17. [4.1"Captured by Microsoft" (statute-of-limitations fight)](https://trial.mts.now/wiki/key-themes#captured-by-microsoft-statute-of-limitations-fight)
-18. [4.2The November 2023 Altman firing & Microsoft's reaction](https://trial.mts.now/wiki/key-themes#the-november-2023-altman-firing-microsoft-s-reaction)
-19. [5Evidence battles](https://trial.mts.now/wiki/key-themes#evidence-battles)
-20. [5.1The February 2025 $97.4B xAI bid for OpenAI's assets](https://trial.mts.now/wiki/key-themes#the-february-2025-97-4b-xai-bid-for-openai-s-assets)
-21. [5.2The Pioneer Building](https://trial.mts.now/wiki/key-themes#the-pioneer-building)
-22. [6From the bench](https://trial.mts.now/wiki/key-themes#from-the-bench)
-23. [6.1The judge's framing — what this case actually is](https://trial.mts.now/wiki/key-themes#the-judge-s-framing-what-this-case-actually-is)
-
-# Key Themes
-
 The narratives both sides keep returning to. Each section links to the underlying quotes in the [daily digests](https://trial.mts.now/wiki/timeline).
 
 * * *
@@ -254,7 +224,3 @@ The San Francisco office Musk leased for OpenAI — and the central piece of evi
 - "There is no separate cause of action for unjust enrichment. The only thing you find in California law is **a claim of restitution under a theory of unjust enrichment**." `(050126TT.txt:1473)`
 - "Mr. Musk's notion that somehow he wants something different, I don't know that he can do that because it's a claim for restitution. And the elements of restitution say that **it goes back to the plaintiff**." `(050126TT.txt:1446)`
 - The unspoken implication: even if plaintiffs win on liability, the $38M may go back to Musk personally — not to a "restored" charity.
-
-Categories:
-
-- [Wiki pages](https://trial.mts.now/)

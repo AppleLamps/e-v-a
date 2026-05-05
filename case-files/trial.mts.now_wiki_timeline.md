@@ -5,25 +5,6 @@ title: "Trial Timeline — MTS Trial Wiki"
 
 # Trial Timeline
 
-From the MTS Trial Wiki, a project documenting Musk v. Altman.
-
-Contents
-
-01. [1Week 1](https://trial.mts.now/wiki/timeline#week-1)
-02. [1.1Day 1 — Mon, Apr 27, 2026](https://trial.mts.now/wiki/timeline#day-1-mon-apr-27-2026)
-03. [1.2Day 2 — Tue, Apr 28, 2026 — \[digest\](quotes/day2\_2026-04-28.md)](https://trial.mts.now/wiki/timeline#day-2-tue-apr-28-2026-digest)
-04. [1.3Day 3 — Wed, Apr 29, 2026 — \[digest\](quotes/day3\_2026-04-29.md)](https://trial.mts.now/wiki/timeline#day-3-wed-apr-29-2026-digest)
-05. [1.4Day 4 — Thu, Apr 30, 2026 — \[digest\](quotes/day4\_2026-04-30.md)](https://trial.mts.now/wiki/timeline#day-4-thu-apr-30-2026-digest)
-06. [1.5Day 5 — Fri, May 1, 2026 — \[digest\](quotes/day5\_2026-05-01.md)](https://trial.mts.now/wiki/timeline#day-5-fri-may-1-2026-digest)
-07. [2Week 2 (anticipated)](https://trial.mts.now/wiki/timeline#week-2-anticipated)
-08. [2.1Mon May 4](https://trial.mts.now/wiki/timeline#mon-may-4)
-09. [2.2Tue May 5](https://trial.mts.now/wiki/timeline#tue-may-5)
-10. [2.3Later in week 2](https://trial.mts.now/wiki/timeline#later-in-week-2)
-11. [3Defense case (no firm dates)](https://trial.mts.now/wiki/timeline#defense-case-no-firm-dates)
-12. [4Closings & deliberation](https://trial.mts.now/wiki/timeline#closings-deliberation)
-
-# Trial Timeline
-
 A day-by-day index. Each row links to a full digest with verbatim quotes and citation lines.
 
 ## Week 1
@@ -102,7 +83,3 @@ A day-by-day index. Each row links to a full digest with verbatim quotes and cit
 
 - Plaintiffs 90 min, OpenAI 90 min, Microsoft 30 min. `(042826TT.txt:6206)`
 - Trial expected to wrap mid-May.
-
-Categories:
-
-- [Wiki pages](https://trial.mts.now/)

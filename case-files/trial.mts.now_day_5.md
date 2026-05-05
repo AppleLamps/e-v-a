@@ -5,30 +5,6 @@ title: "Day 5 - May 1, 2026 (Friday) — MTS Trial Wiki"
 
 # Day 5 - May 1, 2026 (Friday)
 
-Trial date 2026-05-01.
-
-Contents
-
-01. [11\. Summary](https://trial.mts.now/day/5#1-summary)
-02. [22\. Birchall testimony highlights](https://trial.mts.now/day/5#2-birchall-testimony-highlights)
-03. [33\. Shivon Zilis testimony](https://trial.mts.now/day/5#3-shivon-zilis-testimony)
-04. [44\. Other witnesses](https://trial.mts.now/day/5#4-other-witnesses)
-05. [55\. Notable judicial / procedural moments](https://trial.mts.now/day/5#5-notable-judicial-procedural-moments)
-06. [5.1Granting the motion to strike Birchall's "bid" testimony](https://trial.mts.now/day/5#granting-the-motion-to-strike-birchall-s-bid-testimony)
-07. [5.2Dressing down Marc Toberoff](https://trial.mts.now/day/5#dressing-down-marc-toberoff)
-08. [5.3Solicitation / membership exception ruling](https://trial.mts.now/day/5#solicitation-membership-exception-ruling)
-09. [5.4Pushing back on Kry's restitution / unjust enrichment theory](https://trial.mts.now/day/5#pushing-back-on-kry-s-restitution-unjust-enrichment-theory)
-10. [5.5Statute of limitations / discovery rule (\*Fox v. Ethicon\*)](https://trial.mts.now/day/5#statute-of-limitations-discovery-rule-fox-v-ethicon)
-11. [5.6Loss-of-evidence / "I don't remember"](https://trial.mts.now/day/5#loss-of-evidence-i-don-t-remember)
-12. [5.7Public livestream — audio-only](https://trial.mts.now/day/5#public-livestream-audio-only)
-13. [5.8Acknowledging public interest](https://trial.mts.now/day/5#acknowledging-public-interest)
-14. [5.9Wu (Microsoft 30(b)(6)) declaration / limiting instruction](https://trial.mts.now/day/5#wu-microsoft-30-b-6-declaration-limiting-instruction)
-15. [66\. Documents / exhibits referenced](https://trial.mts.now/day/5#6-documents-exhibits-referenced)
-16. [77\. Memorable one-liners / heated moments](https://trial.mts.now/day/5#7-memorable-one-liners-heated-moments)
-17. [88\. What's set up for next week](https://trial.mts.now/day/5#8-what-s-set-up-for-next-week)
-
-# Day 5 - May 1, 2026 (Friday)
-
 **Case:** _Musk et al. v. Altman et al._, 4:24-CV-04722 YGR (N.D. Cal. — Judge Yvonne Gonzalez Rogers) **Volume 5 — Pages 893–953 (~60 pages, 2,185 lines)** **Court convened: 9:59 a.m. — adjourned: 11:24 a.m.**
 
 * * *
@@ -260,8 +236,3 @@ The court agreed to give a limiting instruction phrased "ALL DEFENDANTS OTHER TH
 * * *
 
 _End of Day 5 digest._
-
-Categories:
-
-- [Daily transcripts](https://trial.mts.now/)
-- [Timeline](https://trial.mts.now/wiki/timeline)

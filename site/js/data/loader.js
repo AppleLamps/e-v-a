@@ -16,6 +16,7 @@ export async function loadAll() {
     await Promise.all(FILES.map(fetchJson));
   // Build O(1) indexes used across views.
   const byId = (arr) => Object.fromEntries(arr.map(x => [x.id, x]));
+  const byDocket = (arr) => Object.fromEntries(arr.map(x => [String(x.docket), x]));
   return {
     meta,
     actors,
@@ -31,7 +32,7 @@ export async function loadAll() {
       actor: byId(actors),
       entity: byId(entities),
       claim: byId(claims),
-      source: byId(sources.entries),
+      source: byDocket(sources.entries),
       timeline: byId(timeline)
     }
   };
@@ -51,9 +52,15 @@ export function lookupSource(data, ref) {
       filename: null
     };
   }
-  const m = ref.match(/^#?(\d+)/);
+  // Capture exhibit-style ids in either hyphen ("32-1") or dot ("32.1") form, plus
+  // bare dockets ("163"). A trailing "-Page-7" / ".0" form falls back to the bare docket
+  // because the exhibit key won't match.
+  const m = ref.match(/^#?(\d+)(?:[-.](\d+))?/);
   if (!m) return null;
-  const n = m[1];
-  const src = data.indexes.source[n];
-  return src || { kind: "court", docket: n, label: `Dkt #${n}`, filename: null };
+  const base = m[1];
+  const exhibit = m[2];
+  const key = exhibit ? `${base}-${exhibit}` : base;
+  let src = data.indexes.source[key];
+  if (!src && exhibit) src = data.indexes.source[base];
+  return src || { kind: "court", docket: key, label: `Dkt #${key}`, filename: null };
 }

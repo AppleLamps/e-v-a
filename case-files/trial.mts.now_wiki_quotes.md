@@ -5,70 +5,6 @@ title: "Quotes — MTS Trial Wiki"
 
 # Quotes
 
-From the MTS Trial Wiki, a project documenting Musk v. Altman.
-
-Contents
-
-01. [1Musk's stories](https://trial.mts.now/wiki/quotes#musk-s-stories)
-02. [1.1The Larry Page warning](https://trial.mts.now/wiki/quotes#the-larry-page-warning)
-03. [1.2Musk on his own arc](https://trial.mts.now/wiki/quotes#musk-on-his-own-arc)
-04. [1.3Musk on AI risk, in his own words](https://trial.mts.now/wiki/quotes#musk-on-ai-risk-in-his-own-words)
-05. [1.4Musk's early AI warnings — the Obama meeting](https://trial.mts.now/wiki/quotes#musk-s-early-ai-warnings-the-obama-meeting)
-06. [1.5Musk on the founding lore](https://trial.mts.now/wiki/quotes#musk-on-the-founding-lore)
-07. [1.6Musk on intentions and trust](https://trial.mts.now/wiki/quotes#musk-on-intentions-and-trust)
-08. [2"Stole a charity"](https://trial.mts.now/wiki/quotes#stole-a-charity)
-09. [2.1Musk's "stole a charity" refrain](https://trial.mts.now/wiki/quotes#musk-s-stole-a-charity-refrain)
-10. [2.2Three phases & the stolen-car analogy](https://trial.mts.now/wiki/quotes#three-phases-the-stolen-car-analogy)
-11. [2.3Musk on his $38 million](https://trial.mts.now/wiki/quotes#musk-on-his-38-million)
-12. [2.4"Felt like a bribe"](https://trial.mts.now/wiki/quotes#felt-like-a-bribe)
-13. [2.5Musk on his $38M and the Tesla gifts](https://trial.mts.now/wiki/quotes#musk-on-his-38m-and-the-tesla-gifts)
-14. [2.6Musk on OpenAI's removed profit cap](https://trial.mts.now/wiki/quotes#musk-on-openai-s-removed-profit-cap)
-15. [3Cross-examination of Musk](https://trial.mts.now/wiki/quotes#cross-examination-of-musk)
-16. [3.1Musk on cross](https://trial.mts.now/wiki/quotes#musk-on-cross)
-17. [3.2OpenAI's internal safety processes](https://trial.mts.now/wiki/quotes#openai-s-internal-safety-processes)
-18. [3.3The "did you donate $100M?" beat](https://trial.mts.now/wiki/quotes#the-did-you-donate-100m-beat)
-19. [3.4Musk on the 2017 negotiation](https://trial.mts.now/wiki/quotes#musk-on-the-2017-negotiation)
-20. [3.5Musk on for-profit ownership in his own world](https://trial.mts.now/wiki/quotes#musk-on-for-profit-ownership-in-his-own-world)
-21. [3.6Musk on the "free world" of poaching](https://trial.mts.now/wiki/quotes#musk-on-the-free-world-of-poaching)
-22. [3.7The "OK by me" moment](https://trial.mts.now/wiki/quotes#the-ok-by-me-moment)
-23. [3.8The "last penny" moment](https://trial.mts.now/wiki/quotes#the-last-penny-moment)
-24. [3.9"Broke the deal" / "uncomfortable" tug-of-war](https://trial.mts.now/wiki/quotes#broke-the-deal-uncomfortable-tug-of-war)
-25. [3.10Musk on Tesla "AI robot army"](https://trial.mts.now/wiki/quotes#musk-on-tesla-ai-robot-army)
-26. [3.11The Sept. 22, 2020 GPT-3 license tweet](https://trial.mts.now/wiki/quotes#the-sept-22-2020-gpt-3-license-tweet)
-27. [3.12Sequestration on cross-examination](https://trial.mts.now/wiki/quotes#sequestration-on-cross-examination)
-28. [4Microsoft, Nadella, and xAI](https://trial.mts.now/wiki/quotes#microsoft-nadella-and-xai)
-29. [4.1Musk on Nadella](https://trial.mts.now/wiki/quotes#musk-on-nadella)
-30. [4.2Musk on xAI](https://trial.mts.now/wiki/quotes#musk-on-xai)
-31. [4.3Musk on the "spite" of Altman's apology tour](https://trial.mts.now/wiki/quotes#musk-on-the-spite-of-altman-s-apology-tour)
-32. [5Birchall on the stand](https://trial.mts.now/wiki/quotes#birchall-on-the-stand)
-33. [5.1Birchall on cross-examination](https://trial.mts.now/wiki/quotes#birchall-on-cross-examination)
-34. [6From the bench](https://trial.mts.now/wiki/quotes#from-the-bench)
-35. [6.1The judge keeps order](https://trial.mts.now/wiki/quotes#the-judge-keeps-order)
-36. [6.2"Law 101"](https://trial.mts.now/wiki/quotes#law-101)
-37. [6.3The bench's running comedy](https://trial.mts.now/wiki/quotes#the-bench-s-running-comedy)
-38. [6.4The Musk-at-the-lectern Twitter colloquy](https://trial.mts.now/wiki/quotes#the-musk-at-the-lectern-twitter-colloquy)
-39. [6.5The OpenAI trademark shot](https://trial.mts.now/wiki/quotes#the-openai-trademark-shot)
-40. [6.6The "stop leading" trilogy](https://trial.mts.now/wiki/quotes#the-stop-leading-trilogy)
-41. [6.7The photographer crackdown](https://trial.mts.now/wiki/quotes#the-photographer-crackdown)
-42. [6.8Day-5 sanctions — the bench addresses plaintiffs' counsel](https://trial.mts.now/wiki/quotes#day-5-sanctions-the-bench-addresses-plaintiffs-counsel)
-43. [6.9The judge defining the case](https://trial.mts.now/wiki/quotes#the-judge-defining-the-case)
-44. [6.10Procedural rulings from the bench](https://trial.mts.now/wiki/quotes#procedural-rulings-from-the-bench)
-45. [6.11The "I don't remember" beat](https://trial.mts.now/wiki/quotes#the-i-don-t-remember-beat)
-46. [6.12The audio livestream](https://trial.mts.now/wiki/quotes#the-audio-livestream)
-47. [6.13End-of-day jury admonitions](https://trial.mts.now/wiki/quotes#end-of-day-jury-admonitions)
-48. [6.14The Court on restitution (Day 5)](https://trial.mts.now/wiki/quotes#the-court-on-restitution-day-5)
-49. [6.15Day-5 colloquy on the unjust-enrichment knowledge standard](https://trial.mts.now/wiki/quotes#day-5-colloquy-on-the-unjust-enrichment-knowledge-standard)
-50. [7Counsel — openings & set pieces](https://trial.mts.now/wiki/quotes#counsel-openings-set-pieces)
-51. [7.1Defense set pieces — Savitt's openings](https://trial.mts.now/wiki/quotes#defense-set-pieces-savitt-s-openings)
-52. [7.2Microsoft's quieter shots](https://trial.mts.now/wiki/quotes#microsoft-s-quieter-shots)
-53. [7.3Plaintiffs' set pieces — Molo's openings](https://trial.mts.now/wiki/quotes#plaintiffs-set-pieces-molo-s-openings)
-54. [7.4Witness lineup — the "mental lapse" moment](https://trial.mts.now/wiki/quotes#witness-lineup-the-mental-lapse-moment)
-55. [7.5"Mr. Molo is a terrific lawyer"](https://trial.mts.now/wiki/quotes#mr-molo-is-a-terrific-lawyer)
-56. [7.6Closing argument time allocation](https://trial.mts.now/wiki/quotes#closing-argument-time-allocation)
-57. [8Email gems & exhibits](https://trial.mts.now/wiki/quotes#email-gems-exhibits)
-
-# Quotes
-
 The most vivid, memorable, and quotable lines from the _Musk v. Altman_ trial — from every party, witness, and the bench. Verbatim with citations to the daily transcripts in `wiki/extracted/`.
 
 The wiki takes no position on the merits; the trial will decide those. The point of this page is to preserve the courtroom's voice.
@@ -760,8 +696,3 @@ Read into the record from exhibits:
 * * *
 
 _If anything in here is wrong or out of context, the citation will take you straight to the line in the underlying transcript. Verify and yell at us._
-
-Categories:
-
-- [Wiki pages](https://trial.mts.now/)
-- [Quotes](https://trial.mts.now/wiki/quotes)

@@ -3,21 +3,6 @@ url: "https://trial.mts.now/character/yvonne-gonzalez-rogers"
 title: "Hon. Yvonne Gonzalez Rogers — MTS Trial Wiki"
 ---
 
-# Hon. Yvonne Gonzalez Rogers
-
-From the MTS Trial Wiki — U.S. District Judge, presiding.
-
-Hon. Yvonne Gonzalez Rogers
-
-U.S. District Judge, presiding
-
-![Hon. Yvonne Gonzalez Rogers](https://trial.mts.now/images/characters/yvonne-gonzalez-rogers.jpg)Official portrait via U.S. Courts.
-
-| Role in trial | U.S. District Judge, presiding |
-| Affiliation | U.S. District Court, Northern District of California |
-| Born | October 23, 1965 — Houston, Texas |
-| Testifies | Presiding judge. |
-
 **The Honorable Yvonne Gonzalez Rogers** is the United States District Judge presiding over _Musk v. Altman_. Appointed to the bench in 2011, she sits in the **Northern District of California** in Oakland and is best known publicly for presiding over _Epic Games v. Apple_.
 
 In the first four trial days she has not been afraid to admonish counsel on either side:
@@ -31,8 +16,3 @@ In the first four trial days she has not been afraid to admonish counsel on eith
 
 - **Courtroom Deputy:** Mr. Cuenco.
 - **Court Reporter:** Irene L. Rodriguez (CSR 8074).
-
-Categories:
-
-- [Characters](https://trial.mts.now/characters)
-- [The court](https://trial.mts.now/characters)

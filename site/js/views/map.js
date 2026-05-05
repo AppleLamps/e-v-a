@@ -21,8 +21,10 @@ export function renderMap(data, _m, root) {
   const detail = el("div", { class: "map-detail" }, [
     el("p", { class: "empty" }, "Tap a node to see its dossier and edges.")
   ]);
-  board.appendChild(buildSvg(data, detail));
-  board.appendChild(buildControls(board));
+  const svg = buildSvg(data, detail);
+  board.appendChild(svg);
+  const pz = enablePanZoom(svg, 1200, 760);
+  board.appendChild(buildControls(pz));
   wrap.append(board, detail);
   root.append(head, legend, wrap);
 }
@@ -162,7 +164,6 @@ function buildSvg(data, detailEl) {
     gNodes.appendChild(g);
   }
   svg.append(gEdges, gNodes);
-  enablePanZoom(svg, W, H);
   return svg;
 }
 
@@ -197,27 +198,33 @@ function focusNode(n, nodes, edges, gNodes, gEdges, detailEl) {
   `;
 }
 
-function buildControls(board) {
+function buildControls(pz) {
   const wrap = el("div", { class: "map-controls", role: "group", "aria-label": "Map controls" }, [
     el("button", { type: "button", "aria-label": "Zoom in", title: "Zoom in" }, "+"),
     el("button", { type: "button", "aria-label": "Zoom out", title: "Zoom out" }, "−"),
     el("button", { type: "button", "aria-label": "Reset view", title: "Reset" }, "⤾")
   ]);
   const [zin, zout, reset] = wrap.children;
-  zin.addEventListener("click", () => zoom(board, 1.2));
-  zout.addEventListener("click", () => zoom(board, 1/1.2));
-  reset.addEventListener("click", () => resetView(board));
+  zin.addEventListener("click", () => {
+    pz.state.scale = Math.max(0.5, Math.min(4, pz.state.scale * 1.2));
+    pz.apply();
+  });
+  zout.addEventListener("click", () => {
+    pz.state.scale = Math.max(0.5, Math.min(4, pz.state.scale / 1.2));
+    pz.apply();
+  });
+  reset.addEventListener("click", () => {
+    pz.state.scale = 1; pz.state.x = 0; pz.state.y = 0;
+    pz.apply();
+  });
   return wrap;
 }
-
-let panZoomState = new WeakMap();
 
 function enablePanZoom(svg, W, H) {
   const state = { x: 0, y: 0, scale: 1 };
   const apply = () => {
     svg.setAttribute("viewBox", `${-state.x} ${-state.y} ${W / state.scale} ${H / state.scale}`);
   };
-  panZoomState.set(svg.parentElement || svg, { state, apply, W, H });
   apply();
   let dragging = false, sx = 0, sy = 0, ox = 0, oy = 0;
   function down(e) {
@@ -261,19 +268,7 @@ function enablePanZoom(svg, W, H) {
     }
   }, { passive: true });
   svg.addEventListener("touchend", (e) => { if (e.touches.length < 2) pinch = null; });
+  return { state, apply, W, H };
 }
 function dist(a, b) { return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); }
 function pointer(e, svg) { const r = svg.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
-
-function zoom(board, factor) {
-  const pz = panZoomState.get(board);
-  if (!pz) return;
-  pz.state.scale = Math.max(0.5, Math.min(4, pz.state.scale * factor));
-  pz.apply();
-}
-function resetView(board) {
-  const pz = panZoomState.get(board);
-  if (!pz) return;
-  pz.state.scale = 1; pz.state.x = 0; pz.state.y = 0;
-  pz.apply();
-}

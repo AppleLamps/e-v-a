@@ -63,7 +63,7 @@ export function renderHome(data, _m, root) {
     el("div", { class: "posture-grid" }, [
       stat(meta.docket_entries, "Docket entries", "From the filed complaint through the most recent entry in the archive."),
       stat(meta.filings_extracted, "Filings extracted", "Court PDFs converted to markdown for line-level citation."),
-      stat(meta.live_claims, "Live claims at trial", "Of 26 originally pleaded; only the charitable-trust theory and restitution survive."),
+      stat(meta.live_claims, "Live claims at trial", "After the Jan 15, 2026 MSJ ruling: charitable trust, fraud, constructive fraud, and unjust enrichment vs. OpenAI; aiding and abetting fiduciary breach vs. Microsoft."),
       stat(meta.counterclaims, "Live counterclaims", "OpenAI's UCL and tortious-interference theories tied to the February 2025 LOI."),
       stat(meta.named_defendants, "Named defendants", "Including a layered web of nonprofit, capped-profit, holding, and SPV entities."),
       stat(meta.named_actors, "Named actors", "Founders, board members, executives, attorneys, and witnesses on the record.")

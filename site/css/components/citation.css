@@ -1,6 +1,11 @@
 /* Inline citation chips and popover */
 
 .cite {
+  /* Button reset — chips render identically as <button> or legacy <a>. */
+  appearance: none;
+  font: inherit;
+  color: inherit;
+
   display: inline-flex;
   align-items: baseline;
   gap: 0.18rem;

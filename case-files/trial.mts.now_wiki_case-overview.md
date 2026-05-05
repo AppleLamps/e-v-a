@@ -5,21 +5,6 @@ title: "Case Overview — MTS Trial Wiki"
 
 # Case Overview
 
-From the MTS Trial Wiki, a project documenting Musk v. Altman.
-
-Contents
-
-1. [1Court filing](https://trial.mts.now/wiki/case-overview#court-filing)
-2. [2What the trial is about](https://trial.mts.now/wiki/case-overview#what-the-trial-is-about)
-3. [3What plaintiffs want](https://trial.mts.now/wiki/case-overview#what-plaintiffs-want)
-4. [4The defense theories](https://trial.mts.now/wiki/case-overview#the-defense-theories)
-5. [5Stakes](https://trial.mts.now/wiki/case-overview#stakes)
-6. [6What this trial is NOT about (per court rulings)](https://trial.mts.now/wiki/case-overview#what-this-trial-is-not-about-per-court-rulings)
-7. [7Key legal sub-issues being briefed](https://trial.mts.now/wiki/case-overview#key-legal-sub-issues-being-briefed)
-8. [8Schedule and procedural milestones](https://trial.mts.now/wiki/case-overview#schedule-and-procedural-milestones)
-
-# Case Overview
-
 ## Court filing
 
 _Elon Musk, et al., v. Samuel Altman, et al._ United States District Court, Northern District of California, Oakland Division. Case No. **4:24-CV-04722 YGR**. Before the Hon. **Yvonne Gonzalez Rogers**, U.S. District Judge. Nine-person jury; trial expected to last roughly four weeks. Filed by Musk in 2024.
@@ -82,7 +67,3 @@ Plaintiffs also pursue an alternative **Cal. Bus. & Prof. Code § 17510.6 / .8 c
 - Charging conference Friday May 8 (originally May 1; now slipped).
 
 See [timeline](https://trial.mts.now/wiki/timeline) for a day-by-day account.
-
-Categories:
-
-- [Wiki pages](https://trial.mts.now/)

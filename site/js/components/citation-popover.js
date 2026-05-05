@@ -5,6 +5,7 @@ import { escapeHtml } from "../utils/dom.js";
 
 let dataRef = null;
 let pop = null;
+let currentAnchor = null;
 
 export function initCitationPopover(data) {
   dataRef = data;
@@ -13,8 +14,9 @@ export function initCitationPopover(data) {
   document.addEventListener("citation:show", onShow);
   document.addEventListener("click", onDocClick, true);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") hide(); });
-  window.addEventListener("scroll", hide, { passive: true });
-  window.addEventListener("resize", hide, { passive: true });
+  // Reposition while the anchor is still on screen; hide only when it leaves.
+  window.addEventListener("scroll", onScrollOrResize, { passive: true });
+  window.addEventListener("resize", onScrollOrResize, { passive: true });
 }
 
 function onShow(e) {
@@ -23,7 +25,16 @@ function onShow(e) {
   const html = renderRef(ref);
   pop.innerHTML = html;
   pop.hidden = false;
+  currentAnchor = anchor;
   position(anchor);
+}
+
+function onScrollOrResize() {
+  if (pop.hidden || !currentAnchor) return;
+  const r = currentAnchor.getBoundingClientRect();
+  const visible = r.bottom > 0 && r.top < window.innerHeight && r.right > 0 && r.left < window.innerWidth;
+  if (!visible) { hide(); return; }
+  position(currentAnchor);
 }
 
 function position(anchor) {
@@ -53,6 +64,7 @@ function onDocClick(e) {
 
 function hide() {
   if (pop) pop.hidden = true;
+  currentAnchor = null;
 }
 
 function renderRef(ref) {

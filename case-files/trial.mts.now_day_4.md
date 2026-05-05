@@ -5,34 +5,6 @@ title: "Day 4 Trial Digest — April 30, 2026 — MTS Trial Wiki"
 
 # Day 4 Trial Digest — April 30, 2026
 
-Trial date 2026-04-30.
-
-Contents
-
-01. [11\. Summary](https://trial.mts.now/day/4#1-summary)
-02. [22\. Musk Cross-Examination (Resumed) — Highlights](https://trial.mts.now/day/4#2-musk-cross-examination-resumed-highlights)
-03. [33\. Musk Redirect & Recross — Highlights](https://trial.mts.now/day/4#3-musk-redirect-recross-highlights)
-04. [3.1Redirect (MR. MOLO)](https://trial.mts.now/day/4#redirect-mr-molo)
-05. [3.2Recross (MR. SAVITT)](https://trial.mts.now/day/4#recross-mr-savitt)
-06. [44\. Jared Birchall Direct Examination — Highlights](https://trial.mts.now/day/4#4-jared-birchall-direct-examination-highlights)
-07. [55\. Birchall Cross-Examination — Highlights](https://trial.mts.now/day/4#5-birchall-cross-examination-highlights)
-08. [5.1Cross by MR. WILSON (OpenAI)](https://trial.mts.now/day/4#cross-by-mr-wilson-openai)
-09. [5.2Cross by MS. PATEL (Microsoft)](https://trial.mts.now/day/4#cross-by-ms-patel-microsoft)
-10. [5.3Recross / Court inquiry (post-jury)](https://trial.mts.now/day/4#recross-court-inquiry-post-jury)
-11. [66\. Notable Judicial / Procedural Moments](https://trial.mts.now/day/4#6-notable-judicial-procedural-moments)
-12. [6.1Judge Gonzalez Rogers' rulings on Musk's expert (Russell)](https://trial.mts.now/day/4#judge-gonzalez-rogers-rulings-on-musk-s-expert-russell)
-13. [6.2Court control of Musk's witness conduct](https://trial.mts.now/day/4#court-control-of-musk-s-witness-conduct)
-14. [6.3The privilege / discovery confrontation (post-jury, May 1 set for resolution)](https://trial.mts.now/day/4#the-privilege-discovery-confrontation-post-jury-may-1-set-for-resolution)
-15. [6.4Other procedural rulings](https://trial.mts.now/day/4#other-procedural-rulings)
-16. [77\. Documents / Exhibits Referenced](https://trial.mts.now/day/4#7-documents-exhibits-referenced)
-17. [7.1Plaintiffs' Exhibits (PX)](https://trial.mts.now/day/4#plaintiffs-exhibits-px)
-18. [7.2Defendants' (OpenAI) Exhibits (DX)](https://trial.mts.now/day/4#defendants-openai-exhibits-dx)
-19. [7.3Stipulated facts referenced](https://trial.mts.now/day/4#stipulated-facts-referenced)
-20. [88\. Memorable One-Liners / Heated Moments](https://trial.mts.now/day/4#8-memorable-one-liners-heated-moments)
-21. [99\. Loose Ends / Cliffhangers (set up for May 1)](https://trial.mts.now/day/4#9-loose-ends-cliffhangers-set-up-for-may-1)
-
-# Day 4 Trial Digest — April 30, 2026
-
 _Musk v. Altman / OpenAI, N.D. Cal. 4:24-CV-04722-YGR (Hon. Yvonne Gonzalez Rogers)_ _Source: `043026TT.txt` (Volume 4, pages 645-892)_
 
 * * *
@@ -579,8 +551,3 @@ Birchall identified himself as the head of "EXCESSION LLC ... THE FAMILY OFFICE 
 - **The Friday/weekend break.** Trial was adjourned for three days (Day 4 ended Thursday; Court told the jury to come back Monday morning). Court chambers will meet attorneys May 1 at 10:00 a.m. without a jury to dispose of the privilege issue and the strike motion. (043026TT.txt:7099-7100, 7946-7950, 8116-8118)
 
 - **No overflow room May 1**, because the Court "anticipated it being short." (043026TT.txt:8116-8118)
-
-Categories:
-
-- [Daily transcripts](https://trial.mts.now/)
-- [Timeline](https://trial.mts.now/wiki/timeline)
