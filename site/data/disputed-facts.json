@@ -57,12 +57,12 @@
     "summary": "Central to plaintiffs' remaining aiding-and-abetting theory against Microsoft.",
     "status": "disputed",
     "actors": ["satya-nadella", "reid-hoffman", "deannah-templeton"],
-    "plaintiff_position": "Yes. Microsoft holds the exclusive cloud relationship, exclusive licenses to GPT-4 and successors, $13.75B cumulative investment, and used its leverage to force Altman's reinstatement in November 2023. Nadella's quoted statement that Microsoft has 'all the IP rights and all the capability' ('We have the people, the compute, the data, everything') captures the position.",
-    "plaintiff_citations": [{ "docket": "170", "title": "SAC ¶318(k)" }],
+    "plaintiff_position": "Yes. Microsoft holds the exclusive cloud relationship, exclusive licenses to GPT-4 and successors, $13.75B cumulative investment, and used its leverage to force Altman's reinstatement in November 2023. Nadella's quoted statement that Microsoft has 'all the IP rights and all the capability' ('We have the people, the compute, the data, everything') captures the position. Day 7 Wu testimony added that the 2023 JDCA licensed Microsoft all IP and technology except AGI, and that the Watershed MOU would give Microsoft certain product-IP access after a third-party AGI determination.",
+    "plaintiff_citations": [{ "docket": "170", "title": "SAC ¶318(k)" }, { "trial": "050526TT.txt", "line": 10306, "snippet": "licensed them all IP and technology... excluding only AGI" }],
     "defense_position": "No. Microsoft did not receive 'a conventional equity ownership interest' but a capped-return arrangement (Dkt #329 p.10). The 2019 partnership was 'arm's-length negotiations between sophisticated parties'; Microsoft 'remained supportive of its strategic partnership' and has not 'diverted the partnership benefits for its own benefit'.",
     "defense_citations": [{ "docket": "329", "page": 10, "filename": "gov.uscourts.cand.433688.329.0_1.md" }],
-    "record": "Microsoft's MSJ and proposed findings characterize the relationship at length. Plaintiffs' November 2023 evidence remains partly under seal; the public record shows operational entanglement but not a judicial finding that it equals control.",
-    "record_citations": [{ "docket": "329", "page": 10 }, { "docket": "504" }]
+    "record": "Microsoft's MSJ and proposed findings characterize the relationship at length. Plaintiffs' November 2023 evidence remains partly under seal; the public record shows operational entanglement but not a judicial finding that it equals control. Wu's Day 7 deposition sharpened the economic and licensing picture but did not itself resolve the legal control question.",
+    "record_citations": [{ "docket": "329", "page": 10 }, { "docket": "504" }, { "trial": "050526TT.txt", "line": 10252, "snippet": "total target redemption amounts... rounded to $250,000,000,000" }]
   },
   {
     "id": "df-investor-boycott",
@@ -121,12 +121,12 @@
     "summary": "Plaintiffs allege private inurement; defense filings include redactions on equity figures.",
     "status": "unresolved",
     "actors": ["sam-altman", "greg-brockman"],
-    "plaintiff_position": "Yes. The FAC alleges Altman and Brockman received equity in for-profit entities (¶ 374-375). The Birchall trial testimony emphasized that 'Mr. Brockman' contributed 'zero' to the nonprofit but holds equity in the for-profit.",
-    "plaintiff_citations": [{ "trial": "043026TT.txt", "line": 4416 }],
+    "plaintiff_position": "Yes. The FAC alleges Altman and Brockman received equity in for-profit entities (¶ 374-375). Trial testimony emphasized that Brockman contributed 'zero' financial capital to the nonprofit, acquired his for-profit stake for $0, and now holds roughly $30B in OpenAI equity.",
+    "plaintiff_citations": [{ "trial": "043026TT.txt", "line": 4416 }, { "trial": "050426TT.txt", "line": 2958, "snippet": "you invested $0 in order to acquire that interest" }],
     "defense_position": "OpenAI MSJ pages on this are heavily redacted. Defense framing: any executive equity is at the for-profit subsidiary, structured around mission-aligned compensation; no improper inurement to the nonprofit.",
     "defense_citations": [{ "docket": "327", "page": 17 }],
-    "record": "Substantive equity figures and ownership percentages are redacted in the public MSJ filings. Resolution depends on sealed exhibits and trial testimony.",
-    "record_citations": [{ "docket": "327", "page": 17 }]
+    "record": "Substantive equity figures and ownership percentages remain redacted in the public MSJ filings, but Brockman's trial testimony put at least his approximate current stake and $0 acquisition price in front of the jury.",
+    "record_citations": [{ "docket": "327", "page": 17 }, { "trial": "050426TT.txt", "line": 2958 }]
   },
   {
     "id": "df-pioneer-building",
@@ -145,12 +145,12 @@
     "question": "Has the 'capped-profit' structure been removed?",
     "summary": "Plaintiffs cite the 2024–2025 restructuring as completing the conversion.",
     "status": "disputed",
-    "plaintiff_position": "Yes. 'The profit cap has been completely removed, and the clause that has the for-profit dissolving upon discovery of artificial general intelligence has also been removed, which is a very big deal.' (Musk testimony 042826TT.txt:5850) The October 2025 MOU with Microsoft restructures the entity into an uncapped public-benefit corporation.",
-    "plaintiff_citations": [{ "trial": "042826TT.txt", "line": 5850 }, { "docket": "350", "title": "Pls' MSJ Opp. Exs. 65–66" }],
+    "plaintiff_position": "Yes. 'The profit cap has been completely removed, and the clause that has the for-profit dissolving upon discovery of artificial general intelligence has also been removed, which is a very big deal.' (Musk testimony 042826TT.txt:5850) Day 7 Wu testimony said OpenAI's mission strategy committee began considering inverting the LLC waterfall into uncapped corporate stock as early as April or May 2024, and identified the non-binding Watershed MOU as the proposed recapitalization term sheet.",
+    "plaintiff_citations": [{ "trial": "042826TT.txt", "line": 5850 }, { "docket": "350", "title": "Pls' MSJ Opp. Exs. 65–66" }, { "trial": "050526TT.txt", "line": 10520, "snippet": "Under the Watershed construct... certain access to certain product IP" }],
     "defense_position": "The restructuring 'is not a conversion of the nonprofit into a for-profit entity — as Musk has falsely and repeatedly claimed — but a structure change in which the nonprofit would continue to exist and pursue its mission… while the capped-profit would become a public benefit corporation' serving the same mission. (Counterclaim ¶77)",
     "defense_citations": [{ "docket": "228", "page": 3, "title": "Counterclaim ¶77 quoted in MTD ruling" }],
-    "record": "Substantive evaluation of the restructuring requires the closing documents, which appear in the redacted MSJ exhibit set. The court has not adjudicated the merits.",
-    "record_citations": [{ "docket": "228", "page": 3 }]
+    "record": "Substantive evaluation of the restructuring requires the closing documents, which appear in the redacted MSJ exhibit set. The court has not adjudicated the merits. The Day 7 record distinguishes the current 2023 JDCA license (all IP and technology except AGI) from the non-binding Watershed MOU, under which Microsoft would receive certain product-IP access after AGI is determined by a third-party panel.",
+    "record_citations": [{ "docket": "228", "page": 3 }, { "trial": "050526TT.txt", "line": 10306 }, { "trial": "050526TT.txt", "line": 10520 }]
   },
   {
     "id": "df-jury-scope",
@@ -222,8 +222,8 @@
     "plaintiff_citations": [{ "docket": "503", "filename": "gov.uscourts.cand.433688.503.0.md" }],
     "defense_position": "Microsoft's proposed findings say it was not involved in OpenAI's formation or Musk's departure, was not told of Musk-specific donation conditions, received contractual assurances, and did not cause any alleged breach.",
     "defense_citations": [{ "docket": "504", "filename": "gov.uscourts.cand.433688.504.0.md" }],
-    "record": "The MSJ ruling left the claim alive, but Microsoft's April 27 proposed findings preserve no-knowledge, no-assistance, limitations, laches, and unclean-hands defenses.",
-    "record_citations": [{ "docket": "390" }, { "docket": "504" }]
+    "record": "The MSJ ruling left the claim alive, but Microsoft's April 27 proposed findings preserve no-knowledge, no-assistance, limitations, laches, and unclean-hands defenses. Wu's Day 7 testimony gives the jury concrete evidence on Microsoft economics and license scope, but it is still only part of the actual-knowledge / substantial-assistance inquiry.",
+    "record_citations": [{ "docket": "390" }, { "docket": "504" }, { "trial": "050526TT.txt", "line": 10154 }, { "trial": "050526TT.txt", "line": 10306 }]
   },
   {
     "id": "df-musk-motive-bias",

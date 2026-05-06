@@ -7,10 +7,11 @@
     "jurisdiction": "Delaware (registered as charitable trust in California)",
     "formed": "Dec 2015",
     "short": "The original 501(c)(3). Plaintiffs allege its assets, IP, and personnel were transferred into the for-profit layers; defense says the nonprofit retains supervisory and economic interests.",
-    "description": "Filed in Delaware as a nonprofit corporation; registered with the California Attorney General's Registry of Charitable Trusts in August 2017. Certificate of incorporation states OpenAI 'shall be a nonprofit corporation organized exclusively for charitable and/or educational purposes within the meaning of section 501(c)(3).' The board of OpenAI, Inc. — not the LP — is the entity to which Musk's donations flowed. Site of the November 2023 board crisis.",
+    "description": "Filed in Delaware as a nonprofit corporation; registered with the California Attorney General's Registry of Charitable Trusts in August 2017. Certificate of incorporation states OpenAI 'shall be a nonprofit corporation organized exclusively for charitable and/or educational purposes within the meaning of section 501(c)(3).' The board of OpenAI, Inc. — not the LP — is the entity to which Musk's donations flowed. Site of the November 2023 board crisis. Day 7 Wu deposition testimony added that the nonprofit residual sits behind roughly $250B in aggregate target redemptions and that OpenAI Inc. has no full-time employees apart from board / CEO structure.",
     "flows": [
       { "kind": "Capital in", "from": "Elon Musk (via DAFs and YC.org)", "to": "OpenAI, Inc.", "detail": "$44.56M wired 2016–2020 per FAC ¶424; ~$38M cash on Birchall's trial chart", "citations": ["#32", "#170"] },
-      { "kind": "IP", "from": "OpenAI, Inc.", "to": "OpenAI L.P. / OpenAI OpCo, LLC", "detail": "Plaintiffs allege exclusive licensing arrangement transferred IP control to the for-profit layer", "citations": ["#170"] }
+      { "kind": "IP", "from": "OpenAI, Inc.", "to": "OpenAI L.P. / OpenAI OpCo, LLC", "detail": "Plaintiffs allege exclusive licensing arrangement transferred IP control to the for-profit layer; Wu testified OpenAI Inc. transferred developed IP and most employees to the for-profit LP / OpCo structure", "citations": ["#170", "Trial 050526TT.txt:2428"] },
+      { "kind": "Residual economics", "from": "OpenAI L.P. / OpCo waterfall", "to": "OpenAI, Inc.", "detail": "Wu described roughly $250B in aggregate target redemptions across LPs before the nonprofit residual would be paid", "citations": ["Trial 050526TT.txt:10252"] }
     ],
     "officers": [
       { "actor_id": "sam-altman", "actor_name": "Sam Altman", "title": "CEO; director" },
@@ -19,7 +20,8 @@
     "attributes": [
       ["Type", "501(c)(3) public charity"],
       ["Mission (per cert.)", "'Organized exclusively for charitable and/or educational purposes'"],
-      ["Plaintiffs' theory", "Funds and assets diverted into for-profit subsidiaries"]
+      ["Plaintiffs' theory", "Funds and assets diverted into for-profit subsidiaries"],
+      ["Day 7 Wu testimony", "No full-time employees; nonprofit residual behind roughly $250B aggregate target redemptions before payout"]
     ]
   },
   {
@@ -30,13 +32,15 @@
     "jurisdiction": "Delaware",
     "formed": "Mar 2019",
     "short": "Capped-profit LP launched March 2019 as a for-profit subsidiary of OpenAI, Inc. Designed with 'fixed maximum return' caps for investors. Renamed/restructured into OpenAI OpCo, LLC.",
-    "description": "Created as the vehicle for outside capital after the 2018–2019 strategic pivot. Microsoft's 2019 $1B and 2023 $10B investments flowed here. Plaintiffs allege the 'profit cap' was effectively removed in the 2024–2025 restructuring; defense disputes the framing of the restructuring.",
+    "description": "Created as the vehicle for outside capital after the 2018–2019 strategic pivot. Microsoft's 2019 $1B and 2023 $10B investments flowed here. Plaintiffs allege the 'profit cap' was effectively removed in the 2024–2025 restructuring; defense disputes the framing of the restructuring. Wu's Day 7 30(b)(6) deposition put trial numbers on the waterfall: Microsoft's 2019 $1B round carried a $20B target redemption, the 2023 $10B round carried a $60B / 6x target, and aggregate target redemptions were roughly $250B before the nonprofit residual.",
     "flows": [
-      { "kind": "Capital in", "from": "Microsoft Corp.", "to": "OpenAI L.P.", "detail": "Reported $13.75B cumulative through 2024", "citations": ["#170", "#329"] }
+      { "kind": "Capital in", "from": "Microsoft Corp.", "to": "OpenAI L.P.", "detail": "Reported $13.75B cumulative through 2024; Wu testified the 2019 $1B Microsoft investment carried a $20B target redemption and the 2023 $10B commitment carried a $60B target redemption", "citations": ["#170", "#329", "Trial 050526TT.txt:10154"] },
+      { "kind": "Waterfall", "from": "OpenAI L.P. / members", "to": "Limited partners before nonprofit residual", "detail": "Target-redemption stack described as roughly $250B, with a 20% annual escalator starting in 2025", "citations": ["Trial 050526TT.txt:10252"] }
     ],
     "attributes": [
       ["Structure", "Capped-profit LP"],
-      ["GP", "OpenAI GP, L.L.C."]
+      ["GP", "OpenAI GP, L.L.C."],
+      ["Target redemptions", "Microsoft 2019: $20B target on $1B; Microsoft 2023: $60B target on $10B; aggregate LP stack roughly $250B before nonprofit residual"]
     ]
   },
   {
@@ -47,7 +51,7 @@
     "jurisdiction": "Delaware",
     "formed": "Restructure",
     "short": "Successor name for the operating for-profit. Named defendant in every iteration of the complaint.",
-    "description": "Houses commercial activities and exclusive licensing arrangements with Microsoft; site of the 2024–2025 restructuring at issue."
+    "description": "Houses commercial activities and exclusive licensing arrangements with Microsoft; site of the 2024–2025 restructuring at issue. Wu's Day 7 testimony said the 2023 second amended JDCA licensed Microsoft all OpenAI IP and technology except AGI, while the non-binding Watershed MOU would give Microsoft certain product-IP access after a third-party AGI determination."
   },
   {
     "id": "openai-gp",
@@ -158,11 +162,11 @@
     "jurisdiction": "Washington",
     "formed": "1975",
     "short": "Investor, exclusive cloud provider, and licensee. After MSJ, the remaining Microsoft claim is aiding and abetting breach of fiduciary duty.",
-    "description": "Microsoft's MSJ characterizes the relationship as 'arm's-length negotiations between sophisticated parties'; it 'did not receive a conventional equity ownership interest' but a capped-return arrangement. Plaintiffs cite Microsoft's 2019 $1B, 2023 $10B, and 2024 expanded investments and the November 2023 board episode as evidence Microsoft exerts de facto control.",
+    "description": "Microsoft's MSJ characterizes the relationship as 'arm's-length negotiations between sophisticated parties'; it 'did not receive a conventional equity ownership interest' but a capped-return arrangement. Plaintiffs cite Microsoft's 2019 $1B, 2023 $10B, and 2024 expanded investments and the November 2023 board episode as evidence Microsoft exerts de facto control. Day 7 Wu deposition testimony added that Microsoft's 2023 round had a $60B / 6x target redemption, that the 2023 JDCA licensed Microsoft all IP and technology except AGI, and that the Watershed MOU would provide certain post-AGI product-IP access after a third-party-panel determination.",
     "flows": [
-      { "kind": "Capital", "from": "Microsoft", "to": "OpenAI L.P.", "detail": "$1B (2019) → $10B (2023) → expanded 2024", "citations": ["#170", "#329"] },
+      { "kind": "Capital", "from": "Microsoft", "to": "OpenAI L.P.", "detail": "$1B (2019) with $20B target redemption → $10B (2023) with $60B / 6x target redemption → expanded 2024", "citations": ["#170", "#329", "Trial 050526TT.txt:10154"] },
       { "kind": "Compute", "from": "Microsoft (Azure)", "to": "OpenAI", "detail": "Exclusive cloud relationship; below-cost pricing alleged by plaintiffs (rejected at PI stage)" },
-      { "kind": "Licensing", "from": "OpenAI", "to": "Microsoft", "detail": "Licensee of GPT-4 and successor models" }
+      { "kind": "Licensing", "from": "OpenAI", "to": "Microsoft", "detail": "2023 second amended JDCA licensed all OpenAI IP and technology except AGI; Watershed MOU would provide certain product-IP access after AGI determination", "citations": ["Trial 050526TT.txt:10306", "Trial 050526TT.txt:10520"] }
     ],
     "officers": [
       { "actor_id": "satya-nadella", "actor_name": "Satya Nadella", "title": "CEO" },
