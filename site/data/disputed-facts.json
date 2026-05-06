@@ -46,10 +46,10 @@
     "actors": ["elon-musk"],
     "plaintiff_position": "No, not in any binding sense. Trial testimony: 'I don't object to a for-profit that's in service to the nonprofit.' (042926TT.txt:6039)",
     "plaintiff_citations": [{ "trial": "042926TT.txt", "line": 6039 }],
-    "defense_position": "Yes. Musk privately advised it would be 'better to have a standard C corp with a parallel nonprofit' (¶24 of OpenAI's counterclaim). Earlier, his own December 2016 Neuralink-related email said: 'Setting it up as a nonprofit might, in hindsight, have been the wrong move.' (DX 559)",
-    "defense_citations": [{ "docket": "147", "page": 7, "title": "OpenAI Counterclaim ¶24" }, { "trial": "042926TT.txt", "line": 3275 }],
-    "record": "Documentary evidence supports the proposition that Musk advocated structural change at the time. The contested issue is whether that proposal undermined his reliance on the September 2017 reaffirmations or was conditional on him having control of the resulting entity.",
-    "record_citations": [{ "docket": "147", "page": 7 }, { "docket": "121", "page": 13 }]
+    "defense_position": "Yes. Musk privately advised it would be 'better to have a standard C corp with a parallel nonprofit' (¶24 of OpenAI's counterclaim). Earlier, his own December 2016 Neuralink-related email said: 'Setting it up as a nonprofit might, in hindsight, have been the wrong move.' (DX 559). Day 7 direct added Brockman's account that Musk said the nonprofit 'was the right one early on' but 'may not be the right one now,' that China's AI push was 'another reason to change course,' and that the Dota breakthrough was 'the triggering event' for the next structural step.",
+    "defense_citations": [{ "docket": "147", "page": 7, "title": "OpenAI Counterclaim ¶24" }, { "trial": "042926TT.txt", "line": 3275 }, "Trial-wiki Day 7 ~08:56 PT", "Trial-wiki Day 7 ~08:59-09:03 PT"],
+    "record": "Documentary evidence supports the proposition that Musk advocated structural change at the time. The Day 7 trial record sharpened that point with testimony about July-August 2017 texts and emails tying Musk's shift to funding pressure, competition, and the Dota result. The contested issue remains whether those discussions undermined his reliance on the September 2017 reaffirmations or were conditional on him having control of the resulting entity.",
+    "record_citations": [{ "docket": "147", "page": 7 }, { "docket": "121", "page": 13 }, "Trial-wiki Day 7 ~08:56 PT", "Trial-wiki Day 7 ~08:59-09:03 PT"]
   },
   {
     "id": "df-microsoft-control",

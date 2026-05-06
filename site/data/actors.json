@@ -65,9 +65,9 @@
     "side": "defendant",
     "roles": ["Co-founder", "Defendant", "Witness"],
     "tags": ["Defendant", "President", "Trial witness"],
-    "summary": "Co-founder; OpenAI President; named defendant on the surviving fiduciary-duty and restitution theories. Took the stand May 4-5, 2026. Cross drew out a ~$30B equity stake (paid in $0); a $10M side-payment from Altman in 2017 hidden from Musk; undisclosed Cerebras ownership during 2017 merger talks; and a roster of ongoing self-dealing positions (Stripe, CoreWeave, Helion) that are now OpenAI counterparties. Day 7 turned his personal journal into a central interpretive fight.",
+    "summary": "Co-founder; OpenAI President; named defendant on the surviving fiduciary-duty and restitution theories. Took the stand May 4-5, 2026. Cross drew out a ~$30B equity stake (paid in $0); a $10M side-payment from Altman in 2017 hidden from Musk; Cerebras ownership during the 2017 merger talks, which plaintiffs frame as concealed and Brockman says he disclosed through Shivon Zilis; and a roster of ongoing self-dealing positions (Stripe, CoreWeave, Helion) that are now OpenAI counterparties. Day 7 turned his personal journal into a central interpretive fight.",
     "bio": "Former Stripe CTO; left to join OpenAI in 2015. Plaintiffs single out his November 22, 2015 email — describing OpenAI's nonprofit positioning as 'the best way to bootstrap ourselves into being a leading research institution' — as evidence of strategic intent. Adverse direct began May 4, 2026; Wachtell redirect on Day 6 denied any commitment to Musk that OpenAI would stay a nonprofit; Molo's Day 7 recross attacked Brockman's journal explanations as after-the-fact glosses.",
-    "role_in_case": "Trial testimony made Brockman the case's highest-stakes witness so far. He conceded that his ~$30B OpenAI equity was acquired for $0 (050426TT.txt:2958, 3008); was confronted with PX-350 (Birchall→Musk, Aug 2017) describing a $10M side-stake Altman gave Brockman from his family-office LLC, with Musk forwarding the email to Brockman with only '??' (050426TT.txt:5580, 5626); and was read his own Nov 6, 2017 journal (PX-161) saying it would be wrong to 'steal the nonprofit' from Musk and that if OpenAI claimed commitment to the nonprofit while planning a B Corp, 'then it was a lie.' His defense reading is that 'morally bankrupt' referred to firing Musk from the board and then forming a B Corp without him, not to conversion itself; DX 1252 ('Real decision is fire Elon' / 'Fire Elon route') came in on Day 7 as a prior consistent statement. Plaintiffs' reading is that the journal is contemporaneous proof of intent to push Musk out while preserving the nonprofit story.",
+    "role_in_case": "Trial testimony made Brockman the case's highest-stakes witness so far. He conceded that his ~$30B OpenAI equity was acquired for $0 (050426TT.txt:2958, 3008); was confronted with PX-350 (Birchall→Musk, Aug 2017) describing a $10M side-stake Altman gave Brockman from his family-office LLC, with Musk forwarding the email to Brockman with only '??' (050426TT.txt:5580, 5626); and was read his own Nov 6, 2017 journal (PX-161) saying it would be wrong to 'steal the nonprofit' from Musk and that if OpenAI claimed commitment to the nonprofit while planning a B Corp, 'then it was a lie.' On Day 7 direct, he also said he disclosed his Cerebras interest to Shivon Zilis because he viewed her as Musk's liaison and expected she would pass it on. His defense reading is that 'morally bankrupt' referred to firing Musk from the board and then forming a B Corp without him, not to conversion itself; DX 1252 ('Real decision is fire Elon' / 'Fire Elon route') came in on Day 7 as a prior consistent statement. Plaintiffs' reading is that the journal is contemporaneous proof of intent to push Musk out while preserving the nonprofit story.",
     "position_shifts": [
       { "when": "Nov 22, 2015", "text": "Wrote that the nonprofit posture was 'the best way to bootstrap ourselves into being a leading research institution'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 3", "filename": "gov.uscourts.cand.433688.32.3.md" }] },
       { "when": "Sep 20, 2017", "text": "Joined Sutskever in raising 'highest stakes conversation' concerns about Musk's would-be 'unilateral absolute control over the AGI'.", "citations": [{ "docket": "32", "page": 0, "title": "FAC Ex. 13", "filename": "gov.uscourts.cand.433688.32.13.md" }] },
@@ -79,13 +79,14 @@
       ["Title", "President, OpenAI"],
       ["OpenAI equity stake", "~$30B at current valuation, acquired for $0 (050426TT.txt:2958, 3008)"],
       ["Plaintiffs' framing", "Contributed 'zero' financial capital to the nonprofit but holds significant equity in the for-profit"],
-      ["Disclosed conflicts (PX-390)", "Stripe equity ~$471M + $60M/3-yr OpenAI–Stripe payment-processing deal; CoreWeave equity (~$750K) and ~$22.4B in 2025 OpenAI–CoreWeave deals; Cerebras equity acquired Mar 17, 2017 (undisclosed during 2017 merger talks); Helion ties (Altman holds up to ~$1.5B; OpenAI signed a May 2024 scaled-deployment agreement and a Mar 2026 power-purchase deal)"],
+      ["Disclosed conflicts (PX-390)", "Stripe equity ~$471M + $60M/3-yr OpenAI–Stripe payment-processing deal; CoreWeave equity (~$750K) and ~$22.4B in 2025 OpenAI–CoreWeave deals; Cerebras equity acquired Mar 17, 2017 (plaintiffs say it was undisclosed during the merger talks; Brockman testified he told Shivon Zilis); Helion ties (Altman holds up to ~$1.5B; OpenAI signed a May 2024 scaled-deployment agreement and a Mar 2026 power-purchase deal)"],
       ["Trial testimony", "Days 6-7 (May 4-5, 2026): adverse direct by Kry, Wachtell redirect by Savitt, Day 7 recross by Molo, and DX-1252 admitted through Gerrada"]
     ],
     "connections": [
       { "actor_id": "sam-altman", "actor_name": "Sam Altman", "relation": "Co-founder; co-defendant; trial testimony establishes a $10M side-payment from Altman to Brockman in 2017 (PX-350) hidden from Musk" },
       { "actor_id": "ilya-sutskever", "actor_name": "Ilya Sutskever", "relation": "Co-founder; co-author of Sept 20, 2017 email" },
-      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Estranged co-founder; PX-350 documents Musk forwarding the Birchall side-pay email to Brockman with only '??' (050426TT.txt:5626)" }
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Estranged co-founder; PX-350 documents Musk forwarding the Birchall side-pay email to Brockman with only '??' (050426TT.txt:5626)" },
+      { "actor_id": "shivon-zilis", "actor_name": "Shivon Zilis", "relation": "Brockman testified he treated her as Musk's liaison/proxy in 2017 and disclosed his Cerebras interest to her" }
     ]
   },
   {
@@ -173,14 +174,16 @@
     "side": "plaintiff",
     "roles": ["Plaintiff", "Witness"],
     "tags": ["Plaintiff (FAC)", "Witness"],
-    "summary": "Reported to Musk on OpenAI matters during 2017–2018 (e.g., the September 22, 2017 update in FAC Ex. 14). Added as a co-plaintiff in the FAC (Nov 2024); dropped as a plaintiff in the SAC (May 2025). Filed a declaration in support of the preliminary injunction (Dkt #73.34, Dec 2024). Confirmed as a plaintiffs' witness late on Day 5; on Day 7 the court took under submission a sealed application about whether her testimony should be insulated from the public audio livestream because of security concerns.",
+    "summary": "Reported to Musk on OpenAI matters during 2017–2018 (e.g., the September 22, 2017 update in FAC Ex. 14). Added as a co-plaintiff in the FAC (Nov 2024); dropped as a plaintiff in the SAC (May 2025). Filed a declaration in support of the preliminary injunction (Dkt #73.34, Dec 2024). Brockman's Day 7 direct described her as Musk's liaison/proxy in the 2017 for-profit negotiations and as the person to whom he disclosed his Cerebras interest. Confirmed as a plaintiffs' witness late on Day 5; on Day 7 the court took under submission a sealed application about whether her testimony should be insulated from the public audio livestream because of security concerns.",
     "attributes": [
       ["Plaintiff status", "FAC co-plaintiff (Nov 2024); dropped from SAC (May 2025)"],
       ["Trial role", "Plaintiffs' witness expected after Brockman / Wu deposition sequence"],
-      ["Day 7 procedure", "Sealed livestream-limitation application taken under submission; not merits evidence"]
+      ["Day 7 procedure", "Sealed livestream-limitation application taken under submission; not merits evidence"],
+      ["2017 negotiation role", "Brockman described her as Musk's liaison/proxy and said he expected her to relay key structure discussions to Musk"]
     ],
     "connections": [
-      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Reports to Musk on OpenAI; Tesla/Neuralink board member" }
+      { "actor_id": "elon-musk", "actor_name": "Elon Musk", "relation": "Reports to Musk on OpenAI; Tesla/Neuralink board member" },
+      { "actor_id": "greg-brockman", "actor_name": "Greg Brockman", "relation": "Brockman testified she served as Musk's liaison/proxy during the 2017 for-profit talks" }
     ]
   },
   {
