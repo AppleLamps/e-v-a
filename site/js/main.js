@@ -53,7 +53,7 @@ async function boot() {
 
 function stampMeta(meta) {
   const archive = document.getElementById("archive-stamp");
-  if (archive && meta) archive.textContent = `Archive through ${meta.archive_through}`;
+  if (archive && meta) archive.textContent = `Updated through ${meta.coverage_through || meta.archive_through}`;
   const footer = document.getElementById("footer-stamp");
   if (footer && meta) footer.textContent = `Last analyzed ${meta.last_analyzed} · v${meta.version}`;
   const last = meta && meta.last_analyzed ? meta.last_analyzed : "—";

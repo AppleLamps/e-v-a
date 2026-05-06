@@ -5,6 +5,8 @@
   "judge": "Hon. Yvonne Gonzalez Rogers",
   "magistrate": "Hon. Thomas S. Hixson",
   "filed": "2024-08-05",
+  "coverage_through": "May 5, 2026",
+  "coverage_through_iso": "2026-05-05",
   "archive_through": "May 3, 2026",
   "archive_through_iso": "2026-05-03",
   "last_docket_no": "522",
@@ -12,7 +14,7 @@
   "trial_jury_size": 9,
   "trial_estimated_weeks": 4,
   "posture": "Mid-trial (liability phase); remedies phase begins ~May 18, 2026",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "last_analyzed": "2026-05-05",
   "docket_entries": 692,
   "filings_extracted": 1153,
@@ -22,5 +24,5 @@
   "named_actors": 41,
   "primary_archive": "court-case-md/",
   "secondary_archive": "case-files/ (trial-wiki commentary)",
-  "scope_note": "Primary docket archive runs through May 3, 2026 (entry #522). Trial began April 27, 2026 and is bifurcated under PTO #4 (#477) into liability (Apr 28 - ~May 15) and remedies (~May 18+) phases. Per PTO #3 (#456), disgorgement is an equitable remedy decided by the Court, not the jury. Day-by-day trial coverage is in case-files/ trial-wiki commentary, treated as secondary observation. Live claims after the Apr 24, 2026 order (#497): charitable trust and unjust enrichment/restitution against the OpenAI defendants, plus aiding and abetting fiduciary breach against Microsoft = 3 total. Fraud and constructive fraud were dismissed with prejudice before openings."
+  "scope_note": "Website analysis and trial-wiki commentary run through May 5, 2026. Primary docket archive runs through May 3, 2026 (entry #522). Trial began April 27, 2026 and is bifurcated under PTO #4 (#477) into liability (Apr 28 - ~May 15) and remedies (~May 18+) phases. Per PTO #3 (#456), disgorgement is an equitable remedy decided by the Court, not the jury. Day-by-day trial coverage is in case-files/ trial-wiki commentary, treated as secondary observation. Live claims after the Apr 24, 2026 order (#497): charitable trust and unjust enrichment/restitution against the OpenAI defendants, plus aiding and abetting fiduciary breach against Microsoft = 3 total. Fraud and constructive fraud were dismissed with prejudice before openings."
 }

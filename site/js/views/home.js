@@ -6,9 +6,11 @@ export function renderHome(data, _m, root) {
   const meta = data.meta;
   const a = data.analysis;
   const h = a.hero || {};
+  const coverageThrough = meta.coverage_through || meta.archive_through;
+  const coverageThroughIso = meta.coverage_through_iso || meta.archive_through_iso;
   const hero = el("section", { class: "home-hero" }, [
     el("div", { class: "shell" }, [
-      el("p", { class: "eyebrow" }, "Forensic case file · " + meta.archive_through),
+      el("p", { class: "eyebrow" }, "Forensic case file · updated through " + coverageThrough),
       el("h1", {}, h.headline || "What this case is actually about."),
       el("p", { class: "deck" }, h.deck || ""),
       el("div", { class: "meta-row" }, [
@@ -74,9 +76,9 @@ export function renderHome(data, _m, root) {
     el("div", { class: "archive-callout" }, [
       el("h5", {}, "Archive scope"),
       el("p", {}, [
-        "The primary docket archive ends ",
-        el("strong", {}, formatDate(meta.archive_through_iso)),
-        " (entry #", meta.last_docket_no || "522",
+        "The website analysis and trial commentary run through ",
+        el("strong", {}, formatDate(coverageThroughIso)),
+        ". The primary docket archive currently ends at entry #", meta.last_docket_no || "522",
         "). Trial began ",
         el("strong", {}, formatDate(meta.trial_start_iso)),
         " and proceedings are tracked separately in ",
